@@ -1,4 +1,4 @@
-# IRCCF — Integrated Regulatory Compliance and Cybersecurity Ontology
+# Integrated Regulatory Compliance and Cybersecurity Ontology
 
 **Research reproducibility repository — preliminary regulatory mappings.**
 
