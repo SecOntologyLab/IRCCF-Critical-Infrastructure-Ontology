@@ -89,7 +89,20 @@ The scripts write new outputs beneath `results/verification/`, retaining the rec
 
 ## Traceability results and outstanding verification
 
-The repository includes recorded candidate/active SPARQL queries and CSVs for tactic/CSF coverage and EU regulatory traceability, including the 1,319-path result. **Independent re-execution of the recorded Stardog traceability and coverage queries has not yet been performed as part of this repository assembly.** Source data, graph imports and query execution requirements must be documented before claiming full end-to-end reconstruction of those results.
+The repository includes recorded SPARQL queries and CSV outputs for MITRE ATT&CK for ICS tactic-to-NIST CSF 2.0 Function coverage and EU regulatory traceability.
+
+The original Stage 5.3 ontology produced 1,319 distinct regulatory evidence paths and 32 calculated tactic-to-Function associations. The corrected Stage 5.4 ontology produces 1,320 distinct evidence paths and 33 calculated tactic-to-Function associations, reflecting one additional qualifying Discovery-to-Detect Function association under the established 25% parent-technique coverage threshold.
+
+The repository reproducibility audit includes independent re-execution of the Stardog SPARQL traceability and coverage queries against the archived ontology releases. This verification will establish whether the recorded results can be reproduced from the repository's documented inputs, graph-loading procedures, and query definitions.
+
+The verification will include:
+
+1. Re-execution of the active regulatory traceability query against the Stage 5.4 ontology to confirm 1,320 distinct evidence paths.
+2. Verification of the 33 calculated tactic-to-CSF 2.0 Function associations against the established coverage criterion.
+3. Corresponding checks against the original Stage 5.3 ontology to confirm 1,319 evidence paths and 32 associations.
+4. Documentation of the Stardog environment, ontology-loading procedures, SPARQL queries, resulting outputs, and any discrepancies.
+
+The repository's provenance documentation will record the verification results and any necessary corrections. Until this independent re-execution has been completed, the archived traceability outputs should be regarded as recorded research results rather than independently reproduced repository outputs.
 
 ## Provenance, interpretation and redistribution
 
@@ -101,4 +114,8 @@ The repository includes recorded candidate/active SPARQL queries and CSVs for ta
 
 ## GitHub release status
 
-Prepare the first commit as a **private** repository under `SecOntologyLab`. Review licensing, provenance and final output data before changing repository visibility.
+The repository was initially committed as a private GitHub repository under SecOntologyLab on 24 October 2026.
+
+Initial commit: `5fd073b`
+
+The repository remains private pending review of licensing, source-data provenance, third-party redistribution conditions, and experimental reproducibility. Its contents should not yet be regarded as a fully independently verified public research release.
