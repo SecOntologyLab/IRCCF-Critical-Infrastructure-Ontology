@@ -1,0 +1,11 @@
+﻿Legacy requirement,Original regulation(s),Disposition,Reason
+AccessControl,NIS2,Archived; replaced by article-specific candidates,Legacy generic requirement and mappings require manual provenance review; no automatic equivalence
+BusinessContinuity,NIS2,Archived; replaced by article-specific candidates,Legacy generic requirement and mappings require manual provenance review; no automatic equivalence
+DataMinimization,GDPR,Archived; replaced by article-specific candidates,Legacy generic requirement and mappings require manual provenance review; no automatic equivalence
+HumanOversight,AIAct; GDPR,Archived; replaced by article-specific candidates,Legacy generic requirement and mappings require manual provenance review; no automatic equivalence
+IncidentReporting,NIS2,Archived; replaced by article-specific candidates,Legacy generic requirement and mappings require manual provenance review; no automatic equivalence
+RiskManagement,AIAct; NIS2,Archived; replaced by article-specific candidates,Legacy generic requirement and mappings require manual provenance review; no automatic equivalence
+SecurityByDesign,AIAct; CRA,Archived; replaced by article-specific candidates,Legacy generic requirement and mappings require manual provenance review; no automatic equivalence
+SupplyChainSecurity,NIS2,Archived; replaced by article-specific candidates,Legacy generic requirement and mappings require manual provenance review; no automatic equivalence
+TransparencyObligation,AIAct; GDPR,Archived; replaced by article-specific candidates,Legacy generic requirement and mappings require manual provenance review; no automatic equivalence
+VulnerabilityHandling,CRA,Archived; replaced by article-specific candidates,Legacy generic requirement and mappings require manual provenance review; no automatic equivalence

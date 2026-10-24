@@ -1,0 +1,13 @@
+﻿ATT&CK ICS tactic,CSF 2.0 Functions (≥25%),Preliminary evidence-path rows,Distinct requirements traced,Distinct techniques traced,EU instruments traced,Original manuscript chains (historical)
+Initial Access,"DE, GV, ID, PR",225,24,12,"Cyber Resilience Act, EU AI Act, GDPR, NIS2 Directive",3
+Execution,"DE, ID, PR",94,19,8,"Cyber Resilience Act, EU AI Act, GDPR, NIS2 Directive",17
+Persistence,"DE, ID, PR",119,10,5,"Cyber Resilience Act, EU AI Act, GDPR, NIS2 Directive",14
+Privilege Escalation,"DE, ID, PR",17,7,2,"Cyber Resilience Act, EU AI Act, NIS2 Directive",1
+Evasion,"DE, ID, PR",72,15,5,"Cyber Resilience Act, EU AI Act, GDPR, NIS2 Directive",8
+Discovery,PR,12,8,4,"Cyber Resilience Act, GDPR, NIS2 Directive",4
+Lateral Movement,"DE, ID, PR",156,20,6,"Cyber Resilience Act, EU AI Act, GDPR, NIS2 Directive",1
+Collection,"DE, PR",162,19,8,"Cyber Resilience Act, EU AI Act, GDPR, NIS2 Directive",7
+Command and Control,"DE, ID, PR",105,15,3,"Cyber Resilience Act, EU AI Act, GDPR, NIS2 Directive",2
+Inhibit Response Function,"DE, PR",186,12,11,"Cyber Resilience Act, EU AI Act, GDPR, NIS2 Directive",6
+Impair Process Control,"DE, ID, PR",107,10,4,"Cyber Resilience Act, EU AI Act, GDPR, NIS2 Directive",6
+Impact,"PR, RC",64,7,10,"Cyber Resilience Act, GDPR, NIS2 Directive",1

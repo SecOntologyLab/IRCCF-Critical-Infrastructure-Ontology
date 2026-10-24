@@ -1,0 +1,15 @@
+PREFIX irccf: <https://purl.org/ircc-framework#>
+# DIAGNOSTIC ONLY: traverses unapproved proposed legal-to-control mappings.
+# DO NOT report these rows as validated regulatory traceability chains.
+SELECT ?regulation ?requirement ?proposal ?control ?mitigation ?technique ?tactic ?function
+WHERE {
+  ?regulation irccf:imposesRequirement ?requirement .
+  ?proposal a irccf:ProposedRegulatoryControlMapping ;
+      irccf:proposedRequirement ?requirement ;
+      irccf:proposedControl ?control .
+  ?mitigation irccf:referencesStandardsControl ?control ;
+      irccf:mitigatesTechnique ?technique .
+  ?technique irccf:belongsToTactic ?tactic .
+  ?tactic irccf:calculatedFunctionAssociation ?function .
+}
+ORDER BY ?tactic ?regulation

@@ -1,0 +1,23 @@
+﻿Old tactic URI,Old Function URI
+https://purl.org/ircc-framework#TA0111_PrivilegeEscalation,https://purl.org/ircc-framework#Protect
+https://purl.org/ircc-framework#TA0101_CommandAndControl,https://purl.org/ircc-framework#Protect
+https://purl.org/ircc-framework#TA0104_Execution,https://purl.org/ircc-framework#Protect
+https://purl.org/ircc-framework#TA0110_Persistence,https://purl.org/ircc-framework#Protect
+https://purl.org/ircc-framework#TA0100_Collection,https://purl.org/ircc-framework#Protect
+https://purl.org/ircc-framework#TA0109_LateralMovement,https://purl.org/ircc-framework#Protect
+https://purl.org/ircc-framework#TA0108_InitialAccess,https://purl.org/ircc-framework#Protect
+https://purl.org/ircc-framework#TA0105_Impact,https://purl.org/ircc-framework#Recover
+https://purl.org/ircc-framework#TA0107_InhibitResponseFunction,https://purl.org/ircc-framework#Recover
+https://purl.org/ircc-framework#TA0106_ImpairProcessControl,https://purl.org/ircc-framework#Respond
+https://purl.org/ircc-framework#TA0105_Impact,https://purl.org/ircc-framework#Respond
+https://purl.org/ircc-framework#TA0107_InhibitResponseFunction,https://purl.org/ircc-framework#Respond
+https://purl.org/ircc-framework#TA0101_CommandAndControl,https://purl.org/ircc-framework#Detect
+https://purl.org/ircc-framework#TA0102_Discovery,https://purl.org/ircc-framework#Detect
+https://purl.org/ircc-framework#TA0106_ImpairProcessControl,https://purl.org/ircc-framework#Detect
+https://purl.org/ircc-framework#TA0103_Evasion,https://purl.org/ircc-framework#Detect
+https://purl.org/ircc-framework#TA0104_Execution,https://purl.org/ircc-framework#Detect
+https://purl.org/ircc-framework#TA0110_Persistence,https://purl.org/ircc-framework#Detect
+https://purl.org/ircc-framework#TA0100_Collection,https://purl.org/ircc-framework#Detect
+https://purl.org/ircc-framework#TA0109_LateralMovement,https://purl.org/ircc-framework#Detect
+https://purl.org/ircc-framework#TA0107_InhibitResponseFunction,https://purl.org/ircc-framework#Detect
+https://purl.org/ircc-framework#TA0102_Discovery,https://purl.org/ircc-framework#Identify

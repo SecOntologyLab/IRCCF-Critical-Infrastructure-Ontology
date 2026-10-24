@@ -1,0 +1,13 @@
+Test,Matches
+01 law to obligation,35
+02 + active technical mapping,0
+03 + legacy control mitigates,0
+04 + tactic,0
+05 + computed Function,0
+candidate regulatory→control,47
+candidate control with MITRE reference,100
+MITRE mitigation to standard control,126
+MITRE mitigation → technique,402
+technique → tactic,116
+computed tactic → Function,32
+DIAGNOSTIC ONLY candidate-control→MITRE→tactic paths,1652

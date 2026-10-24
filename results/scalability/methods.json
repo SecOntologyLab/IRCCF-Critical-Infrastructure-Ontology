@@ -1,0 +1,16 @@
+{
+  "ontology": "C:\\Users\\andre\\irccf-shacl\\IRCCF_Scalability_Benchmark\\irccf_stage5_3_PRELIMINARY_all47_active.ttl",
+  "scales": [
+    1,
+    2,
+    5,
+    10
+  ],
+  "runs": 3,
+  "timeout_seconds": 180,
+  "memory_limit_mb": 2500,
+  "rdflib": "7.1.1",
+  "owlrl": "7.1.2",
+  "sampling_note": "Peak RSS is sampled periodically; brief peaks might be missed",
+  "design_note": "Original schema unchanged. Synthetic uniquely identified ABox replicas only. Each clone uses existing predicates/types."
+}

@@ -1,0 +1,1470 @@
+@prefix irccf: <https://purl.org/ircc-framework#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+irccf:AIAct a irccf:Regulation ;
+    rdfs:label "EU AI Act" ;
+    irccf:imposesRequirement irccf:HumanOversight,
+        irccf:RiskManagement,
+        irccf:SecurityByDesign,
+        irccf:TransparencyObligation .
+
+irccf:CRA a irccf:Regulation ;
+    rdfs:label "Cyber Resilience Act" ;
+    irccf:imposesRequirement irccf:SecurityByDesign,
+        irccf:VulnerabilityHandling .
+
+irccf:CTIAnalysisProvider a irccf:Stakeholder .
+
+irccf:CommunicationIntegrityControl a irccf:SecurityControl ;
+    rdfs:label "Communication integrity control (SR 3.1)" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:description "Communication integrity protection." ;
+    irccf:mitigates irccf:T0803_BlockCommandMessage,
+        irccf:T0804_BlockReportingMessage,
+        irccf:T0830_AdversaryInTheMiddle,
+        irccf:T0848_RogueMaster .
+
+irccf:ComplianceMeasure a owl:Class .
+
+irccf:GDPR a irccf:Regulation ;
+    rdfs:label "GDPR" ;
+    irccf:imposesRequirement irccf:DataMinimization,
+        irccf:HumanOversight,
+        irccf:TransparencyObligation .
+
+irccf:NIS2 a irccf:Regulation ;
+    rdfs:label "NIS2 Directive" ;
+    irccf:imposesRequirement irccf:AccessControl,
+        irccf:BusinessContinuity,
+        irccf:IncidentReporting,
+        irccf:RiskManagement,
+        irccf:SupplyChainSecurity .
+
+irccf:NetworkSegmentationControl a irccf:SecurityControl ;
+    rdfs:label "Network segmentation control (SR 5.1)" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:description "Network segmentation to limit lateral movement." ;
+    irccf:mitigates irccf:T0843_ProgramDownload,
+        irccf:T0866_ExploitationOfRemoteServices,
+        irccf:T0867_LateralToolTransfer,
+        irccf:T0884_ConnectionProxy .
+
+irccf:Ontology a owl:Ontology ;
+    rdfs:label "Integrated Regulatory Compliance and Cybersecurity Framework Ontology" .
+
+irccf:PlatformProvider a irccf:Stakeholder .
+
+irccf:T0800_ActivateFirmwareUpdateMode a irccf:ThreatTechnique ;
+    rdfs:label "Activate Firmware Update Mode" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0800" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--19a71d1e-6334-4233-8260-b749cae37953" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0801_MonitorProcessState a irccf:ThreatTechnique ;
+    rdfs:label "Monitor Process State" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0801" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--2d0d40ad-22fa-4cc8-b264-072557e1364b" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0802_AutomatedCollection a irccf:ThreatTechnique ;
+    rdfs:label "Automated Collection" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0802" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--3de230d4-3e42-4041-b089-17e1128feded" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0805_BlockSerialCOM a irccf:HistoricalThreatTechnique ;
+    rdfs:label "Block Serial COM" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreStatus "not active in ATT&CK ICS v19.2" .
+
+irccf:T0813_DenialOfControl a irccf:ThreatTechnique ;
+    rdfs:label "Denial of Control" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0813" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--e33c7ecc-5a38-497f-beb2-a9a2049a4c20" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0815_DenialOfView a irccf:ThreatTechnique ;
+    rdfs:label "Denial of View" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0815" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--56ddc820-6cfb-407f-850b-52c035d123ac" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0817_DriveByCompromise a irccf:ThreatTechnique ;
+    rdfs:label "Drive-by Compromise" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0817" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--7830cfcf-b268-4ac0-a69e-73c6affbae9a" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0827_LossOfControl a irccf:ThreatTechnique ;
+    rdfs:label "Loss of Control" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0827" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--a81696ef-c106-482c-8f80-59c30f2569fb" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0828_LossOfProductivityAndRevenue a irccf:ThreatTechnique ;
+    rdfs:label "Loss of Productivity and Revenue" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0828" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--63b6942d-8359-4506-bfb3-cf87aa8120ee" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0829_LossOfView a irccf:ThreatTechnique ;
+    rdfs:label "Loss of View" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0829" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--138979ba-0430-4de6-a128-2fc0b056ba36" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0831_ManipulationOfControl a irccf:ThreatTechnique ;
+    rdfs:label "Manipulation of Control" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0831" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--1af9e3fd-2bcc-414d-adbd-fe3b95c02ca1" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0832_ManipulationOfView a irccf:ThreatTechnique ;
+    rdfs:label "Manipulation of View" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0832" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--4c2e1408-9d68-4187-8e6b-a77bc52700ec" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0834_NativeAPI a irccf:ThreatTechnique ;
+    rdfs:label "Native API" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0834" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--b52870cc-83f3-473c-b895-72d91751030b" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0837_LossOfProtection a irccf:ThreatTechnique ;
+    rdfs:label "Loss of Protection" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0837" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--2bb4d762-bf4a-4bc3-9318-15cc6a354163" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0838_ModifyAlarmSettings a irccf:ThreatTechnique ;
+    rdfs:label "Modify Alarm Settings" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0838" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--e5de767e-f513-41cd-aa15-33f6ce5fbf92" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0845_ProgramUpload a irccf:ThreatTechnique ;
+    rdfs:label "Program Upload" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0845" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--3067b85e-271e-4bc5-81ad-ab1a81d411e3" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0847_ReplicationThroughRemovableMedia a irccf:ThreatTechnique ;
+    rdfs:label "Replication Through Removable Media" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0847" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--c267bbee-bb59-47fe-85e0-3ed210337c21" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0860_WirelessCompromise a irccf:ThreatTechnique ;
+    rdfs:label "Wireless Compromise" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0860" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--2877063e-1851-48d2-bcc6-bc1d2733157e" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0861_PointAndTagIdentification a irccf:ThreatTechnique ;
+    rdfs:label "Point & Tag Identification" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0861" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--25852363-5968-4673-b81d-341d5ed90bd1" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0862_SupplyChainCompromise a irccf:ThreatTechnique ;
+    rdfs:label "Supply Chain Compromise" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0862" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--5e0f75da-e108-4688-a6de-a4f07cc2cbe3" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0863_UserExecution a irccf:ThreatTechnique ;
+    rdfs:label "User Execution" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0863" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--2736b752-4ec5-4421-a230-8977dea7649c" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0864_TransientCyberAsset a irccf:ThreatTechnique ;
+    rdfs:label "Transient Cyber Asset" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0864" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--35392fb4-a31d-4c6a-b9f2-1c65b7f5e6b9" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0865_SpearphishingAttachment a irccf:ThreatTechnique ;
+    rdfs:label "Spearphishing Attachment" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0865" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--648f995e-9c3a-41e4-aeee-98bb41037426" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0868_DetectOperatingMode a irccf:ThreatTechnique ;
+    rdfs:label "Detect Operating Mode" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0868" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--2aa406ed-81c3-4c1d-ba83-cfbee5a2847a" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0874_Hooking a irccf:ThreatTechnique ;
+    rdfs:label "Hooking" ;
+    irccf:belongsToTactic irccf:TA0104_Execution,
+        irccf:TA0111_PrivilegeEscalation ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0874" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--ab390887-afc0-4715-826d-b1b167d522ae" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0877_IOImage a irccf:ThreatTechnique ;
+    rdfs:label "I/O Image" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0877" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--53a48c74-0025-45f4-b04a-baa853df8204" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0879_DamageToProperty a irccf:ThreatTechnique ;
+    rdfs:label "Damage to Property" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0879" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--83ebd22f-b401-4d59-8219-2294172cf916" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0880_LossOfSafety a irccf:ThreatTechnique ;
+    rdfs:label "Loss of Safety" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0880" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--5fa00fdd-4a55-4191-94a0-564181d7fec2" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0883_InternetAccessibleDevice a irccf:ThreatTechnique ;
+    rdfs:label "Internet Accessible Device" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0883" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--f8df6b57-14bc-425f-9a91-6f59f6799307" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0888_RemoteSystemInformationDiscovery a irccf:ThreatTechnique ;
+    rdfs:label "Remote System Information Discovery" ;
+    irccf:belongsToTactic irccf:TA0102_Discovery ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0888" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--2fedbe69-581f-447d-8a78-32ee7db939a9" ;
+    irccf:mitreStatus "active" .
+
+irccf:appliesTo a owl:ObjectProperty ;
+    rdfs:domain irccf:RegulatoryRequirement ;
+    rdfs:range irccf:Asset .
+
+irccf:belongsToFramework a owl:ObjectProperty ;
+    rdfs:domain irccf:FrameworkFunction ;
+    rdfs:range irccf:CybersecurityFramework .
+
+irccf:belongsToStandard a owl:ObjectProperty ;
+    rdfs:domain irccf:SecurityControl ;
+    rdfs:range irccf:TechnicalStandard .
+
+irccf:belongsToTactic a owl:ObjectProperty ;
+    rdfs:domain irccf:ThreatTechnique ;
+    rdfs:range irccf:Tactic .
+
+irccf:belongsToThreatModel a owl:ObjectProperty ;
+    rdfs:comment "Links tactics or techniques to a threat model." .
+
+irccf:description a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+irccf:detects a owl:ObjectProperty ;
+    rdfs:domain irccf:Asset ;
+    rdfs:range irccf:ThreatTechnique .
+
+irccf:governsProcessing a owl:ObjectProperty .
+
+irccf:hasSubtechnique a owl:ObjectProperty .
+
+irccf:implementedBy a owl:ObjectProperty ;
+    rdfs:domain irccf:RegulatoryRequirement ;
+    rdfs:range irccf:SecurityControl .
+
+irccf:imposesRequirement a owl:ObjectProperty ;
+    rdfs:domain irccf:Regulation ;
+    rdfs:range irccf:RegulatoryRequirement .
+
+irccf:involvesProcessing a owl:ObjectProperty .
+
+irccf:mapsToFunction a owl:ObjectProperty ;
+    rdfs:comment "Links requirements, tactics, or controls to NIST CSF functions." .
+
+irccf:mitigates a owl:ObjectProperty ;
+    rdfs:domain irccf:SecurityControl ;
+    rdfs:range irccf:ThreatTechnique .
+
+irccf:mitreAttackID a owl:DatatypeProperty .
+
+irccf:mitreDataVersion a owl:DatatypeProperty .
+
+irccf:mitreSTIXID a owl:DatatypeProperty .
+
+irccf:mitreStatus a owl:DatatypeProperty .
+
+irccf:performedBy a owl:ObjectProperty .
+
+irccf:subtechniqueOf a owl:ObjectProperty .
+
+irccf:supportsComplianceWith a owl:ObjectProperty .
+
+irccf:usedInCaseStudy a owl:ObjectProperty .
+
+irccf:AIEnabledSystem a owl:Class ;
+    rdfs:subClassOf irccf:Asset .
+
+irccf:AccessControl a irccf:RegulatoryRequirement ;
+    rdfs:label "Access control requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:description "Appropriate access control policies and procedures." ;
+    irccf:implementedBy irccf:AccessControlEnforcement,
+        irccf:UseControlAuthorization ;
+    irccf:mapsToFunction irccf:Protect .
+
+irccf:AccessControlEnforcement a irccf:SecurityControl ;
+    rdfs:label "Access control enforcement (SR 1.1)" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:description "Human user identification and authentication." ;
+    irccf:mitigates irccf:T0812_DefaultCredentials,
+        irccf:T0822_ExternalRemoteServices,
+        irccf:T0859_ValidAccounts,
+        irccf:T0886_RemoteServices,
+        irccf:T0891_HardcodedCredentials,
+        irccf:T0892_ChangeCredential .
+
+irccf:BackupRecoveryControl a irccf:SecurityControl ;
+    rdfs:label "Backup and recovery control (SR 7.3)" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:description "System backup and recovery capabilities." ;
+    irccf:mitigates irccf:T0809_DataDestruction,
+        irccf:T0826_LossOfAvailability .
+
+irccf:BusinessContinuity a irccf:RegulatoryRequirement ;
+    rdfs:label "Business continuity requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:description "Organizations must ensure continuity of essential services." ;
+    irccf:implementedBy irccf:BackupRecoveryControl,
+        irccf:ResourceAvailabilityControl ;
+    irccf:mapsToFunction irccf:Recover .
+
+irccf:CTICaseStudy a irccf:CaseStudy .
+
+irccf:CTIPlatform a irccf:Asset ;
+    rdfs:label "CTI sharing platform" ;
+    irccf:involvesProcessing irccf:ThreatSharing ;
+    irccf:usedInCaseStudy irccf:CTICaseStudy .
+
+irccf:CriticalInfrastructureOperator a irccf:Stakeholder .
+
+irccf:DataConfidentialityControl a irccf:SecurityControl ;
+    rdfs:label "Data confidentiality control (SR 4.1)" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:description "Information confidentiality protection." ;
+    irccf:mitigates irccf:T0811_DataFromInformationRepositories,
+        irccf:T0852_ScreenCapture,
+        irccf:T0882_TheftOfOperationalInformation,
+        irccf:T0893_DataFromLocalSystem .
+
+irccf:DataMinimization a irccf:RegulatoryRequirement ;
+    rdfs:label "Data minimization requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:description "Personal data must be limited to what is necessary." ;
+    irccf:governsProcessing irccf:ThreatSharing ;
+    irccf:implementedBy irccf:DataConfidentialityControl,
+        irccf:NetworkMonitoringControl ;
+    irccf:mapsToFunction irccf:Protect .
+
+irccf:ICSCaseStudy a irccf:CaseStudy .
+
+irccf:IncidentReporting a irccf:RegulatoryRequirement ;
+    rdfs:label "Incident reporting requirement" ;
+    irccf:appliesTo irccf:CTIPlatform,
+        irccf:OTSensor ;
+    irccf:implementedBy irccf:AuditLoggingControl ;
+    irccf:mapsToFunction irccf:Respond .
+
+irccf:ProcessingActivity a owl:Class .
+
+irccf:ResourceAvailabilityControl a irccf:SecurityControl ;
+    rdfs:label "Resource availability control (SR 7.1)" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:description "Denial of service protection and resource availability." ;
+    irccf:mitigates irccf:T0814_DenialOfService,
+        irccf:T0816_DeviceRestartShutdown,
+        irccf:T0881_ServiceStop .
+
+irccf:SupplyChainSecurity a irccf:RegulatoryRequirement ;
+    rdfs:label "Supply chain security requirement" ;
+    irccf:description "Organizations must manage cybersecurity risks in supply chains." ;
+    irccf:implementedBy irccf:SystemIntegrityControl ;
+    irccf:mapsToFunction irccf:Govern .
+
+irccf:T0803_BlockCommandMessage a irccf:HistoricalThreatTechnique ;
+    rdfs:label "Block Command Message" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreStatus "not active in ATT&CK ICS v19.2" .
+
+irccf:T0804_BlockReportingMessage a irccf:HistoricalThreatTechnique ;
+    rdfs:label "Block Reporting Message" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreStatus "not active in ATT&CK ICS v19.2" .
+
+irccf:T0806_BruteForceIO a irccf:ThreatTechnique ;
+    rdfs:label "Brute Force I/O" ;
+    irccf:belongsToTactic irccf:TA0106_ImpairProcessControl ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0806" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--8e7089d3-fba2-44f8-94a8-9a79c53920c4" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0807_CommandLineInterface a irccf:ThreatTechnique ;
+    rdfs:label "Command-Line Interface" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0807" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--24a9253e-8948-4c98-b751-8e2aee53127c" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0809_DataDestruction a irccf:ThreatTechnique ;
+    rdfs:label "Data Destruction" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0809" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--493832d9-cea6-4b63-abe7-9a65a6473675" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0811_DataFromInformationRepositories a irccf:ThreatTechnique ;
+    rdfs:label "Data from Information Repositories" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0811" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--3405891b-16aa-4bd7-bd7c-733501f9b20f" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0812_DefaultCredentials a irccf:HistoricalThreatTechnique ;
+    rdfs:label "Default Credentials" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreStatus "not active in ATT&CK ICS v19.2" .
+
+irccf:T0814_DenialOfService a irccf:ThreatTechnique ;
+    rdfs:label "Denial of Service" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0814" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--1b22b676-9347-4c55-9a35-ef0dc653db5b" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0816_DeviceRestartShutdown a irccf:ThreatTechnique ;
+    rdfs:label "Device Restart/Shutdown" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0816" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--25dfc8ad-bd73-4dfd-84a9-3c3d383f76e9" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0819_ExploitPublicFacingApplication a irccf:ThreatTechnique ;
+    rdfs:label "Exploit Public-Facing Application" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0819" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--32632a95-6856-47b9-9ab7-fea5cd7dce00" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0820_ExploitationForEvasion a irccf:ThreatTechnique ;
+    rdfs:label "Exploitation for Evasion" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0820" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--9f947a1c-3860-48a8-8af0-a2dfa3efde03" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0822_ExternalRemoteServices a irccf:ThreatTechnique ;
+    rdfs:label "External Remote Services" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0822" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--8d2f3bab-507c-4424-b58b-edc977bd215c" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0823_GraphicalUserInterface a irccf:ThreatTechnique ;
+    rdfs:label "Graphical User Interface" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0823" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--b0628bfc-5376-4a38-9182-f324501cb4cf" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0826_LossOfAvailability a irccf:ThreatTechnique ;
+    rdfs:label "Loss of Availability" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0826" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--b5b9bacb-97f2-4249-b804-47fd44de1f95" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0839_ModuleFirmware a irccf:HistoricalThreatTechnique ;
+    rdfs:label "Module Firmware" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreStatus "not active in ATT&CK ICS v19.2" .
+
+irccf:T0840_NetworkConnectionEnumeration a irccf:ThreatTechnique ;
+    rdfs:label "Network Connection Enumeration" ;
+    irccf:belongsToTactic irccf:TA0102_Discovery ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0840" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--ea0c980c-5cf0-43a7-a049-59c4c207566e" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0843_001_DownloadAll a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Download All" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement ;
+    irccf:mitreAttackID "T0843.001" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--77015a55-eef8-4f71-a071-b152f82ec1ef" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T0843_ProgramDownload .
+
+irccf:T0843_002_OnlineEdit a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Online Edit" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement ;
+    irccf:mitreAttackID "T0843.002" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--d85a6ee9-820c-4adf-8a64-2392ee70c83c" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T0843_ProgramDownload .
+
+irccf:T0843_003_ProgramAppend a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Program Append" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement ;
+    irccf:mitreAttackID "T0843.003" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--574d5bfb-9a7a-4b28-ab5c-743ac704c135" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T0843_ProgramDownload .
+
+irccf:T0846_001_PortScan a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Port Scan" ;
+    irccf:belongsToTactic irccf:TA0102_Discovery ;
+    irccf:mitreAttackID "T0846.001" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--5d24bb1d-4487-4923-ae3a-8e679092ac7a" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T0846_RemoteSystemDiscovery .
+
+irccf:T0846_002_BroadcastDiscovery a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Broadcast Discovery" ;
+    irccf:belongsToTactic irccf:TA0102_Discovery ;
+    irccf:mitreAttackID "T0846.002" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--c55f0be5-044e-4577-8095-65b37680d28c" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T0846_RemoteSystemDiscovery .
+
+irccf:T0846_003_MulticastDiscovery a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Multicast Discovery" ;
+    irccf:belongsToTactic irccf:TA0102_Discovery ;
+    irccf:mitreAttackID "T0846.003" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--64bbc1b2-101f-4322-af1d-0c9cc25cef91" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T0846_RemoteSystemDiscovery .
+
+irccf:T0848_RogueMaster a irccf:ThreatTechnique ;
+    rdfs:label "Rogue Master" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0848" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--b14395bd-5419-4ef4-9bd8-696936f509bb" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0849_Masquerading a irccf:ThreatTechnique ;
+    rdfs:label "Masquerading" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0849" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--ba203963-3182-41ac-af14-7e7ebc83cd61" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0851_Rootkit a irccf:ThreatTechnique ;
+    rdfs:label "Rootkit" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion,
+        irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0851" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--3b6b9246-43f8-4c69-ad7a-2b11cfe0a0d9" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0852_ScreenCapture a irccf:ThreatTechnique ;
+    rdfs:label "Screen Capture" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0852" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--c5e3cdbc-0387-4be9-8f83-ff5c0865f377" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0853_Scripting a irccf:ThreatTechnique ;
+    rdfs:label "Scripting" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0853" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--2dc2b567-8821-49f9-9045-8740f3d0b958" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0857_SystemFirmware a irccf:HistoricalThreatTechnique ;
+    rdfs:label "System Firmware" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreStatus "not active in ATT&CK ICS v19.2" .
+
+irccf:T0859_ValidAccounts a irccf:ThreatTechnique ;
+    rdfs:label "Valid Accounts" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement,
+        irccf:TA0110_Persistence ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0859" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--cd2c76a4-5e23-4ca5-9c40-d5e0604f7101" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0867_LateralToolTransfer a irccf:ThreatTechnique ;
+    rdfs:label "Lateral Tool Transfer" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0867" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--ead7bd34-186e-4c79-9a4d-b65bcce6ed9d" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0869_StandardApplicationLayerProtocol a irccf:ThreatTechnique ;
+    rdfs:label "Standard Application Layer Protocol" ;
+    irccf:belongsToTactic irccf:TA0101_CommandAndControl ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0869" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--e076cca8-2f08-45c9-aff7-ea5ac798b387" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0871_ExecutionThroughAPI a irccf:ThreatTechnique ;
+    rdfs:label "Execution through API" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0871" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--5a2610f6-9fff-41e1-bc27-575ca20383d4" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0872_IndicatorRemovalOnHost a irccf:ThreatTechnique ;
+    rdfs:label "Indicator Removal on Host" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0872" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--53a26eee-1080-4d17-9762-2027d5a1b805" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0873_001_SiemensProjectFileFormat a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Siemens Project File Format" ;
+    irccf:belongsToTactic irccf:TA0110_Persistence ;
+    irccf:mitreAttackID "T0873.001" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--354ca909-b54d-4c41-b597-9c296b344a43" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T0873_ProjectFileInfection .
+
+irccf:T0881_ServiceStop a irccf:ThreatTechnique ;
+    rdfs:label "Service Stop" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0881" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--063b5b92-5361-481a-9c3f-95492ed9a2d8" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0882_TheftOfOperationalInformation a irccf:ThreatTechnique ;
+    rdfs:label "Theft of Operational Information" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0882" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--b7e13ee8-182c-4f19-92a4-a88d7d855d54" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0884_ConnectionProxy a irccf:ThreatTechnique ;
+    rdfs:label "Connection Proxy" ;
+    irccf:belongsToTactic irccf:TA0101_CommandAndControl ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0884" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--d67adac8-e3b9-44f9-9e6d-6c2a7d69dbe4" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0885_CommonlyUsedPort a irccf:ThreatTechnique ;
+    rdfs:label "Commonly Used Port" ;
+    irccf:belongsToTactic irccf:TA0101_CommandAndControl ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0885" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--e6c31185-8040-4267-83d3-b217b8a92f07" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0886_RemoteServices a irccf:ThreatTechnique ;
+    rdfs:label "Remote Services" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess,
+        irccf:TA0109_LateralMovement ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0886" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--e1f9cdd2-9511-4fca-90d7-f3e92cfdd0bf" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0887_WirelessSniffing a irccf:ThreatTechnique ;
+    rdfs:label "Wireless Sniffing" ;
+    irccf:belongsToTactic irccf:TA0100_Collection,
+        irccf:TA0102_Discovery ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0887" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--0fe075d5-beac-4d02-b93e-0f874997db72" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0889_ModifyProgram a irccf:ThreatTechnique ;
+    rdfs:label "Modify Program" ;
+    irccf:belongsToTactic irccf:TA0110_Persistence ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0889" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--fc5fda7e-6b2c-4457-b036-759896a2efa2" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0890_ExploitationForPrivilegeEscalation a irccf:ThreatTechnique ;
+    rdfs:label "Exploitation for Privilege Escalation" ;
+    irccf:belongsToTactic irccf:TA0111_PrivilegeEscalation ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0890" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--cfe68e93-ce94-4c0f-a57d-3aa72cedd618" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0891_HardcodedCredentials a irccf:HistoricalThreatTechnique ;
+    rdfs:label "Hardcoded Credentials" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreStatus "not active in ATT&CK ICS v19.2" .
+
+irccf:T0892_ChangeCredential a irccf:ThreatTechnique ;
+    rdfs:label "Change Credential" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0892" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--fab8fc7d-f27f-4fbb-9de6-44740aade05f" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0893_DataFromLocalSystem a irccf:ThreatTechnique ;
+    rdfs:label "Data from Local System" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0893" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--fa3aa267-da22-4bdd-961f-03223322a8d5" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0894_SystemBinaryProxyExecution a irccf:ThreatTechnique ;
+    rdfs:label "System Binary Proxy Execution" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0894" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--1c5cf58c-a34a-40d7-82f4-f987cdfc2b91" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0895_AutorunImage a irccf:ThreatTechnique ;
+    rdfs:label "Autorun Image" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0895" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--77d9c726-b53e-481d-8bcc-1068aebfbb9d" ;
+    irccf:mitreStatus "active" .
+
+irccf:T1691_001_CommandMessage a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Command Message" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:mitreAttackID "T1691.001" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--15ca2a99-2d3e-457f-b1d7-c52a1d5849c9" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T1691_BlockOperationalTechnologyMessage .
+
+irccf:T1691_002_ReportingMessage a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Reporting Message" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:mitreAttackID "T1691.002" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--7866bb5f-98ee-45c2-984c-8a328c5176b2" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T1691_BlockOperationalTechnologyMessage .
+
+irccf:T1692_001_CommandMessage a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Command Message" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion,
+        irccf:TA0106_ImpairProcessControl ;
+    irccf:mitreAttackID "T1692.001" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--4344d1b8-968b-4697-9ab9-f9abe5f52265" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T1692_UnauthorizedMessage .
+
+irccf:T1692_002_ReportingMessage a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Reporting Message" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion,
+        irccf:TA0106_ImpairProcessControl ;
+    irccf:mitreAttackID "T1692.002" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--527106b3-95a2-4ed2-bf89-db7f0e4d0da0" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T1692_UnauthorizedMessage .
+
+irccf:T1693_001_SystemFirmware a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "System Firmware" ;
+    irccf:belongsToTactic irccf:TA0106_ImpairProcessControl,
+        irccf:TA0107_InhibitResponseFunction,
+        irccf:TA0110_Persistence ;
+    irccf:mitreAttackID "T1693.001" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--68a9324d-a524-4766-a899-a026f68a33df" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T1693_ModifyFirmware .
+
+irccf:T1693_002_ModuleFirmware a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Module Firmware" ;
+    irccf:belongsToTactic irccf:TA0106_ImpairProcessControl,
+        irccf:TA0107_InhibitResponseFunction,
+        irccf:TA0110_Persistence ;
+    irccf:mitreAttackID "T1693.002" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--75587e49-ab7e-44df-9549-faeb1da57f39" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T1693_ModifyFirmware .
+
+irccf:T1694_001_DefaultCredentials a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Default Credentials" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement,
+        irccf:TA0110_Persistence ;
+    irccf:mitreAttackID "T1694.001" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--5658ad88-7510-490e-a351-95d50b1bcd91" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T1694_InsecureCredentials .
+
+irccf:T1694_002_HardcodedCredentials a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Hardcoded Credentials" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement,
+        irccf:TA0110_Persistence ;
+    irccf:mitreAttackID "T1694.002" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--6b335943-c3af-430e-a135-ab09623bdc20" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T1694_InsecureCredentials .
+
+irccf:T1695_001_SerialCOM a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Serial COM" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:mitreAttackID "T1695.001" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--55e7e5c1-3760-4451-bae0-e79b29f452c5" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T1695_BlockCommunications .
+
+irccf:T1695_002_Ethernet a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Ethernet" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:mitreAttackID "T1695.002" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--6008c1f0-1b68-4614-8f5b-a547436b8855" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T1695_BlockCommunications .
+
+irccf:T1695_003_WiFi a irccf:SubTechnique,
+        irccf:ThreatTechnique ;
+    rdfs:label "Wi-Fi" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:mitreAttackID "T1695.003" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--71f2d49e-65dd-4fb6-a4cc-0d2b19d427fa" ;
+    irccf:mitreStatus "active" ;
+    irccf:subtechniqueOf irccf:T1695_BlockCommunications .
+
+irccf:ThreatModel a owl:Class .
+
+irccf:UseControlAuthorization a irccf:SecurityControl ;
+    rdfs:label "Use control authorization (SR 2.1)" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:description "Authorization enforcement for all users." ;
+    irccf:mitigates irccf:T0807_CommandLineInterface,
+        irccf:T0823_GraphicalUserInterface,
+        irccf:T0871_ExecutionThroughAPI,
+        irccf:T0890_ExploitationForPrivilegeEscalation .
+
+irccf:VulnerabilityHandling a irccf:RegulatoryRequirement ;
+    rdfs:label "Vulnerability handling requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:description "Products with digital elements must have vulnerability handling processes." ;
+    irccf:implementedBy irccf:InputValidationControl,
+        irccf:SystemIntegrityControl ;
+    irccf:mapsToFunction irccf:Protect .
+
+irccf:AuditLoggingControl a irccf:SecurityControl ;
+    rdfs:label "Audit logging control (SR 2.8)" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:description "Auditable events and tamper-proof logging." ;
+    irccf:mitigates irccf:T0849_Masquerading,
+        irccf:T0872_IndicatorRemovalOnHost,
+        irccf:T0894_SystemBinaryProxyExecution .
+
+irccf:CaseStudy a owl:Class .
+
+irccf:CybersecurityFramework a owl:Class .
+
+irccf:Govern a irccf:FrameworkFunction ;
+    rdfs:label "Govern" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+irccf:HumanOversight a irccf:RegulatoryRequirement ;
+    rdfs:label "Human oversight requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:implementedBy irccf:AnomalyDetectionControl,
+        irccf:AuditLoggingControl ;
+    irccf:mapsToFunction irccf:Detect .
+
+irccf:Identify a irccf:FrameworkFunction ;
+    rdfs:label "Identify" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+irccf:InputValidationControl a irccf:SecurityControl ;
+    rdfs:label "Input validation control (SR 3.5)" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:description "Input validation to prevent injection and manipulation." ;
+    irccf:mitigates irccf:T0819_ExploitPublicFacingApplication,
+        irccf:T0820_ExploitationForEvasion,
+        irccf:T0853_Scripting .
+
+irccf:NetworkMonitoringControl a irccf:SecurityControl ;
+    rdfs:label "Network monitoring control" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:mitigates irccf:T0830_AdversaryInTheMiddle,
+        irccf:T0840_NetworkConnectionEnumeration,
+        irccf:T0842_NetworkSniffing,
+        irccf:T0869_StandardApplicationLayerProtocol,
+        irccf:T0885_CommonlyUsedPort,
+        irccf:T0887_WirelessSniffing .
+
+irccf:RiskManagement a irccf:RegulatoryRequirement ;
+    rdfs:label "Risk management requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:description "Organizations must identify and manage cybersecurity risks." ;
+    irccf:implementedBy irccf:AnomalyDetectionControl,
+        irccf:NetworkMonitoringControl ;
+    irccf:mapsToFunction irccf:Identify .
+
+irccf:SecurityByDesign a irccf:RegulatoryRequirement ;
+    rdfs:label "Security by design requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:implementedBy irccf:AnomalyDetectionControl,
+        irccf:InputValidationControl,
+        irccf:SystemIntegrityControl ;
+    irccf:mapsToFunction irccf:Protect .
+
+irccf:T0821_ModifyControllerTasking a irccf:ThreatTechnique ;
+    rdfs:label "Modify Controller Tasking" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0821" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--09a61657-46e1-439e-b3ed-3e4556a78243" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0835_ManipulateIOImage a irccf:ThreatTechnique ;
+    rdfs:label "Manipulate I/O Image" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0835" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--36e9f5bc-ac13-4da4-a2f4-01f4877d9004" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0836_ModifyParameter a irccf:ThreatTechnique ;
+    rdfs:label "Modify Parameter" ;
+    irccf:belongsToTactic irccf:TA0106_ImpairProcessControl ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0836" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--097924ce-a9a9-4039-8591-e0deedfb8722" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0842_NetworkSniffing a irccf:ThreatTechnique ;
+    rdfs:label "Network Sniffing" ;
+    irccf:belongsToTactic irccf:TA0102_Discovery ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0842" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--38213338-1aab-479d-949b-c81b66ccca5c" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0855_UnauthorizedCommandMessage a irccf:HistoricalThreatTechnique ;
+    rdfs:label "Unauthorized Command Message" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreStatus "not active in ATT&CK ICS v19.2" .
+
+irccf:T0856_SpoofReportingMessage a irccf:HistoricalThreatTechnique ;
+    rdfs:label "Spoof Reporting Message" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreStatus "not active in ATT&CK ICS v19.2" .
+
+irccf:T0858_ChangeOperatingMode a irccf:ThreatTechnique ;
+    rdfs:label "Change Operating Mode" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion,
+        irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0858" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--2883c520-7957-46ca-89bd-dab1ad53b601" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0866_ExploitationOfRemoteServices a irccf:ThreatTechnique ;
+    rdfs:label "Exploitation of Remote Services" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess,
+        irccf:TA0109_LateralMovement ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0866" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--85a45294-08f1-4539-bf00-7da08aa7b0ee" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0873_ProjectFileInfection a irccf:ThreatTechnique ;
+    rdfs:label "Project File Infection" ;
+    irccf:belongsToTactic irccf:TA0110_Persistence ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:hasSubtechnique irccf:T0873_001_SiemensProjectFileFormat ;
+    irccf:mitreAttackID "T0873" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--e72425f8-9ae6-41d3-bfdb-e1b865e60722" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0878_AlarmSuppression a irccf:ThreatTechnique ;
+    rdfs:label "Alarm Suppression" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0878" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--2900bbd8-308a-4274-b074-5b8bde8347bc" ;
+    irccf:mitreStatus "active" .
+
+irccf:T1691_BlockOperationalTechnologyMessage a irccf:ThreatTechnique ;
+    rdfs:label "Block Operational Technology Message" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:hasSubtechnique irccf:T1691_001_CommandMessage,
+        irccf:T1691_002_ReportingMessage ;
+    irccf:mitreAttackID "T1691" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--338f4364-2269-4f70-9079-b20384b16628" ;
+    irccf:mitreStatus "active" .
+
+irccf:T1692_UnauthorizedMessage a irccf:ThreatTechnique ;
+    rdfs:label "Unauthorized Message" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion,
+        irccf:TA0106_ImpairProcessControl ;
+    irccf:hasSubtechnique irccf:T1692_001_CommandMessage,
+        irccf:T1692_002_ReportingMessage ;
+    irccf:mitreAttackID "T1692" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--e17cdc00-8b58-4e5f-9d50-4cad1592c4c3" ;
+    irccf:mitreStatus "active" .
+
+irccf:T1693_ModifyFirmware a irccf:ThreatTechnique ;
+    rdfs:label "Modify Firmware" ;
+    irccf:belongsToTactic irccf:TA0106_ImpairProcessControl,
+        irccf:TA0107_InhibitResponseFunction,
+        irccf:TA0110_Persistence ;
+    irccf:hasSubtechnique irccf:T1693_001_SystemFirmware,
+        irccf:T1693_002_ModuleFirmware ;
+    irccf:mitreAttackID "T1693" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--7b4c0e19-a9b0-4a74-a196-b38c07b79f20" ;
+    irccf:mitreStatus "active" .
+
+irccf:T1694_InsecureCredentials a irccf:ThreatTechnique ;
+    rdfs:label "Insecure Credentials" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement,
+        irccf:TA0110_Persistence ;
+    irccf:hasSubtechnique irccf:T1694_001_DefaultCredentials,
+        irccf:T1694_002_HardcodedCredentials ;
+    irccf:mitreAttackID "T1694" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--3e9b182e-e493-49e1-9a9b-bd0dfcd34a7c" ;
+    irccf:mitreStatus "active" .
+
+irccf:TA0111_PrivilegeEscalation a irccf:Tactic ;
+    rdfs:label "Privilege Escalation" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques used to gain higher-level permissions on a system or network." ;
+    irccf:mapsToFunction irccf:Protect ;
+    irccf:mitreAttackID "TA0111" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--33752ae7-f875-4f43-bdb6-d8d02d341046" .
+
+irccf:TechnicalStandard a owl:Class .
+
+irccf:ThreatSharing a irccf:ProcessingActivity ;
+    rdfs:label "Threat intelligence sharing" ;
+    irccf:performedBy irccf:CriticalInfrastructureOperator .
+
+irccf:TransparencyObligation a irccf:RegulatoryRequirement ;
+    rdfs:label "Transparency obligation" ;
+    irccf:description "AI systems must provide transparency regarding logic involved." ;
+    irccf:mapsToFunction irccf:Govern .
+
+irccf:AnomalyDetectionControl a irccf:SecurityControl ;
+    rdfs:label "Anomaly detection control" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:mitigates irccf:T0806_BruteForceIO,
+        irccf:T0821_ModifyControllerTasking,
+        irccf:T0835_ManipulateIOImage,
+        irccf:T0836_ModifyParameter,
+        irccf:T0855_UnauthorizedCommandMessage,
+        irccf:T0856_SpoofReportingMessage,
+        irccf:T0858_ChangeOperatingMode,
+        irccf:T0878_AlarmSuppression .
+
+irccf:Recover a irccf:FrameworkFunction ;
+    rdfs:label "Recover" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+irccf:Stakeholder a owl:Class .
+
+irccf:SystemIntegrityControl a irccf:SecurityControl ;
+    rdfs:label "System integrity control (SR 3.4)" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 ;
+    irccf:description "Software and information integrity verification." ;
+    irccf:mitigates irccf:T0839_ModuleFirmware,
+        irccf:T0851_Rootkit,
+        irccf:T0857_SystemFirmware,
+        irccf:T0873_ProjectFileInfection,
+        irccf:T0889_ModifyProgram,
+        irccf:T0895_AutorunImage .
+
+irccf:T0830_AdversaryInTheMiddle a irccf:ThreatTechnique ;
+    rdfs:label "Adversary-in-the-Middle" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mitreAttackID "T0830" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--9a505987-ab05-4f46-a9a6-6441442eec3b" ;
+    irccf:mitreStatus "active" .
+
+irccf:T0846_RemoteSystemDiscovery a irccf:ThreatTechnique ;
+    rdfs:label "Remote System Discovery" ;
+    irccf:belongsToTactic irccf:TA0102_Discovery ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:hasSubtechnique irccf:T0846_001_PortScan,
+        irccf:T0846_002_BroadcastDiscovery,
+        irccf:T0846_003_MulticastDiscovery ;
+    irccf:mitreAttackID "T0846" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--d5a69cfb-fc2a-46cb-99eb-74b236db5061" ;
+    irccf:mitreStatus "active" .
+
+irccf:T1695_BlockCommunications a irccf:ThreatTechnique ;
+    rdfs:label "Block Communications" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:hasSubtechnique irccf:T1695_001_SerialCOM,
+        irccf:T1695_002_Ethernet,
+        irccf:T1695_003_WiFi ;
+    irccf:mitreAttackID "T1695" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--fbb67c2d-37c3-49ee-86e3-bf234cc48ca9" ;
+    irccf:mitreStatus "active" .
+
+irccf:TA0101_CommandAndControl a irccf:Tactic ;
+    rdfs:label "Command and Control" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques used to communicate with systems under adversary control." ;
+    irccf:mapsToFunction irccf:Detect,
+        irccf:Protect ;
+    irccf:mitreAttackID "TA0101" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--97c8ff73-bd14-4b6c-ac32-3d91d2c41e3f" .
+
+irccf:Asset a owl:Class .
+
+irccf:Respond a irccf:FrameworkFunction ;
+    rdfs:label "Respond" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+irccf:T0843_ProgramDownload a irccf:ThreatTechnique ;
+    rdfs:label "Program Download" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:hasSubtechnique irccf:T0843_001_DownloadAll,
+        irccf:T0843_002_OnlineEdit,
+        irccf:T0843_003_ProgramAppend ;
+    irccf:mitreAttackID "T0843" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "attack-pattern--be69c571-d746-4b1f-bdd0-c0c9817e9068" ;
+    irccf:mitreStatus "active" .
+
+irccf:Regulation a owl:Class .
+
+irccf:NIST_CSF_2_0 a irccf:CybersecurityFramework ;
+    rdfs:label "NIST CSF 2.0" .
+
+irccf:FrameworkFunction a owl:Class .
+
+irccf:OTSensor a irccf:AIEnabledSystem ;
+    rdfs:label "AI-based OT Sensor" ;
+    irccf:detects irccf:T0821_ModifyControllerTasking,
+        irccf:T0830_AdversaryInTheMiddle,
+        irccf:T0835_ManipulateIOImage,
+        irccf:T0836_ModifyParameter,
+        irccf:T0842_NetworkSniffing,
+        irccf:T0855_UnauthorizedCommandMessage,
+        irccf:T0856_SpoofReportingMessage,
+        irccf:T0858_ChangeOperatingMode,
+        irccf:T0866_ExploitationOfRemoteServices,
+        irccf:T0878_AlarmSuppression ;
+    irccf:usedInCaseStudy irccf:ICSCaseStudy .
+
+irccf:TA0102_Discovery a irccf:Tactic ;
+    rdfs:label "Discovery" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques used to gain knowledge about the system and internal network." ;
+    irccf:mapsToFunction irccf:Detect,
+        irccf:Identify ;
+    irccf:mitreAttackID "TA0102" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--696af733-728e-49d7-8261-75fdc590f453" .
+
+irccf:TA0106_ImpairProcessControl a irccf:Tactic ;
+    rdfs:label "Impair Process Control" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques that manipulate, disable, or damage physical control processes." ;
+    irccf:mapsToFunction irccf:Detect,
+        irccf:Respond ;
+    irccf:mitreAttackID "TA0106" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--ff048b6c-b872-4218-b68c-3735ebd1f024" .
+
+irccf:HistoricalThreatTechnique a owl:Class .
+
+irccf:TA0103_Evasion a irccf:Tactic ;
+    rdfs:label "Evasion" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques used to avoid detection throughout a compromise." ;
+    irccf:mapsToFunction irccf:Detect ;
+    irccf:mitreAttackID "TA0103" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--ddf70682-f3ce-479c-a9a4-7eadf9bfead7" .
+
+irccf:Detect a irccf:FrameworkFunction ;
+    rdfs:label "Detect" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+irccf:TA0104_Execution a irccf:Tactic ;
+    rdfs:label "Execution" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques that result in adversary-controlled code running on a local or remote system." ;
+    irccf:mapsToFunction irccf:Detect,
+        irccf:Protect ;
+    irccf:mitreAttackID "TA0104" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--93bf9a8e-b14c-4587-b6d5-9efc7c12eb45" .
+
+irccf:TA0110_Persistence a irccf:Tactic ;
+    rdfs:label "Persistence" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques used to maintain access to ICS environments across restarts or credential changes." ;
+    irccf:mapsToFunction irccf:Detect,
+        irccf:Protect ;
+    irccf:mitreAttackID "TA0110" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--78f1d2ae-a579-44c4-8fc5-3e1775c73fac" .
+
+irccf:Protect a irccf:FrameworkFunction ;
+    rdfs:label "Protect" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+irccf:TA0100_Collection a irccf:Tactic ;
+    rdfs:label "Collection" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques used to gather data of interest and domain knowledge." ;
+    irccf:mapsToFunction irccf:Detect,
+        irccf:Protect ;
+    irccf:mitreAttackID "TA0100" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--b2a67b1e-913c-46f6-b219-048a90560bb9" .
+
+irccf:TA0109_LateralMovement a irccf:Tactic ;
+    rdfs:label "Lateral Movement" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques used to move through the ICS environment." ;
+    irccf:mapsToFunction irccf:Detect,
+        irccf:Protect ;
+    irccf:mitreAttackID "TA0109" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--51c25a9e-8615-40c0-8afd-1da578847924" .
+
+irccf:IEC_62443_3_3 a irccf:TechnicalStandard ;
+    rdfs:label "IEC 62443-3-3" .
+
+irccf:TA0105_Impact a irccf:Tactic ;
+    rdfs:label "Impact" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques used to disrupt, deny, degrade, or destroy ICS systems and data." ;
+    irccf:mapsToFunction irccf:Recover,
+        irccf:Respond ;
+    irccf:mitreAttackID "TA0105" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--77542f83-70d0-40c2-8a9d-ad2eb8b00279" .
+
+irccf:TA0108_InitialAccess a irccf:Tactic ;
+    rdfs:label "Initial Access" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques used to gain an initial foothold within an ICS environment." ;
+    irccf:mapsToFunction irccf:Protect ;
+    irccf:mitreAttackID "TA0108" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--69da72d2-f550-41c5-ab9e-e8255707f28a" .
+
+irccf:RegulatoryRequirement a owl:Class .
+
+irccf:Tactic a owl:Class .
+
+irccf:SecurityControl a owl:Class .
+
+irccf:SubTechnique a owl:Class ;
+    rdfs:subClassOf irccf:ThreatTechnique .
+
+irccf:TA0107_InhibitResponseFunction a irccf:Tactic ;
+    rdfs:label "Inhibit Response Function" ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:description "Techniques that prevent safety, protection, and quality assurance functions from responding to a failure, hazard, or unsafe state." ;
+    irccf:mapsToFunction irccf:Detect,
+        irccf:Recover,
+        irccf:Respond ;
+    irccf:mitreAttackID "TA0107" ;
+    irccf:mitreDataVersion "ICS v19.2" ;
+    irccf:mitreSTIXID "x-mitre-tactic--298fe907-7931-4fd2-8131-2814dd493134" .
+
+irccf:MITRE_ATTACK_ICS a irccf:ThreatModel ;
+    rdfs:label "MITRE ATT&CK for ICS" .
+
+irccf:ThreatTechnique a owl:Class .
+

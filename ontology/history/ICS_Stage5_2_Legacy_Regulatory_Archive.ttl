@@ -1,0 +1,95 @@
+@prefix irccf: <https://purl.org/ircc-framework#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+irccf:AIAct irccf:imposesRequirement irccf:HumanOversight,
+        irccf:RiskManagement,
+        irccf:SecurityByDesign,
+        irccf:TransparencyObligation .
+
+irccf:CRA irccf:imposesRequirement irccf:SecurityByDesign,
+        irccf:VulnerabilityHandling .
+
+irccf:GDPR irccf:imposesRequirement irccf:DataMinimization,
+        irccf:HumanOversight,
+        irccf:TransparencyObligation .
+
+irccf:NIS2 irccf:imposesRequirement irccf:AccessControl,
+        irccf:BusinessContinuity,
+        irccf:IncidentReporting,
+        irccf:RiskManagement,
+        irccf:SupplyChainSecurity .
+
+irccf:AccessControl a irccf:RegulatoryRequirement ;
+    rdfs:label "Access control requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:description "Appropriate access control policies and procedures." ;
+    irccf:implementedBy irccf:AccessControlEnforcement,
+        irccf:UseControlAuthorization ;
+    irccf:mapsToFunction irccf:Protect .
+
+irccf:BusinessContinuity a irccf:RegulatoryRequirement ;
+    rdfs:label "Business continuity requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:description "Organizations must ensure continuity of essential services." ;
+    irccf:implementedBy irccf:BackupRecoveryControl,
+        irccf:ResourceAvailabilityControl ;
+    irccf:mapsToFunction irccf:Recover .
+
+irccf:DataMinimization a irccf:RegulatoryRequirement ;
+    rdfs:label "Data minimization requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:description "Personal data must be limited to what is necessary." ;
+    irccf:governsProcessing irccf:ThreatSharing ;
+    irccf:implementedBy irccf:DataConfidentialityControl,
+        irccf:NetworkMonitoringControl ;
+    irccf:mapsToFunction irccf:Protect .
+
+irccf:IncidentReporting a irccf:RegulatoryRequirement ;
+    rdfs:label "Incident reporting requirement" ;
+    irccf:appliesTo irccf:CTIPlatform,
+        irccf:OTSensor ;
+    irccf:implementedBy irccf:AuditLoggingControl ;
+    irccf:mapsToFunction irccf:Respond .
+
+irccf:SupplyChainSecurity a irccf:RegulatoryRequirement ;
+    rdfs:label "Supply chain security requirement" ;
+    irccf:description "Organizations must manage cybersecurity risks in supply chains." ;
+    irccf:implementedBy irccf:SystemIntegrityControl ;
+    irccf:mapsToFunction irccf:Govern .
+
+irccf:VulnerabilityHandling a irccf:RegulatoryRequirement ;
+    rdfs:label "Vulnerability handling requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:description "Products with digital elements must have vulnerability handling processes." ;
+    irccf:implementedBy irccf:InputValidationControl,
+        irccf:SystemIntegrityControl ;
+    irccf:mapsToFunction irccf:Protect .
+
+irccf:HumanOversight a irccf:RegulatoryRequirement ;
+    rdfs:label "Human oversight requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:implementedBy irccf:AnomalyDetectionControl,
+        irccf:AuditLoggingControl ;
+    irccf:mapsToFunction irccf:Detect .
+
+irccf:RiskManagement a irccf:RegulatoryRequirement ;
+    rdfs:label "Risk management requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:description "Organizations must identify and manage cybersecurity risks." ;
+    irccf:implementedBy irccf:AnomalyDetectionControl,
+        irccf:NetworkMonitoringControl ;
+    irccf:mapsToFunction irccf:Identify .
+
+irccf:SecurityByDesign a irccf:RegulatoryRequirement ;
+    rdfs:label "Security by design requirement" ;
+    irccf:appliesTo irccf:OTSensor ;
+    irccf:implementedBy irccf:AnomalyDetectionControl,
+        irccf:InputValidationControl,
+        irccf:SystemIntegrityControl ;
+    irccf:mapsToFunction irccf:Protect .
+
+irccf:TransparencyObligation a irccf:RegulatoryRequirement ;
+    rdfs:label "Transparency obligation" ;
+    irccf:description "AI systems must provide transparency regarding logic involved." ;
+    irccf:mapsToFunction irccf:Govern .
+

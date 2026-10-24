@@ -1,0 +1,73 @@
+﻿Tactic ID,Tactic,Function,Mapped parent techniques,All parent techniques,Coverage %,Assigned 25%
+TA0100,Collection,GV,0,11,0.0,False
+TA0100,Collection,ID,2,11,18.1818,False
+TA0100,Collection,PR,8,11,72.7273,True
+TA0100,Collection,DE,5,11,45.4545,True
+TA0100,Collection,RS,0,11,0.0,False
+TA0100,Collection,RC,0,11,0.0,False
+TA0101,Command and Control,GV,0,3,0.0,False
+TA0101,Command and Control,ID,3,3,100.0,True
+TA0101,Command and Control,PR,3,3,100.0,True
+TA0101,Command and Control,DE,3,3,100.0,True
+TA0101,Command and Control,RS,0,3,0.0,False
+TA0101,Command and Control,RC,0,3,0.0,False
+TA0102,Discovery,GV,0,5,0.0,False
+TA0102,Discovery,ID,0,5,0.0,False
+TA0102,Discovery,PR,4,5,80.0,True
+TA0102,Discovery,DE,1,5,20.0,False
+TA0102,Discovery,RS,0,5,0.0,False
+TA0102,Discovery,RC,0,5,0.0,False
+TA0103,Evasion,GV,0,7,0.0,False
+TA0103,Evasion,ID,3,7,42.8571,True
+TA0103,Evasion,PR,7,7,100.0,True
+TA0103,Evasion,DE,3,7,42.8571,True
+TA0103,Evasion,RS,0,7,0.0,False
+TA0103,Evasion,RC,0,7,0.0,False
+TA0104,Execution,GV,0,10,0.0,False
+TA0104,Execution,ID,3,10,30.0,True
+TA0104,Execution,PR,9,10,90.0,True
+TA0104,Execution,DE,3,10,30.0,True
+TA0104,Execution,RS,0,10,0.0,False
+TA0104,Execution,RC,0,10,0.0,False
+TA0105,Impact,GV,0,12,0.0,False
+TA0105,Impact,ID,0,12,0.0,False
+TA0105,Impact,PR,10,12,83.3333,True
+TA0105,Impact,DE,0,12,0.0,False
+TA0105,Impact,RS,0,12,0.0,False
+TA0105,Impact,RC,8,12,66.6667,True
+TA0106,Impair Process Control,GV,0,4,0.0,False
+TA0106,Impair Process Control,ID,2,4,50.0,True
+TA0106,Impair Process Control,PR,4,4,100.0,True
+TA0106,Impair Process Control,DE,4,4,100.0,True
+TA0106,Impair Process Control,RS,0,4,0.0,False
+TA0106,Impair Process Control,RC,0,4,0.0,False
+TA0107,Inhibit Response Function,GV,0,13,0.0,False
+TA0107,Inhibit Response Function,ID,2,13,15.3846,False
+TA0107,Inhibit Response Function,PR,11,13,84.6154,True
+TA0107,Inhibit Response Function,DE,7,13,53.8462,True
+TA0107,Inhibit Response Function,RS,0,13,0.0,False
+TA0107,Inhibit Response Function,RC,2,13,15.3846,False
+TA0108,Initial Access,GV,3,12,25.0,True
+TA0108,Initial Access,ID,6,12,50.0,True
+TA0108,Initial Access,PR,12,12,100.0,True
+TA0108,Initial Access,DE,8,12,66.6667,True
+TA0108,Initial Access,RS,0,12,0.0,False
+TA0108,Initial Access,RC,0,12,0.0,False
+TA0109,Lateral Movement,GV,1,6,16.6667,False
+TA0109,Lateral Movement,ID,4,6,66.6667,True
+TA0109,Lateral Movement,PR,6,6,100.0,True
+TA0109,Lateral Movement,DE,5,6,83.3333,True
+TA0109,Lateral Movement,RS,0,6,0.0,False
+TA0109,Lateral Movement,RC,0,6,0.0,False
+TA0110,Persistence,GV,0,5,0.0,False
+TA0110,Persistence,ID,4,5,80.0,True
+TA0110,Persistence,PR,5,5,100.0,True
+TA0110,Persistence,DE,4,5,80.0,True
+TA0110,Persistence,RS,0,5,0.0,False
+TA0110,Persistence,RC,0,5,0.0,False
+TA0111,Privilege Escalation,GV,0,2,0.0,False
+TA0111,Privilege Escalation,ID,2,2,100.0,True
+TA0111,Privilege Escalation,PR,2,2,100.0,True
+TA0111,Privilege Escalation,DE,1,2,50.0,True
+TA0111,Privilege Escalation,RS,0,2,0.0,False
+TA0111,Privilege Escalation,RC,0,2,0.0,False

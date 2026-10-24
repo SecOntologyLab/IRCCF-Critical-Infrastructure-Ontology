@@ -1,0 +1,23 @@
+@prefix irccf: <https://purl.org/ircc-framework#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode irccf:HumanOversight ;
+            sh:resultMessage "The same generic HumanOversight requirement is imposed by GDPR and AIAct; the two legal provisions must be modelled separately." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint [ a sh:SPARQLConstraint ;
+                    sh:message "The same generic HumanOversight requirement is imposed by GDPR and AIAct; the two legal provisions must be modelled separately." ;
+                    sh:select """
+      PREFIX irccf: <https://purl.org/ircc-framework#>
+      SELECT $this WHERE {
+        irccf:GDPR irccf:imposesRequirement $this .
+        irccf:AIAct irccf:imposesRequirement $this .
+      }
+    """ ] ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape irccf:SharedHumanOversightShape ;
+            sh:value irccf:HumanOversight ] .
+

@@ -1,0 +1,403 @@
+mitigation_id,mitigation_name,technique_id,technique_name,stix_relationship_id,assertion_uri
+M0807,Network Allowlists,T0816,Device Restart/Shutdown,relationship--00e6c22b-9275-4039-b6d4-2ac0680325d6,https://purl.org/ircc-framework#MitigationAssertion_00e6c22b_9275_4039_b6d4_2ac0680325d6
+M0810,Out-of-Band Communications Channel,T1695.001,Serial COM,relationship--0105c4f6-a34f-4e0e-964b-a7d108ea3e08,https://purl.org/ircc-framework#MitigationAssertion_0105c4f6_a34f_4e0e_964b_a7d108ea3e08
+M0918,User Account Management,T0881,Service Stop,relationship--01b4a92f-da42-4dfa-8d59-53709b65940e,https://purl.org/ircc-framework#MitigationAssertion_01b4a92f_da42_4dfa_8d59_53709b65940e
+M0802,Communication Authenticity,T1693,Modify Firmware,relationship--01c8cc53-dfd0-4afc-8df6-e57494bd9e24,https://purl.org/ircc-framework#MitigationAssertion_01c8cc53_dfd0_4afc_8df6_e57494bd9e24
+M0813,Software Process and Device Authentication,T0843,Program Download,relationship--028a3bcc-f299-4061-a0f2-8da85e0a3c81,https://purl.org/ircc-framework#MitigationAssertion_028a3bcc_f299_4061_a0f2_8da85e0a3c81
+M0804,Human User Authentication,T0838,Modify Alarm Settings,relationship--03a9cdc7-3cc5-43e3-9a9c-97d1c4310e35,https://purl.org/ircc-framework#MitigationAssertion_03a9cdc7_3cc5_43e3_9a9c_97d1c4310e35
+M0951,Update Software,T0862,Supply Chain Compromise,relationship--03d44496-7a15-4e23-820f-b6f1079dbbd3,https://purl.org/ircc-framework#MitigationAssertion_03d44496_7a15_4e23_820f_b6f1079dbbd3
+M0941,Encrypt Sensitive Information,T0893,Data from Local System,relationship--03e80e3c-28b9-4e7f-8b17-7c86d1483b91,https://purl.org/ircc-framework#MitigationAssertion_03e80e3c_28b9_4e7f_8b17_7c86d1483b91
+M0944,Restrict Library Loading,T0874,Hooking,relationship--04882fef-2a6b-40d0-a101-da9c76a3572e,https://purl.org/ircc-framework#MitigationAssertion_04882fef_2a6b_40d0_a101_da9c76a3572e
+M0947,Audit,T0862,Supply Chain Compromise,relationship--0491ef92-2941-4841-9fe6-2e1809788b52,https://purl.org/ircc-framework#MitigationAssertion_0491ef92_2941_4841_9fe6_2e1809788b52
+M0813,Software Process and Device Authentication,T0845,Program Upload,relationship--06c663f8-fcf1-47eb-ab79-284e93eafa6b,https://purl.org/ircc-framework#MitigationAssertion_06c663f8_fcf1_47eb_ab79_284e93eafa6b
+M0938,Execution Prevention,T0863,User Execution,relationship--07f4d65d-4572-450f-8cb2-908fee97bd67,https://purl.org/ircc-framework#MitigationAssertion_07f4d65d_4572_450f_8cb2_908fee97bd67
+M0919,Threat Intelligence Program,T0820,Exploitation for Evasion,relationship--08302021-aacf-428f-a0ce-e1034d925fb0,https://purl.org/ircc-framework#MitigationAssertion_08302021_aacf_428f_a0ce_e1034d925fb0
+M0807,Network Allowlists,T1692.002,Reporting Message,relationship--085c2906-24e2-4bc8-8e5d-fded599d798c,https://purl.org/ircc-framework#MitigationAssertion_085c2906_24e2_4bc8_8e5d_fded599d798c
+M0927,Password Policies,T1694.001,Default Credentials,relationship--096e7743-c090-4386-a759-d749f00bae61,https://purl.org/ircc-framework#MitigationAssertion_096e7743_c090_4386_a759_d749f00bae61
+M0804,Human User Authentication,T0885,Commonly Used Port,relationship--0a5d2136-e1f5-4a54-be64-a558f918bf0d,https://purl.org/ircc-framework#MitigationAssertion_0a5d2136_e1f5_4a54_be64_a558f918bf0d
+M0937,Filter Network Traffic,T1693.002,Module Firmware,relationship--0bdfc1b0-3dd2-4170-a39e-98675202a6d2,https://purl.org/ircc-framework#MitigationAssertion_0bdfc1b0_3dd2_4170_a39e_98675202a6d2
+M0802,Communication Authenticity,T1692.001,Command Message,relationship--0c68501b-8e36-4d75-9e61-7a518a9ca1f2,https://purl.org/ircc-framework#MitigationAssertion_0c68501b_8e36_4d75_9e61_7a518a9ca1f2
+M0807,Network Allowlists,T1693.002,Module Firmware,relationship--0cd64563-f35e-4cb3-94b9-617c868d3671,https://purl.org/ircc-framework#MitigationAssertion_0cd64563_f35e_4cb3_94b9_617c868d3671
+M0802,Communication Authenticity,T0845,Program Upload,relationship--0df0cb6d-0067-48b2-a33e-495415713ab7,https://purl.org/ircc-framework#MitigationAssertion_0df0cb6d_0067_48b2_a33e_495415713ab7
+M0924,Restrict Registry Permissions,T0881,Service Stop,relationship--0e4f272b-d744-4feb-9f3f-c24c3598538f,https://purl.org/ircc-framework#MitigationAssertion_0e4f272b_d744_4feb_9f3f_c24c3598538f
+M0945,Code Signing,T0873.001,Siemens Project File Format,relationship--0f41614d-c37c-47d1-9616-6dae9b73b532,https://purl.org/ircc-framework#MitigationAssertion_0f41614d_c37c_47d1_9616_6dae9b73b532
+M0814,Static Network Configuration,T0846.001,Port Scan,relationship--0f7a9b56-e3b4-4cc9-9ea7-32faebad74b6,https://purl.org/ircc-framework#MitigationAssertion_0f7a9b56_e3b4_4cc9_9ea7_32faebad74b6
+M0813,Software Process and Device Authentication,T0848,Rogue Master,relationship--0f8a6c14-1050-404a-bb6e-4fe107d5b6cd,https://purl.org/ircc-framework#MitigationAssertion_0f8a6c14_1050_404a_bb6e_4fe107d5b6cd
+M0930,Network Segmentation,T0869,Standard Application Layer Protocol,relationship--0ff88ef7-44fd-4307-b381-2e0bc76ce83b,https://purl.org/ircc-framework#MitigationAssertion_0ff88ef7_44fd_4307_b381_2e0bc76ce83b
+M0812,Safety Instrumented Systems,T0880,Loss of Safety,relationship--0ffdee1a-1e83-4506-aba2-38c55812abb3,https://purl.org/ircc-framework#MitigationAssertion_0ffdee1a_1e83_4506_aba2_38c55812abb3
+M0801,Access Management,T0859,Valid Accounts,relationship--104b4f25-d0a9-41f6-94b3-fa85ee8b1523,https://purl.org/ircc-framework#MitigationAssertion_104b4f25_d0a9_41f6_94b3_fa85ee8b1523
+M0807,Network Allowlists,T0800,Activate Firmware Update Mode,relationship--10626671-941d-4a82-a835-56059058ef87,https://purl.org/ircc-framework#MitigationAssertion_10626671_941d_4a82_a835_56059058ef87
+M0813,Software Process and Device Authentication,T0868,Detect Operating Mode,relationship--107d9a23-991b-44f5-97f6-7f6983c7013a,https://purl.org/ircc-framework#MitigationAssertion_107d9a23_991b_44f5_97f6_7f6983c7013a
+M0926,Privileged Account Management,T0859,Valid Accounts,relationship--111f437a-c67d-40e4-9515-7e9b22e65eff,https://purl.org/ircc-framework#MitigationAssertion_111f437a_c67d_40e4_9515_7e9b22e65eff
+M0802,Communication Authenticity,T0858,Change Operating Mode,relationship--12a6c5bc-c685-4249-b8c6-e6d49aa2b9ed,https://purl.org/ircc-framework#MitigationAssertion_12a6c5bc_c685_4249_b8c6_e6d49aa2b9ed
+M0945,Code Signing,T0843.001,Download All,relationship--137ce4a2-be4c-4eb7-b92c-d686fa2a1044,https://purl.org/ircc-framework#MitigationAssertion_137ce4a2_be4c_4eb7_b92c_d686fa2a1044
+M0930,Network Segmentation,T1693.002,Module Firmware,relationship--16b92a53-7334-42b1-bc55-dcd4907fdd9f,https://purl.org/ircc-framework#MitigationAssertion_16b92a53_7334_42b1_bc55_dcd4907fdd9f
+M0814,Static Network Configuration,T0846.003,Multicast Discovery,relationship--17925772-5935-4f50-bf0e-abb5e0bad6b3,https://purl.org/ircc-framework#MitigationAssertion_17925772_5935_4f50_bf0e_abb5e0bad6b3
+M0816,Mitigation Limited or Not Effective,T0877,I/O Image,relationship--17ae41a5-cb45-4935-bec1-ea0c8bfb2f34,https://purl.org/ircc-framework#MitigationAssertion_17ae41a5_cb45_4935_bec1_ea0c8bfb2f34
+M0810,Out-of-Band Communications Channel,T0815,Denial of View,relationship--18ef2d69-d11a-4d31-a803-da989c4073f7,https://purl.org/ircc-framework#MitigationAssertion_18ef2d69_d11a_4d31_a803_da989c4073f7
+M0930,Network Segmentation,T0838,Modify Alarm Settings,relationship--19ab6776-42de-48af-975a-568d31a3bb66,https://purl.org/ircc-framework#MitigationAssertion_19ab6776_42de_48af_975a_568d31a3bb66
+M0951,Update Software,T0817,Drive-by Compromise,relationship--1a40cec9-47c3-404e-b039-b7ae83ffaf68,https://purl.org/ircc-framework#MitigationAssertion_1a40cec9_47c3_404e_b039_b7ae83ffaf68
+M0921,Restrict Web-Based Content,T0863,User Execution,relationship--1aa02c37-973e-46bd-ab45-609463e514e9,https://purl.org/ircc-framework#MitigationAssertion_1aa02c37_973e_46bd_ab45_609463e514e9
+M0947,Audit,T0843,Program Download,relationship--1c3d966a-5995-48ed-919d-25b972010fe9,https://purl.org/ircc-framework#MitigationAssertion_1c3d966a_5995_48ed_919d_25b972010fe9
+M0947,Audit,T0843.001,Download All,relationship--1ddb73e6-b7a8-4f4d-bf8b-f9de3a5ef52a,https://purl.org/ircc-framework#MitigationAssertion_1ddb73e6_b7a8_4f4d_bf8b_f9de3a5ef52a
+M0916,Vulnerability Scanning,T0866,Exploitation of Remote Services,relationship--1f87378c-49fb-4da5-8ed3-3672633d3713,https://purl.org/ircc-framework#MitigationAssertion_1f87378c_49fb_4da5_8ed3_3672633d3713
+M0918,User Account Management,T0859,Valid Accounts,relationship--1fc147bd-d6ab-4beb-908b-0fbe8e125b76,https://purl.org/ircc-framework#MitigationAssertion_1fc147bd_d6ab_4beb_908b_0fbe8e125b76
+M0810,Out-of-Band Communications Channel,T0813,Denial of Control,relationship--2089201c-c1c6-4d92-a737-a6499e26ee7f,https://purl.org/ircc-framework#MitigationAssertion_2089201c_c1c6_4d92_a737_a6499e26ee7f
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,relationship--20a0d820-59ef-42fc-9f56-7a93d1ce7a84,https://purl.org/ircc-framework#MitigationAssertion_20a0d820_59ef_42fc_9f56_7a93d1ce7a84
+M0922,Restrict File and Directory Permissions,T0809,Data Destruction,relationship--21b6ec9c-8779-49db-bf19-90e81893a6e4,https://purl.org/ircc-framework#MitigationAssertion_21b6ec9c_8779_49db_bf19_90e81893a6e4
+M0930,Network Segmentation,T1693,Modify Firmware,relationship--21c7b1bb-ba40-4843-b462-079b1b85c01b,https://purl.org/ircc-framework#MitigationAssertion_21c7b1bb_ba40_4843_b462_079b1b85c01b
+M0930,Network Segmentation,T0822,External Remote Services,relationship--220140ac-d927-4d86-9335-c04aa6ee3c61,https://purl.org/ircc-framework#MitigationAssertion_220140ac_d927_4d86_9335_c04aa6ee3c61
+M0804,Human User Authentication,T0858,Change Operating Mode,relationship--22448288-32d9-4d2c-be16-0784e119fff1,https://purl.org/ircc-framework#MitigationAssertion_22448288_32d9_4d2c_be16_0784e119fff1
+M0950,Exploit Protection,T0820,Exploitation for Evasion,relationship--238f967a-0c29-4aa3-bbb5-3dc593473bbf,https://purl.org/ircc-framework#MitigationAssertion_238f967a_0c29_4aa3_bbb5_3dc593473bbf
+M0801,Access Management,T1694.001,Default Credentials,relationship--23f33619-c64e-4999-85c1-b5c88e570e46,https://purl.org/ircc-framework#MitigationAssertion_23f33619_c64e_4999_85c1_b5c88e570e46
+M0805,Mechanical Protection Layers,T0880,Loss of Safety,relationship--242b5a0d-e4e8-4ceb-a975-cf8efd64e981,https://purl.org/ircc-framework#MitigationAssertion_242b5a0d_e4e8_4ceb_a975_cf8efd64e981
+M0800,Authorization Enforcement,T0861,Point & Tag Identification,relationship--243ad7b2-546c-4bf2-a3c0-1438b13e197d,https://purl.org/ircc-framework#MitigationAssertion_243ad7b2_546c_4bf2_a3c0_1438b13e197d
+M0937,Filter Network Traffic,T0843.003,Program Append,relationship--246ba662-bd89-4295-b603-582ebad285da,https://purl.org/ircc-framework#MitigationAssertion_246ba662_bd89_4295_b603_582ebad285da
+M0926,Privileged Account Management,T0842,Network Sniffing,relationship--26fdd07e-d194-4f8e-a9af-d5b2f1d0222e,https://purl.org/ircc-framework#MitigationAssertion_26fdd07e_d194_4f8e_a9af_d5b2f1d0222e
+M0936,Account Use Policies,T0822,External Remote Services,relationship--276aa6a6-e700-470a-8f72-02537ba7be9d,https://purl.org/ircc-framework#MitigationAssertion_276aa6a6_e700_470a_8f72_02537ba7be9d
+M0807,Network Allowlists,T1695.003,Wi-Fi,relationship--28b06a92-2933-49f5-887e-c09cf1bb861f,https://purl.org/ircc-framework#MitigationAssertion_28b06a92_2933_49f5_887e_c09cf1bb861f
+M0813,Software Process and Device Authentication,T0843.003,Program Append,relationship--28bb99c4-ac44-406c-bd5d-cabb273363fb,https://purl.org/ircc-framework#MitigationAssertion_28bb99c4_ac44_406c_bd5d_cabb273363fb
+M0945,Code Signing,T0851,Rootkit,relationship--2971151c-0e8a-4567-84dc-01cf5dd35005,https://purl.org/ircc-framework#MitigationAssertion_2971151c_0e8a_4567_84dc_01cf5dd35005
+M0816,Mitigation Limited or Not Effective,T0823,Graphical User Interface,relationship--2b62e4c0-9267-47bd-8f4d-0394b13fb566,https://purl.org/ircc-framework#MitigationAssertion_2b62e4c0_9267_47bd_8f4d_0394b13fb566
+M0810,Out-of-Band Communications Channel,T1691.001,Command Message,relationship--2c6c4752-536e-4b96-86d7-7efe88350082,https://purl.org/ircc-framework#MitigationAssertion_2c6c4752_536e_4b96_86d7_7efe88350082
+M0807,Network Allowlists,T0838,Modify Alarm Settings,relationship--2cd79563-0f5a-44a1-9be4-6dc330855d64,https://purl.org/ircc-framework#MitigationAssertion_2cd79563_0f5a_44a1_9be4_6dc330855d64
+M0945,Code Signing,T1693,Modify Firmware,relationship--2d621264-4a6d-4bc7-abaf-89a89c2ef813,https://purl.org/ircc-framework#MitigationAssertion_2d621264_4a6d_4bc7_abaf_89a89c2ef813
+M0935,Limit Access to Resource Over Network,T0822,External Remote Services,relationship--2daeeaaa-5b4b-4bb7-a94d-78a5749027ca,https://purl.org/ircc-framework#MitigationAssertion_2daeeaaa_5b4b_4bb7_a94d_78a5749027ca
+M0818,Validate Program Inputs,T1692.001,Command Message,relationship--2de38f5e-b97c-498a-a4c9-f13e5d2d233c,https://purl.org/ircc-framework#MitigationAssertion_2de38f5e_b97c_498a_a4c9_f13e5d2d233c
+M0922,Restrict File and Directory Permissions,T0882,Theft of Operational Information,relationship--2e5f338d-92c4-4647-8fef-7c901ff774f5,https://purl.org/ircc-framework#MitigationAssertion_2e5f338d_92c4_4647_8fef_7c901ff774f5
+M0807,Network Allowlists,T0861,Point & Tag Identification,relationship--2ecc567f-3aaa-4bd8-935f-4808d177a552,https://purl.org/ircc-framework#MitigationAssertion_2ecc567f_3aaa_4bd8_935f_4808d177a552
+M0938,Execution Prevention,T0853,Scripting,relationship--2f64b5aa-7e4d-4a5e-9960-69a63ad25083,https://purl.org/ircc-framework#MitigationAssertion_2f64b5aa_7e4d_4a5e_9960_69a63ad25083
+M0806,Minimize Wireless Signal Propagation,T0887,Wireless Sniffing,relationship--2f6b635b-1441-4ef0-9289-1ed6b9098d4a,https://purl.org/ircc-framework#MitigationAssertion_2f6b635b_1441_4ef0_9289_1ed6b9098d4a
+M0937,Filter Network Traffic,T1692.001,Command Message,relationship--2f8c9deb-aefe-4fa3-b00c-ec15fd154233,https://purl.org/ircc-framework#MitigationAssertion_2f8c9deb_aefe_4fa3_b00c_ec15fd154233
+M0941,Encrypt Sensitive Information,T0864,Transient Cyber Asset,relationship--2fbb7867-79c5-4d45-9876-98c4041dd72e,https://purl.org/ircc-framework#MitigationAssertion_2fbb7867_79c5_4d45_9876_98c4041dd72e
+M0947,Audit,T0811,Data from Information Repositories,relationship--2ff82993-5010-4450-89e7-341f449f3263,https://purl.org/ircc-framework#MitigationAssertion_2ff82993_5010_4450_89e7_341f449f3263
+M0948,Application Isolation and Sandboxing,T0853,Scripting,relationship--2fffbea8-c031-4de8-a451-447bbbe3e224,https://purl.org/ircc-framework#MitigationAssertion_2fffbea8_c031_4de8_a451_447bbbe3e224
+M0813,Software Process and Device Authentication,T1692.001,Command Message,relationship--3003564d-fb12-4509-946b-818e4e5b8431,https://purl.org/ircc-framework#MitigationAssertion_3003564d_fb12_4509_946b_818e4e5b8431
+M0802,Communication Authenticity,T0843.001,Download All,relationship--31b8d0d3-2e81-4367-80c0-1173988e77d7,https://purl.org/ircc-framework#MitigationAssertion_31b8d0d3_2e81_4367_80c0_1173988e77d7
+M0930,Network Segmentation,T0883,Internet Accessible Device,relationship--33215dfa-53d0-4bd7-a15d-cec9315c7c4d,https://purl.org/ircc-framework#MitigationAssertion_33215dfa_53d0_4bd7_a15d_cec9315c7c4d
+M0938,Execution Prevention,T0894,System Binary Proxy Execution,relationship--337f366d-3d76-470c-8ee2-0e2252648282,https://purl.org/ircc-framework#MitigationAssertion_337f366d_3d76_470c_8ee2_0e2252648282
+M0808,Encrypt Network Traffic,T0887,Wireless Sniffing,relationship--3478c49c-594b-4224-b7f9-2b0b09c67288,https://purl.org/ircc-framework#MitigationAssertion_3478c49c_594b_4224_b7f9_2b0b09c67288
+M0947,Audit,T0889,Modify Program,relationship--34ac1b1b-1103-4fc9-a62e-f1dd1451b28b,https://purl.org/ircc-framework#MitigationAssertion_34ac1b1b_1103_4fc9_a62e_f1dd1451b28b
+M0930,Network Segmentation,T0842,Network Sniffing,relationship--34d4101b-b4c9-4ea3-a84d-81e84e7f5033,https://purl.org/ircc-framework#MitigationAssertion_34d4101b_b4c9_4ea3_a84d_81e84e7f5033
+M0930,Network Segmentation,T1692.002,Reporting Message,relationship--34dcc9e8-a43a-475b-81b6-b15240545075,https://purl.org/ircc-framework#MitigationAssertion_34dcc9e8_a43a_475b_81b6_b15240545075
+M0930,Network Segmentation,T0830,Adversary-in-the-Middle,relationship--35cf6922-d48f-42ea-b7f5-f0258892bd52,https://purl.org/ircc-framework#MitigationAssertion_35cf6922_d48f_42ea_b7f5_f0258892bd52
+M0937,Filter Network Traffic,T0843,Program Download,relationship--366a4cd1-aa95-4985-9d80-b45a2551e298,https://purl.org/ircc-framework#MitigationAssertion_366a4cd1_aa95_4985_9d80_b45a2551e298
+M0930,Network Segmentation,T0846.003,Multicast Discovery,relationship--3680ab7a-254b-426c-b417-460712c2f357,https://purl.org/ircc-framework#MitigationAssertion_3680ab7a_254b_426c_b417_460712c2f357
+M0930,Network Segmentation,T1695.003,Wi-Fi,relationship--39dcfc44-5f18-475f-b431-22032a14cbe5,https://purl.org/ircc-framework#MitigationAssertion_39dcfc44_5f18_475f_b431_22032a14cbe5
+M0804,Human User Authentication,T0816,Device Restart/Shutdown,relationship--3a6cd53d-0d4e-4cf8-8edf-f9ebde4faac4,https://purl.org/ircc-framework#MitigationAssertion_3a6cd53d_0d4e_4cf8_8edf_f9ebde4faac4
+M0802,Communication Authenticity,T0860,Wireless Compromise,relationship--3ab912a4-70aa-45f8-b2ef-57113dde2cfa,https://purl.org/ircc-framework#MitigationAssertion_3ab912a4_70aa_45f8_b2ef_57113dde2cfa
+M0950,Exploit Protection,T0890,Exploitation for Privilege Escalation,relationship--3b6567a9-6213-4db4-a069-1a86b1098b63,https://purl.org/ircc-framework#MitigationAssertion_3b6567a9_6213_4db4_a069_1a86b1098b63
+M0804,Human User Authentication,T0843.002,Online Edit,relationship--3b9a4916-78b9-44b3-b0fc-6f167a918d7d,https://purl.org/ircc-framework#MitigationAssertion_3b9a4916_78b9_44b3_b0fc_6f167a918d7d
+M0800,Authorization Enforcement,T0843.001,Download All,relationship--3cf99739-b045-4a83-985d-e9984076b81d,https://purl.org/ircc-framework#MitigationAssertion_3cf99739_b045_4a83_985d_e9984076b81d
+M0938,Execution Prevention,T0871,Execution through API,relationship--3d676c1b-2650-4599-8a57-790c55f9977d,https://purl.org/ircc-framework#MitigationAssertion_3d676c1b_2650_4599_8a57_790c55f9977d
+M0810,Out-of-Band Communications Channel,T1691.002,Reporting Message,relationship--3e249f0a-5755-4e0f-96ce-f3ce6376fed5,https://purl.org/ircc-framework#MitigationAssertion_3e249f0a_5755_4e0f_96ce_f3ce6376fed5
+M0813,Software Process and Device Authentication,T0860,Wireless Compromise,relationship--3f335e8f-68da-4b06-9d96-f371ddaf23e6,https://purl.org/ircc-framework#MitigationAssertion_3f335e8f_68da_4b06_9d96_f371ddaf23e6
+M0807,Network Allowlists,T1693,Modify Firmware,relationship--41abc220-4ec6-41cc-bb36-37c43341fc41,https://purl.org/ircc-framework#MitigationAssertion_41abc220_4ec6_41cc_bb36_37c43341fc41
+M0802,Communication Authenticity,T0832,Manipulation of View,relationship--41adaf0b-b7ae-4bdb-9a5b-567fd0911d7a,https://purl.org/ircc-framework#MitigationAssertion_41adaf0b_b7ae_4bdb_9a5b_567fd0911d7a
+M0813,Software Process and Device Authentication,T0886,Remote Services,relationship--4211c12a-57cf-4ebb-910a-6af7aa09cf34,https://purl.org/ircc-framework#MitigationAssertion_4211c12a_57cf_4ebb_910a_6af7aa09cf34
+M0807,Network Allowlists,T0843,Program Download,relationship--4256a0c2-437d-4a4c-88ac-d08d3041b8c1,https://purl.org/ircc-framework#MitigationAssertion_4256a0c2_437d_4a4c_88ac_d08d3041b8c1
+M0922,Restrict File and Directory Permissions,T0873,Project File Infection,relationship--42ab7d24-8286-4a7a-8cd7-02e54a80e13f,https://purl.org/ircc-framework#MitigationAssertion_42ab7d24_8286_4a7a_8cd7_02e54a80e13f
+M0942,Disable or Remove Feature or Program,T0866,Exploitation of Remote Services,relationship--4369da69-bb09-4cc8-8600-081a450f50e0,https://purl.org/ircc-framework#MitigationAssertion_4369da69_bb09_4cc8_8600_081a450f50e0
+M0938,Execution Prevention,T0834,Native API,relationship--446c95ea-5178-4ae9-8f92-cb20dd50f7de,https://purl.org/ircc-framework#MitigationAssertion_446c95ea_5178_4ae9_8f92_cb20dd50f7de
+M0953,Data Backup,T0813,Denial of Control,relationship--44c857cf-7a4e-405a-87ca-7f6d79000589,https://purl.org/ircc-framework#MitigationAssertion_44c857cf_7a4e_405a_87ca_7f6d79000589
+M0930,Network Segmentation,T0816,Device Restart/Shutdown,relationship--45ee1822-71e4-4d92-976d-306561b70555,https://purl.org/ircc-framework#MitigationAssertion_45ee1822_71e4_4d92_976d_306561b70555
+M0807,Network Allowlists,T0806,Brute Force I/O,relationship--461e81a2-c7ad-499e-908d-05ef2f7bd9cd,https://purl.org/ircc-framework#MitigationAssertion_461e81a2_c7ad_499e_908d_05ef2f7bd9cd
+M0800,Authorization Enforcement,T0821,Modify Controller Tasking,relationship--4653847b-c089-4435-9159-6f76353833f7,https://purl.org/ircc-framework#MitigationAssertion_4653847b_c089_4435_9159_6f76353833f7
+M0950,Exploit Protection,T0866,Exploitation of Remote Services,relationship--47f15a06-8675-4698-833d-bd141ed9e755,https://purl.org/ircc-framework#MitigationAssertion_47f15a06_8675_4698_833d_bd141ed9e755
+M0802,Communication Authenticity,T0816,Device Restart/Shutdown,relationship--491455dc-f7c8-4e12-811b-b8c5c041b4c3,https://purl.org/ircc-framework#MitigationAssertion_491455dc_f7c8_4e12_811b_b8c5c041b4c3
+M0800,Authorization Enforcement,T0886,Remote Services,relationship--4966e63c-ca05-466d-91f9-41d799a54471,https://purl.org/ircc-framework#MitigationAssertion_4966e63c_ca05_466d_91f9_41d799a54471
+M0930,Network Segmentation,T0846.001,Port Scan,relationship--49aebf0c-e231-4cbb-84a2-97c9a6d11654,https://purl.org/ircc-framework#MitigationAssertion_49aebf0c_e231_4cbb_84a2_97c9a6d11654
+M0804,Human User Authentication,T0868,Detect Operating Mode,relationship--49d38b21-5ce5-48d9-a356-639fc6c7a53d,https://purl.org/ircc-framework#MitigationAssertion_49d38b21_5ce5_48d9_a356_639fc6c7a53d
+M0930,Network Segmentation,T1695.001,Serial COM,relationship--4b44a657-11cc-45bc-b096-f32e58a70036,https://purl.org/ircc-framework#MitigationAssertion_4b44a657_11cc_45bc_b096_f32e58a70036
+M0802,Communication Authenticity,T0843.002,Online Edit,relationship--4e7ec200-9a1b-46d4-9383-738903fec554,https://purl.org/ircc-framework#MitigationAssertion_4e7ec200_9a1b_46d4_9383_738903fec554
+M0930,Network Segmentation,T0886,Remote Services,relationship--502a0b7e-048a-468a-b888-e91fde47c6eb,https://purl.org/ircc-framework#MitigationAssertion_502a0b7e_048a_468a_b888_e91fde47c6eb
+M0947,Audit,T0864,Transient Cyber Asset,relationship--5041e17d-6349-4589-8c61-7b43964b5f9b,https://purl.org/ircc-framework#MitigationAssertion_5041e17d_6349_4589_8c61_7b43964b5f9b
+M0941,Encrypt Sensitive Information,T0811,Data from Information Repositories,relationship--50a2b289-7bce-405d-8515-c2b5424cce5c,https://purl.org/ircc-framework#MitigationAssertion_50a2b289_7bce_405d_8515_c2b5424cce5c
+M0801,Access Management,T1694.002,Hardcoded Credentials,relationship--50c2224e-7592-4400-afbb-6434e025bfd8,https://purl.org/ircc-framework#MitigationAssertion_50c2224e_7592_4400_afbb_6434e025bfd8
+M0810,Out-of-Band Communications Channel,T0831,Manipulation of Control,relationship--520aad6a-2483-45bc-a172-2417137f6ca0,https://purl.org/ircc-framework#MitigationAssertion_520aad6a_2483_45bc_a172_2417137f6ca0
+M0927,Password Policies,T0886,Remote Services,relationship--5212f36b-216f-4e32-8b64-3b4c94dfada5,https://purl.org/ircc-framework#MitigationAssertion_5212f36b_216f_4e32_8b64_3b4c94dfada5
+M0810,Out-of-Band Communications Channel,T0830,Adversary-in-the-Middle,relationship--52855d5d-e835-470f-a675-751c2779c861,https://purl.org/ircc-framework#MitigationAssertion_52855d5d_e835_470f_a675_751c2779c861
+M0810,Out-of-Band Communications Channel,T0826,Loss of Availability,relationship--52c7176b-431d-44a6-8c03-7c15a8cf6ce1,https://purl.org/ircc-framework#MitigationAssertion_52c7176b_431d_44a6_8c03_7c15a8cf6ce1
+M0927,Password Policies,T0892,Change Credential,relationship--53af6987-21bb-46fd-bf85-e3eeaa74de1a,https://purl.org/ircc-framework#MitigationAssertion_53af6987_21bb_46fd_bf85_e3eeaa74de1a
+M0930,Network Segmentation,T0843.002,Online Edit,relationship--544f0447-0f37-4b1c-b424-3fbcdee15e63,https://purl.org/ircc-framework#MitigationAssertion_544f0447_0f37_4b1c_b424_3fbcdee15e63
+M0930,Network Segmentation,T0806,Brute Force I/O,relationship--56672ea4-cbf0-4a3e-8aed-edcc7d33133b,https://purl.org/ircc-framework#MitigationAssertion_56672ea4_cbf0_4a3e_8aed_edcc7d33133b
+M0937,Filter Network Traffic,T0848,Rogue Master,relationship--575f0e0b-d68d-432b-abb3-cbd3e641fc88,https://purl.org/ircc-framework#MitigationAssertion_575f0e0b_d68d_432b_abb3_cbd3e641fc88
+M0953,Data Backup,T0831,Manipulation of Control,relationship--578117b2-0f4b-4d75-a2dc-3ee45976e616,https://purl.org/ircc-framework#MitigationAssertion_578117b2_0f4b_4d75_a2dc_3ee45976e616
+M0816,Mitigation Limited or Not Effective,T0801,Monitor Process State,relationship--5804ae3d-0daf-47a5-b026-d42878f55803,https://purl.org/ircc-framework#MitigationAssertion_5804ae3d_0daf_47a5_b026_d42878f55803
+M0807,Network Allowlists,T0879,Damage to Property,relationship--58269882-7e8d-4d24-b7a3-dbef6196cb61,https://purl.org/ircc-framework#MitigationAssertion_58269882_7e8d_4d24_b7a3_dbef6196cb61
+M0932,Multi-factor Authentication,T0842,Network Sniffing,relationship--58a0fd57-ea5f-46b0-84ac-c5b963fb7e94,https://purl.org/ircc-framework#MitigationAssertion_58a0fd57_ea5f_46b0_84ac_c5b963fb7e94
+M0810,Out-of-Band Communications Channel,T0832,Manipulation of View,relationship--58cb4cb5-4b0f-4ce0-b3f9-5deb9de31c52,https://purl.org/ircc-framework#MitigationAssertion_58cb4cb5_4b0f_4ce0_b3f9_5deb9de31c52
+M0942,Disable or Remove Feature or Program,T0853,Scripting,relationship--590bdd67-31ef-4edd-b2ac-2bd1b98da19c,https://purl.org/ircc-framework#MitigationAssertion_590bdd67_31ef_4edd_b2ac_2bd1b98da19c
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services,relationship--5914a482-dbb7-429d-96f3-77f0588ac12d,https://purl.org/ircc-framework#MitigationAssertion_5914a482_dbb7_429d_96f3_77f0588ac12d
+M0807,Network Allowlists,T0843.003,Program Append,relationship--598386c1-778c-41b7-af1e-e0947651f4ca,https://purl.org/ircc-framework#MitigationAssertion_598386c1_778c_41b7_af1e_e0947651f4ca
+M0800,Authorization Enforcement,T0845,Program Upload,relationship--5ae1cf3a-2603-4bf9-ace3-5b1ee5d8d757,https://purl.org/ircc-framework#MitigationAssertion_5ae1cf3a_2603_4bf9_ace3_5b1ee5d8d757
+M0808,Encrypt Network Traffic,T1693,Modify Firmware,relationship--5b060600-e8b8-4dd8-8ed7-aadbccb8e2a8,https://purl.org/ircc-framework#MitigationAssertion_5b060600_e8b8_4dd8_8ed7_aadbccb8e2a8
+M0931,Network Intrusion Prevention,T0869,Standard Application Layer Protocol,relationship--5be1f2b1-75fd-4e7e-901b-495cee4ab5ad,https://purl.org/ircc-framework#MitigationAssertion_5be1f2b1_75fd_4e7e_901b_495cee4ab5ad
+M0947,Audit,T0836,Modify Parameter,relationship--5bf8473c-3c60-4a8a-8514-c2b50ab8a92d,https://purl.org/ircc-framework#MitigationAssertion_5bf8473c_3c60_4a8a_8514_c2b50ab8a92d
+M0801,Access Management,T0845,Program Upload,relationship--5ca1d677-b41f-4f1e-b86b-f5637a418829,https://purl.org/ircc-framework#MitigationAssertion_5ca1d677_b41f_4f1e_b86b_f5637a418829
+M0815,Watchdog Timers,T0814,Denial of Service,relationship--5d0a7979-0420-4fd1-b5ad-cb5565cbdf9d,https://purl.org/ircc-framework#MitigationAssertion_5d0a7979_0420_4fd1_b5ad_cb5565cbdf9d
+M0814,Static Network Configuration,T0878,Alarm Suppression,relationship--5d33de22-35b0-47fa-bc63-f984522340b7,https://purl.org/ircc-framework#MitigationAssertion_5d33de22_35b0_47fa_bc63_f984522340b7
+M0813,Software Process and Device Authentication,T0838,Modify Alarm Settings,relationship--5d4f6aff-650c-45fe-a9d8-2080d3ea02d7,https://purl.org/ircc-framework#MitigationAssertion_5d4f6aff_650c_45fe_a9d8_2080d3ea02d7
+M0801,Access Management,T0843.001,Download All,relationship--5d788a27-a1ba-4f22-aa03-b43875d6ace1,https://purl.org/ircc-framework#MitigationAssertion_5d788a27_a1ba_4f22_aa03_b43875d6ace1
+M0947,Audit,T0851,Rootkit,relationship--5de6bf53-0a02-439b-a8d0-248fa9640a36,https://purl.org/ircc-framework#MitigationAssertion_5de6bf53_0a02_439b_a8d0_248fa9640a36
+M0937,Filter Network Traffic,T0859,Valid Accounts,relationship--5dfa5bad-8b0b-4884-bf01-04ea89e3ccf7,https://purl.org/ircc-framework#MitigationAssertion_5dfa5bad_8b0b_4884_bf01_04ea89e3ccf7
+M0948,Application Isolation and Sandboxing,T0890,Exploitation for Privilege Escalation,relationship--5f03ee5d-534c-454c-aae3-b41130b00286,https://purl.org/ircc-framework#MitigationAssertion_5f03ee5d_534c_454c_aae3_b41130b00286
+M0804,Human User Authentication,T1693.001,System Firmware,relationship--5f4badb1-5583-4101-84e4-5b6ebdb0c463,https://purl.org/ircc-framework#MitigationAssertion_5f4badb1_5583_4101_84e4_5b6ebdb0c463
+M0804,Human User Authentication,T0821,Modify Controller Tasking,relationship--5f5c38f6-aa3e-4447-a2d3-a76830ab36b0,https://purl.org/ircc-framework#MitigationAssertion_5f5c38f6_aa3e_4447_a2d3_a76830ab36b0
+M0928,Operating System Configuration,T0847,Replication Through Removable Media,relationship--604a9bf0-81a3-425b-9005-779c4f0f749d,https://purl.org/ircc-framework#MitigationAssertion_604a9bf0_81a3_425b_9005_779c4f0f749d
+M0804,Human User Authentication,T0843.003,Program Append,relationship--6079656e-d391-4de7-aeff-20c0f00f68c3,https://purl.org/ircc-framework#MitigationAssertion_6079656e_d391_4de7_aeff_20c0f00f68c3
+M0930,Network Segmentation,T0848,Rogue Master,relationship--61668e93-6d9d-418d-9fbd-2d88c3a66544,https://purl.org/ircc-framework#MitigationAssertion_61668e93_6d9d_418d_9fbd_2d88c3a66544
+M0937,Filter Network Traffic,T0843.001,Download All,relationship--619b3740-df20-4974-858f-f8067749d7b0,https://purl.org/ircc-framework#MitigationAssertion_619b3740_df20_4974_858f_f8067749d7b0
+M0930,Network Segmentation,T0866,Exploitation of Remote Services,relationship--63323b12-86db-4b91-a701-90daf3f98f7c,https://purl.org/ircc-framework#MitigationAssertion_63323b12_86db_4b91_a701_90daf3f98f7c
+M0804,Human User Authentication,T0800,Activate Firmware Update Mode,relationship--63453d2f-30f6-40ab-b32c-506d940ecd20,https://purl.org/ircc-framework#MitigationAssertion_63453d2f_30f6_40ab_b32c_506d940ecd20
+M0810,Out-of-Band Communications Channel,T1695.003,Wi-Fi,relationship--636a70d1-dd76-4633-b960-e64459f87299,https://purl.org/ircc-framework#MitigationAssertion_636a70d1_dd76_4633_b960_e64459f87299
+M0937,Filter Network Traffic,T0868,Detect Operating Mode,relationship--64db6a39-64d2-4999-97d7-91c28c32f42e,https://purl.org/ircc-framework#MitigationAssertion_64db6a39_64d2_4999_97d7_91c28c32f42e
+M0807,Network Allowlists,T0848,Rogue Master,relationship--652a68a2-a26b-4e8c-86dd-fd83187ed043,https://purl.org/ircc-framework#MitigationAssertion_652a68a2_a26b_4e8c_86dd_fd83187ed043
+M0801,Access Management,T0868,Detect Operating Mode,relationship--6637d8e6-6578-4d15-a993-d63ced4c4464,https://purl.org/ircc-framework#MitigationAssertion_6637d8e6_6578_4d15_a993_d63ced4c4464
+M0930,Network Segmentation,T0845,Program Upload,relationship--671043a9-337f-411a-9ca9-3112e897ab09,https://purl.org/ircc-framework#MitigationAssertion_671043a9_337f_411a_9ca9_3112e897ab09
+M0922,Restrict File and Directory Permissions,T0881,Service Stop,relationship--6833d534-9cbb-4b9f-85b6-93d3d2d6faca,https://purl.org/ircc-framework#MitigationAssertion_6833d534_9cbb_4b9f_85b6_93d3d2d6faca
+M0937,Filter Network Traffic,T0861,Point & Tag Identification,relationship--686cbd74-ef49-4e77-9599-21777d3a4738,https://purl.org/ircc-framework#MitigationAssertion_686cbd74_ef49_4e77_9599_21777d3a4738
+M0809,Operational Information Confidentiality,T0882,Theft of Operational Information,relationship--69576d3c-d0e8-459e-9f2e-0b9c560b2e04,https://purl.org/ircc-framework#MitigationAssertion_69576d3c_d0e8_459e_9f2e_0b9c560b2e04
+M0947,Audit,T0821,Modify Controller Tasking,relationship--698d7c50-daab-4087-a7b4-b2bc8dfd81a7,https://purl.org/ircc-framework#MitigationAssertion_698d7c50_daab_4087_a7b4_b2bc8dfd81a7
+M0810,Out-of-Band Communications Channel,T1691,Block Operational Technology Message,relationship--69f9597e-a47d-49bb-a182-376349f979ef,https://purl.org/ircc-framework#MitigationAssertion_69f9597e_a47d_49bb_a182_376349f979ef
+M0802,Communication Authenticity,T0843.003,Program Append,relationship--6a314797-9105-44e3-be5f-41b817454daf,https://purl.org/ircc-framework#MitigationAssertion_6a314797_9105_44e3_be5f_41b817454daf
+M0953,Data Backup,T0827,Loss of Control,relationship--6ad39b3a-a962-457f-852c-be7fc615e22f,https://purl.org/ircc-framework#MitigationAssertion_6ad39b3a_a962_457f_852c_be7fc615e22f
+M0800,Authorization Enforcement,T0838,Modify Alarm Settings,relationship--6b5d2643-b399-43aa-8ab1-7557a0446b07,https://purl.org/ircc-framework#MitigationAssertion_6b5d2643_b399_43aa_8ab1_7557a0446b07
+M0800,Authorization Enforcement,T0816,Device Restart/Shutdown,relationship--6b5fd6d8-ef70-4896-b1a4-7b6c29c3a0d4,https://purl.org/ircc-framework#MitigationAssertion_6b5fd6d8_ef70_4896_b1a4_7b6c29c3a0d4
+M0947,Audit,T1693,Modify Firmware,relationship--6bbb12c3-171d-45a5-a01b-a74b0c0704f0,https://purl.org/ircc-framework#MitigationAssertion_6bbb12c3_171d_45a5_a01b_a74b0c0704f0
+M0953,Data Backup,T0809,Data Destruction,relationship--6be4cef2-3d54-4cd8-97df-8a8b37c03605,https://purl.org/ircc-framework#MitigationAssertion_6be4cef2_3d54_4cd8_97df_8a8b37c03605
+M0949,Antivirus/Antimalware,T0864,Transient Cyber Asset,relationship--6c15ec9f-2b48-419c-adc1-f989833f6187,https://purl.org/ircc-framework#MitigationAssertion_6c15ec9f_2b48_419c_adc1_f989833f6187
+M0804,Human User Authentication,T0886,Remote Services,relationship--6d1906b4-e815-4688-86f1-ce61d403f8c6,https://purl.org/ircc-framework#MitigationAssertion_6d1906b4_e815_4688_86f1_ce61d403f8c6
+M0807,Network Allowlists,T0802,Automated Collection,relationship--6f0384e6-73c8-4fc7-bc0c-0a8c2bfa473d,https://purl.org/ircc-framework#MitigationAssertion_6f0384e6_73c8_4fc7_bc0c_0a8c2bfa473d
+M0951,Update Software,T0819,Exploit Public-Facing Application,relationship--6f2c2043-6487-467a-bb49-e8cd2509ae9f,https://purl.org/ircc-framework#MitigationAssertion_6f2c2043_6487_467a_bb49_e8cd2509ae9f
+M0807,Network Allowlists,T1695.001,Serial COM,relationship--6f815d4c-0512-4d92-bcdf-068034233048,https://purl.org/ircc-framework#MitigationAssertion_6f815d4c_0512_4d92_bcdf_068034233048
+M0937,Filter Network Traffic,T1692.002,Reporting Message,relationship--703adc98-d4d1-409e-bf20-4e65921ae52f,https://purl.org/ircc-framework#MitigationAssertion_703adc98_d4d1_409e_bf20_4e65921ae52f
+M0811,Redundancy of Service,T0827,Loss of Control,relationship--7041d8e5-3b74-402a-86b3-fd59def80632,https://purl.org/ircc-framework#MitigationAssertion_7041d8e5_3b74_402a_86b3_fd59def80632
+M0917,User Training,T0863,User Execution,relationship--71c9db9c-6f0c-4e33-a20a-dcd5b791a49a,https://purl.org/ircc-framework#MitigationAssertion_71c9db9c_6f0c_4e33_a20a_dcd5b791a49a
+M0813,Software Process and Device Authentication,T0830,Adversary-in-the-Middle,relationship--71e9230d-eec8-4ce1-bc96-9288bacc8b13,https://purl.org/ircc-framework#MitigationAssertion_71e9230d_eec8_4ce1_bc96_9288bacc8b13
+M0808,Encrypt Network Traffic,T1693.001,System Firmware,relationship--72848957-910f-4fa5-8a59-383c0a9dae62,https://purl.org/ircc-framework#MitigationAssertion_72848957_910f_4fa5_8a59_383c0a9dae62
+M0931,Network Intrusion Prevention,T0846.001,Port Scan,relationship--73dbe470-0d10-493b-b0ae-241da7dc0b58,https://purl.org/ircc-framework#MitigationAssertion_73dbe470_0d10_493b_b0ae_241da7dc0b58
+M0807,Network Allowlists,T1691.002,Reporting Message,relationship--73ed52f4-4a98-47e7-84bf-5eae555d999d,https://purl.org/ircc-framework#MitigationAssertion_73ed52f4_4a98_47e7_84bf_5eae555d999d
+M0931,Network Intrusion Prevention,T0884,Connection Proxy,relationship--7411b05d-209a-4907-83ce-00ab1538fbac,https://purl.org/ircc-framework#MitigationAssertion_7411b05d_209a_4907_83ce_00ab1538fbac
+M0814,Static Network Configuration,T0888,Remote System Information Discovery,relationship--74ec9ce5-3155-488c-ae56-570c47a1d207,https://purl.org/ircc-framework#MitigationAssertion_74ec9ce5_3155_488c_ae56_570c47a1d207
+M0938,Execution Prevention,T0807,Command-Line Interface,relationship--75366cbf-e45f-4cfd-9e76-5af4dfe10766,https://purl.org/ircc-framework#MitigationAssertion_75366cbf_e45f_4cfd_9e76_5af4dfe10766
+M0800,Authorization Enforcement,T0871,Execution through API,relationship--754521fc-4306-4daa-831b-6b6fb45847e2,https://purl.org/ircc-framework#MitigationAssertion_754521fc_4306_4daa_831b_6b6fb45847e2
+M0813,Software Process and Device Authentication,T0800,Activate Firmware Update Mode,relationship--758d5818-f919-4a6b-9dc2-a212595a11bd,https://purl.org/ircc-framework#MitigationAssertion_758d5818_f919_4a6b_9dc2_a212595a11bd
+M0804,Human User Authentication,T0861,Point & Tag Identification,relationship--79324bdd-cdab-4d0a-af60-af1047c1d117,https://purl.org/ircc-framework#MitigationAssertion_79324bdd_cdab_4d0a_af60_af1047c1d117
+M0930,Network Segmentation,T0864,Transient Cyber Asset,relationship--798919d3-df8b-463f-b2be-4c1aa8089384,https://purl.org/ircc-framework#MitigationAssertion_798919d3_df8b_463f_b2be_4c1aa8089384
+M0937,Filter Network Traffic,T0884,Connection Proxy,relationship--7bfaf0ff-6d88-460f-aa32-3fb0267b4f20,https://purl.org/ircc-framework#MitigationAssertion_7bfaf0ff_6d88_460f_aa32_3fb0267b4f20
+M0942,Disable or Remove Feature or Program,T0807,Command-Line Interface,relationship--7c2edd6c-5189-4ba9-af3d-bdaff4a699ca,https://purl.org/ircc-framework#MitigationAssertion_7c2edd6c_5189_4ba9_af3d_bdaff4a699ca
+M0813,Software Process and Device Authentication,T0858,Change Operating Mode,relationship--7d5759cd-890e-4ec5-b92b-aba225d52960,https://purl.org/ircc-framework#MitigationAssertion_7d5759cd_890e_4ec5_b92b_aba225d52960
+M0802,Communication Authenticity,T0848,Rogue Master,relationship--7db9687b-7099-4cb6-a040-bc32fc549a81,https://purl.org/ircc-framework#MitigationAssertion_7db9687b_7099_4cb6_a040_bc32fc549a81
+M0931,Network Intrusion Prevention,T0885,Commonly Used Port,relationship--7dedeb73-ef90-4282-a635-cc37326773af,https://purl.org/ircc-framework#MitigationAssertion_7dedeb73_ef90_4282_a635_cc37326773af
+M0918,User Account Management,T0838,Modify Alarm Settings,relationship--7fdaa9be-aecf-459f-b028-7c35dc8b6451,https://purl.org/ircc-framework#MitigationAssertion_7fdaa9be_aecf_459f_b028_7c35dc8b6451
+M0948,Application Isolation and Sandboxing,T0820,Exploitation for Evasion,relationship--7ff12adb-bc9a-42e5-9cbf-613b200c36dc,https://purl.org/ircc-framework#MitigationAssertion_7ff12adb_bc9a_42e5_9cbf_613b200c36dc
+M0814,Static Network Configuration,T0830,Adversary-in-the-Middle,relationship--808174b7-3ab0-45b5-963e-5c10dd749e3c,https://purl.org/ircc-framework#MitigationAssertion_808174b7_3ab0_45b5_963e_5c10dd749e3c
+M0802,Communication Authenticity,T0868,Detect Operating Mode,relationship--808c57e7-72ef-4860-b9ea-8ea072e2385a,https://purl.org/ircc-framework#MitigationAssertion_808c57e7_72ef_4860_b9ea_8ea072e2385a
+M0947,Audit,T1693.001,System Firmware,relationship--80d77b53-6aa4-4703-946f-6c7f0748f823,https://purl.org/ircc-framework#MitigationAssertion_80d77b53_6aa4_4703_946f_6c7f0748f823
+M0917,User Training,T0865,Spearphishing Attachment,relationship--81ca994a-b350-424d-8f39-a0b64aa76260,https://purl.org/ircc-framework#MitigationAssertion_81ca994a_b350_424d_8f39_a0b64aa76260
+M0813,Software Process and Device Authentication,T1693.001,System Firmware,relationship--81cd1138-ca48-4c06-8964-3fe007b3593a,https://purl.org/ircc-framework#MitigationAssertion_81cd1138_ca48_4c06_8964_3fe007b3593a
+M0807,Network Allowlists,T0886,Remote Services,relationship--842a2b85-4e77-4eb6-99e1-c4a231aadf48,https://purl.org/ircc-framework#MitigationAssertion_842a2b85_4e77_4eb6_99e1_c4a231aadf48
+M0930,Network Segmentation,T0846.002,Broadcast Discovery,relationship--86d04319-a13e-4105-9def-c659360c4613,https://purl.org/ircc-framework#MitigationAssertion_86d04319_a13e_4105_9def_c659360c4613
+M0922,Restrict File and Directory Permissions,T0811,Data from Information Repositories,relationship--86f1655a-db46-4d49-9051-6653da83eb13,https://purl.org/ircc-framework#MitigationAssertion_86f1655a_db46_4d49_9051_6653da83eb13
+M0946,Boot Integrity,T1693.002,Module Firmware,relationship--88c470f0-7214-4a2b-bd35-3c71733ce392,https://purl.org/ircc-framework#MitigationAssertion_88c470f0_7214_4a2b_bd35_3c71733ce392
+M0810,Out-of-Band Communications Channel,T0827,Loss of Control,relationship--8b17ad46-b0cc-4766-9cae-eba32260d468,https://purl.org/ircc-framework#MitigationAssertion_8b17ad46_b0cc_4766_9cae_eba32260d468
+M0942,Disable or Remove Feature or Program,T0816,Device Restart/Shutdown,relationship--8ca2fe75-9bb3-4af5-8fee-accd33d6d2ec,https://purl.org/ircc-framework#MitigationAssertion_8ca2fe75_9bb3_4af5_8fee_accd33d6d2ec
+M0811,Redundancy of Service,T0829,Loss of View,relationship--8ecf5eac-7767-411b-b54a-b374ea51b9e9,https://purl.org/ircc-framework#MitigationAssertion_8ecf5eac_7767_411b_b54a_b374ea51b9e9
+M0803,Data Loss Prevention,T0893,Data from Local System,relationship--8f7ccb2b-de2a-4a5c-9f1e-d5e58e69efa8,https://purl.org/ircc-framework#MitigationAssertion_8f7ccb2b_de2a_4a5c_9f1e_d5e58e69efa8
+M0937,Filter Network Traffic,T1693.001,System Firmware,relationship--8f7df0c0-9cc3-4322-847d-1f4ec35dfa65,https://purl.org/ircc-framework#MitigationAssertion_8f7df0c0_9cc3_4322_847d_1f4ec35dfa65
+M0934,Limit Hardware Installation,T0847,Replication Through Removable Media,relationship--8f90363e-2825-4178-807f-9268a28760fa,https://purl.org/ircc-framework#MitigationAssertion_8f90363e_2825_4178_807f_9268a28760fa
+M0948,Application Isolation and Sandboxing,T0866,Exploitation of Remote Services,relationship--8fa6fe89-e704-4be4-a15b-50e188084aa3,https://purl.org/ircc-framework#MitigationAssertion_8fa6fe89_e704_4be4_a15b_50e188084aa3
+M0930,Network Segmentation,T0843,Program Download,relationship--8fcecf74-36df-41ab-9476-539c9ac0b339,https://purl.org/ircc-framework#MitigationAssertion_8fcecf74_36df_41ab_9476_539c9ac0b339
+M0951,Update Software,T0890,Exploitation for Privilege Escalation,relationship--91f29477-2ff6-4dbf-bf68-c8825a938851,https://purl.org/ircc-framework#MitigationAssertion_91f29477_2ff6_4dbf_bf68_c8825a938851
+M0922,Restrict File and Directory Permissions,T0872,Indicator Removal on Host,relationship--92d1fd4f-6cc7-4db5-82f8-f8caa5ff59f0,https://purl.org/ircc-framework#MitigationAssertion_92d1fd4f_6cc7_4db5_82f8_f8caa5ff59f0
+M0941,Encrypt Sensitive Information,T1693.001,System Firmware,relationship--9315cc99-8e64-4bdc-99b9-6c8ab9b1f5ce,https://purl.org/ircc-framework#MitigationAssertion_9315cc99_8e64_4bdc_99b9_6c8ab9b1f5ce
+M0810,Out-of-Band Communications Channel,T1695,Block Communications,relationship--931e05ae-0fc9-4e37-9c88-063b80fd1d61,https://purl.org/ircc-framework#MitigationAssertion_931e05ae_0fc9_4e37_9c88_063b80fd1d61
+M0922,Restrict File and Directory Permissions,T0893,Data from Local System,relationship--94654460-b115-4056-beb1-e982ed33437b,https://purl.org/ircc-framework#MitigationAssertion_94654460_b115_4056_beb1_e982ed33437b
+M0804,Human User Authentication,T1693,Modify Firmware,relationship--962128bd-13b9-48a6-a4c8-3f07104a962f,https://purl.org/ircc-framework#MitigationAssertion_962128bd_13b9_48a6_a4c8_3f07104a962f
+M0916,Vulnerability Scanning,T0819,Exploit Public-Facing Application,relationship--968830b7-ee80-4a6e-96a4-9fc70470e4a9,https://purl.org/ircc-framework#MitigationAssertion_968830b7_ee80_4a6e_96a4_9fc70470e4a9
+M0945,Code Signing,T0821,Modify Controller Tasking,relationship--973f5884-a076-413e-ac96-f0bd01375fb6,https://purl.org/ircc-framework#MitigationAssertion_973f5884_a076_413e_ac96_f0bd01375fb6
+M0951,Update Software,T0820,Exploitation for Evasion,relationship--97c5b388-518a-46ec-b2b0-41bfa6a83204,https://purl.org/ircc-framework#MitigationAssertion_97c5b388_518a_46ec_b2b0_41bfa6a83204
+M0813,Software Process and Device Authentication,T0861,Point & Tag Identification,relationship--984992e3-0407-406a-b8dd-c114d8b2d9a2,https://purl.org/ircc-framework#MitigationAssertion_984992e3_0407_406a_b8dd_c114d8b2d9a2
+M0928,Operating System Configuration,T0895,Autorun Image,relationship--98567b03-7421-4761-8caa-cbea82d89fe3,https://purl.org/ircc-framework#MitigationAssertion_98567b03_7421_4761_8caa_cbea82d89fe3
+M0800,Authorization Enforcement,T0843.003,Program Append,relationship--98d7d238-3473-4e3c-adc0-3c8d33341466,https://purl.org/ircc-framework#MitigationAssertion_98d7d238_3473_4e3c_adc0_3c8d33341466
+M0927,Password Policies,T0822,External Remote Services,relationship--98f1d575-a975-42ae-8b00-2c9e22d560d5,https://purl.org/ircc-framework#MitigationAssertion_98f1d575_a975_42ae_8b00_2c9e22d560d5
+M0811,Redundancy of Service,T0813,Denial of Control,relationship--99ec0a8e-4a4f-427c-89db-163e4b206021,https://purl.org/ircc-framework#MitigationAssertion_99ec0a8e_4a4f_427c_89db_163e4b206021
+M0937,Filter Network Traffic,T0806,Brute Force I/O,relationship--9a44b2a8-9f4c-43df-9174-1cba6e165886,https://purl.org/ircc-framework#MitigationAssertion_9a44b2a8_9f4c_43df_9174_1cba6e165886
+M0931,Network Intrusion Prevention,T0865,Spearphishing Attachment,relationship--9a607f89-85b8-4fba-8eb7-7e4900ea693f,https://purl.org/ircc-framework#MitigationAssertion_9a607f89_85b8_4fba_8eb7_7e4900ea693f
+M0807,Network Allowlists,T0843.002,Online Edit,relationship--9aacca46-bf65-4247-b14c-65359d1b47db,https://purl.org/ircc-framework#MitigationAssertion_9aacca46_bf65_4247_b14c_65359d1b47db
+M0932,Multi-factor Authentication,T0859,Valid Accounts,relationship--9b412b1f-2dd0-4e7f-8364-f625181ba1db,https://purl.org/ircc-framework#MitigationAssertion_9b412b1f_2dd0_4e7f_8364_f625181ba1db
+M0930,Network Segmentation,T0843.001,Download All,relationship--9b7bc0f3-c7cf-47e4-a3ed-0f91e01831ca,https://purl.org/ircc-framework#MitigationAssertion_9b7bc0f3_c7cf_47e4_a3ed_0f91e01831ca
+M0945,Code Signing,T1693.002,Module Firmware,relationship--9b802cf9-03e4-414f-af09-fc108e96839c,https://purl.org/ircc-framework#MitigationAssertion_9b802cf9_03e4_414f_af09_fc108e96839c
+M0813,Software Process and Device Authentication,T1692,Unauthorized Message,relationship--9ba6c904-d1bd-46dd-95fb-6da58333fa40,https://purl.org/ircc-framework#MitigationAssertion_9ba6c904_d1bd_46dd_95fb_6da58333fa40
+M0930,Network Segmentation,T0881,Service Stop,relationship--9cca3120-c95e-4f5e-bc4b-0521ab5cc512,https://purl.org/ircc-framework#MitigationAssertion_9cca3120_c95e_4f5e_bc4b_0521ab5cc512
+M0800,Authorization Enforcement,T0843.002,Online Edit,relationship--9d463aef-aa70-4375-9ed3-4b0387ba70e6,https://purl.org/ircc-framework#MitigationAssertion_9d463aef_aa70_4375_9ed3_4b0387ba70e6
+M0801,Access Management,T1693.001,System Firmware,relationship--a05f4a7a-eebb-463a-97e6-1088b94fa78b,https://purl.org/ircc-framework#MitigationAssertion_a05f4a7a_eebb_463a_97e6_1088b94fa78b
+M0930,Network Segmentation,T0802,Automated Collection,relationship--a08d85dd-a8b3-4848-94aa-941c43b6d8f2,https://purl.org/ircc-framework#MitigationAssertion_a08d85dd_a8b3_4848_94aa_941c43b6d8f2
+M0927,Password Policies,T0859,Valid Accounts,relationship--a1383f2a-2ee2-47df-a661-8904a7535e0c,https://purl.org/ircc-framework#MitigationAssertion_a1383f2a_2ee2_47df_a661_8904a7535e0c
+M0808,Encrypt Network Traffic,T1693.002,Module Firmware,relationship--a1e6b6f0-b13c-48a0-b62d-12dfb80112ad,https://purl.org/ircc-framework#MitigationAssertion_a1e6b6f0_b13c_48a0_b62d_12dfb80112ad
+M0807,Network Allowlists,T0868,Detect Operating Mode,relationship--a22fabd2-836e-4141-9219-c76cc10138ec,https://purl.org/ircc-framework#MitigationAssertion_a22fabd2_836e_4141_9219_c76cc10138ec
+M0804,Human User Authentication,T0843.001,Download All,relationship--a23297f1-58b9-48f4-8289-e81c34d9a522,https://purl.org/ircc-framework#MitigationAssertion_a23297f1_58b9_48f4_8289_e81c34d9a522
+M0813,Software Process and Device Authentication,T1693,Modify Firmware,relationship--a3971be9-7bef-4663-b6c3-3cffc418f76b,https://purl.org/ircc-framework#MitigationAssertion_a3971be9_7bef_4663_b6c3_3cffc418f76b
+M0802,Communication Authenticity,T1693.001,System Firmware,relationship--a3df8609-d9c4-4ef0-9a58-8d7155fba4f7,https://purl.org/ircc-framework#MitigationAssertion_a3df8609_d9c4_4ef0_9a58_8d7155fba4f7
+M0930,Network Segmentation,T1695.002,Ethernet,relationship--a3fb7c3c-7064-43d2-849c-2a5893583de9,https://purl.org/ircc-framework#MitigationAssertion_a3fb7c3c_7064_43d2_849c_2a5893583de9
+M0801,Access Management,T0843.002,Online Edit,relationship--a61fa979-f701-4dbe-b040-397b152ac14f,https://purl.org/ircc-framework#MitigationAssertion_a61fa979_f701_4dbe_b040_397b152ac14f
+M0807,Network Allowlists,T1691.001,Command Message,relationship--a6ebd61b-7845-4694-9860-2e8998f2841f,https://purl.org/ircc-framework#MitigationAssertion_a6ebd61b_7845_4694_9860_2e8998f2841f
+M0953,Data Backup,T0892,Change Credential,relationship--a717ccc7-0fe6-4a83-951f-5a89037ed927,https://purl.org/ircc-framework#MitigationAssertion_a717ccc7_0fe6_4a83_951f_5a89037ed927
+M0926,Privileged Account Management,T0866,Exploitation of Remote Services,relationship--a78e727c-8e42-448c-beb4-463804e18be0,https://purl.org/ircc-framework#MitigationAssertion_a78e727c_8e42_448c_beb4_463804e18be0
+M0800,Authorization Enforcement,T0843,Program Download,relationship--a7caa7f2-cfb9-4fc9-ae8d-49349b6c260f,https://purl.org/ircc-framework#MitigationAssertion_a7caa7f2_cfb9_4fc9_ae8d_49349b6c260f
+M0918,User Account Management,T0822,External Remote Services,relationship--a7fbe555-a61b-4b93-bfb2-8e0dd0d6323e,https://purl.org/ircc-framework#MitigationAssertion_a7fbe555_a61b_4b93_bfb2_8e0dd0d6323e
+M0942,Disable or Remove Feature or Program,T0822,External Remote Services,relationship--a847aa03-ea56-47d1-8f4e-f9e0dd9707a0,https://purl.org/ircc-framework#MitigationAssertion_a847aa03_ea56_47d1_8f4e_f9e0dd9707a0
+M0813,Software Process and Device Authentication,T0843.001,Download All,relationship--a8563939-14f9-4790-a8bb-6e984e3ad7ac,https://purl.org/ircc-framework#MitigationAssertion_a8563939_14f9_4790_a8bb_6e984e3ad7ac
+M0801,Access Management,T0858,Change Operating Mode,relationship--a86cee0a-dc49-4c95-b5dc-37405337490b,https://purl.org/ircc-framework#MitigationAssertion_a86cee0a_dc49_4c95_b5dc_37405337490b
+M0801,Access Management,T1693.002,Module Firmware,relationship--a8f136ed-4ab7-4dbc-ba22-db57ace5ed6e,https://purl.org/ircc-framework#MitigationAssertion_a8f136ed_4ab7_4dbc_ba22_db57ace5ed6e
+M0945,Code Signing,T0889,Modify Program,relationship--a91002fe-21b2-4417-9c23-af712a7a035c,https://purl.org/ircc-framework#MitigationAssertion_a91002fe_21b2_4417_9c23_af712a7a035c
+M0802,Communication Authenticity,T1693.002,Module Firmware,relationship--a99cb0b8-4ac0-4712-850a-3aac16f87520,https://purl.org/ircc-framework#MitigationAssertion_a99cb0b8_4ac0_4712_850a_3aac16f87520
+M0807,Network Allowlists,T0858,Change Operating Mode,relationship--ab60fe4a-5860-410a-8bca-2cdbea95e5f8,https://purl.org/ircc-framework#MitigationAssertion_ab60fe4a_5860_410a_8bca_2cdbea95e5f8
+M0930,Network Segmentation,T1693.001,System Firmware,relationship--ac8d2d28-5fdc-44d6-9e5a-8e5560b3f91f,https://purl.org/ircc-framework#MitigationAssertion_ac8d2d28_5fdc_44d6_9e5a_8e5560b3f91f
+M0950,Exploit Protection,T0819,Exploit Public-Facing Application,relationship--ad7fd147-066e-4ed5-aa9d-7b2f1771150d,https://purl.org/ircc-framework#MitigationAssertion_ad7fd147_066e_4ed5_aa9d_7b2f1771150d
+M0807,Network Allowlists,T0878,Alarm Suppression,relationship--ade12d27-13bb-4ebf-be08-7039cf699682,https://purl.org/ircc-framework#MitigationAssertion_ade12d27_13bb_4ebf_be08_7039cf699682
+M0801,Access Management,T1694,Insecure Credentials,relationship--ae0b459d-535d-4895-ac9f-6ec0518afe00,https://purl.org/ircc-framework#MitigationAssertion_ae0b459d_535d_4895_ac9f_6ec0518afe00
+M0918,User Account Management,T0886,Remote Services,relationship--ae10e97a-90ac-498b-8601-01081dc4af8b,https://purl.org/ircc-framework#MitigationAssertion_ae10e97a_90ac_498b_8601_01081dc4af8b
+M0930,Network Segmentation,T1695,Block Communications,relationship--ae1e5c1a-8f2f-4a5a-a262-3d485c20e7a0,https://purl.org/ircc-framework#MitigationAssertion_ae1e5c1a_8f2f_4a5a_a262_3d485c20e7a0
+M0814,Static Network Configuration,T1691.002,Reporting Message,relationship--ae20022f-25b5-4eff-8775-53f1e0ad91b8,https://purl.org/ircc-framework#MitigationAssertion_ae20022f_25b5_4eff_8775_53f1e0ad91b8
+M0816,Mitigation Limited or Not Effective,T0840,Network Connection Enumeration,relationship--ae7487f1-a2d0-443d-b418-cd726c5ac15f,https://purl.org/ircc-framework#MitigationAssertion_ae7487f1_a2d0_443d_b418_cd726c5ac15f
+M0804,Human User Authentication,T0836,Modify Parameter,relationship--af20f409-05ed-42c3-ae3e-09b047b84875,https://purl.org/ircc-framework#MitigationAssertion_af20f409_05ed_42c3_ae3e_09b047b84875
+M0810,Out-of-Band Communications Channel,T1695.002,Ethernet,relationship--af5c41cb-063d-42a9-ad54-833bd65477d0,https://purl.org/ircc-framework#MitigationAssertion_af5c41cb_063d_42a9_ad54_833bd65477d0
+M0947,Audit,T0843.003,Program Append,relationship--af861c3e-966c-49aa-86c4-a76102977d16,https://purl.org/ircc-framework#MitigationAssertion_af861c3e_966c_49aa_86c4_a76102977d16
+M0811,Redundancy of Service,T0826,Loss of Availability,relationship--afb0b60e-e604-4b96-abb9-57fdce4e5108,https://purl.org/ircc-framework#MitigationAssertion_afb0b60e_e604_4b96_abb9_57fdce4e5108
+M0802,Communication Authenticity,T0800,Activate Firmware Update Mode,relationship--afd63145-6033-49e4-ad43-d0b35fa5ed88,https://purl.org/ircc-framework#MitigationAssertion_afd63145_6033_49e4_ad43_d0b35fa5ed88
+M0931,Network Intrusion Prevention,T0830,Adversary-in-the-Middle,relationship--b13417ea-d8da-497f-818f-d2d90562039a,https://purl.org/ircc-framework#MitigationAssertion_b13417ea_d8da_497f_818f_d2d90562039a
+M0930,Network Segmentation,T0878,Alarm Suppression,relationship--b1768154-221c-48be-ab2b-549ec1eddafb,https://purl.org/ircc-framework#MitigationAssertion_b1768154_221c_48be_ab2b_549ec1eddafb
+M0931,Network Intrusion Prevention,T0863,User Execution,relationship--b1d993d5-9e7e-4043-a651-07c7b5ad5a6b,https://purl.org/ircc-framework#MitigationAssertion_b1d993d5_9e7e_4043_a651_07c7b5ad5a6b
+M0814,Static Network Configuration,T0846,Remote System Discovery,relationship--b2defaaf-625d-416e-8a9d-8be6d89bacdc,https://purl.org/ircc-framework#MitigationAssertion_b2defaaf_625d_416e_8a9d_8be6d89bacdc
+M0806,Minimize Wireless Signal Propagation,T0860,Wireless Compromise,relationship--b2e10e48-8bd9-472a-9c6f-1d38650e8df1,https://purl.org/ircc-framework#MitigationAssertion_b2e10e48_8bd9_472a_9c6f_1d38650e8df1
+M0808,Encrypt Network Traffic,T0860,Wireless Compromise,relationship--b363cbbb-679c-47e0-8ad0-af98ebf51e60,https://purl.org/ircc-framework#MitigationAssertion_b363cbbb_679c_47e0_8ad0_af98ebf51e60
+M0801,Access Management,T0800,Activate Firmware Update Mode,relationship--b3b24837-83ed-46c5-ba80-66a832c7072e,https://purl.org/ircc-framework#MitigationAssertion_b3b24837_83ed_46c5_ba80_66a832c7072e
+M0947,Audit,T0830,Adversary-in-the-Middle,relationship--b47dbc50-fd8f-4e5b-bb3d-e93b68bf5497,https://purl.org/ircc-framework#MitigationAssertion_b47dbc50_fd8f_4e5b_bb3d_e93b68bf5497
+M0917,User Training,T0893,Data from Local System,relationship--b48a9fea-26a5-473c-9a5d-fcc3531e1fd3,https://purl.org/ircc-framework#MitigationAssertion_b48a9fea_26a5_473c_9a5d_fcc3531e1fd3
+M0947,Audit,T1693.002,Module Firmware,relationship--b58f623d-c61f-46e8-b356-09af226ba9ad,https://purl.org/ircc-framework#MitigationAssertion_b58f623d_c61f_46e8_b356_09af226ba9ad
+M0816,Mitigation Limited or Not Effective,T0835,Manipulate I/O Image,relationship--b5bb5ec3-aa3c-4734-8425-4be80c5658a9,https://purl.org/ircc-framework#MitigationAssertion_b5bb5ec3_aa3c_4734_8425_4be80c5658a9
+M0816,Mitigation Limited or Not Effective,T0852,Screen Capture,relationship--b5e52859-8dab-4e7e-af70-bb38c6993c98,https://purl.org/ircc-framework#MitigationAssertion_b5e52859_8dab_4e7e_af70_bb38c6993c98
+M0802,Communication Authenticity,T0831,Manipulation of Control,relationship--b628d878-4f35-4580-8d42-26984d13821e,https://purl.org/ircc-framework#MitigationAssertion_b628d878_4f35_4580_8d42_26984d13821e
+M0913,Application Developer Guidance,T0859,Valid Accounts,relationship--b69f31c3-6c12-4b81-8e74-9c58ea635fa4,https://purl.org/ircc-framework#MitigationAssertion_b69f31c3_6c12_4b81_8e74_9c58ea635fa4
+M0947,Audit,T0874,Hooking,relationship--b72b7dfd-f134-4324-84b8-52ff13fc6b5c,https://purl.org/ircc-framework#MitigationAssertion_b72b7dfd_f134_4324_84b8_52ff13fc6b5c
+M0801,Access Management,T0861,Point & Tag Identification,relationship--b7f23af2-e948-4531-af56-1a1b4d03702f,https://purl.org/ircc-framework#MitigationAssertion_b7f23af2_e948_4531_af56_1a1b4d03702f
+M0814,Static Network Configuration,T0846.002,Broadcast Discovery,relationship--b8c33196-8fc2-4855-b764-cd49554f0223,https://purl.org/ircc-framework#MitigationAssertion_b8c33196_8fc2_4855_b764_cd49554f0223
+M0807,Network Allowlists,T1693.001,System Firmware,relationship--b8ce3f0c-7c11-4846-b567-a5d4233b0e6e,https://purl.org/ircc-framework#MitigationAssertion_b8ce3f0c_7c11_4846_b567_a5d4233b0e6e
+M0953,Data Backup,T0826,Loss of Availability,relationship--b8d6e550-18fe-49ad-9964-7802bbe0cb58,https://purl.org/ircc-framework#MitigationAssertion_b8d6e550_18fe_49ad_9964_7802bbe0cb58
+M0951,Update Software,T0864,Transient Cyber Asset,relationship--b8edcf0a-ec53-4203-b3ad-2cc734a1f1dd,https://purl.org/ircc-framework#MitigationAssertion_b8edcf0a_ec53_4203_b3ad_2cc734a1f1dd
+M0800,Authorization Enforcement,T0868,Detect Operating Mode,relationship--b8f6d6a8-e668-4596-8ec2-41c5d1bd211d,https://purl.org/ircc-framework#MitigationAssertion_b8f6d6a8_e668_4596_8ec2_41c5d1bd211d
+M0918,User Account Management,T0811,Data from Information Repositories,relationship--b9632b4d-43c3-4bfa-88e0-629245acb8eb,https://purl.org/ircc-framework#MitigationAssertion_b9632b4d_43c3_4bfa_88e0_629245acb8eb
+M0945,Code Signing,T0849,Masquerading,relationship--b9e82422-b072-494f-99c1-fcab07b90133,https://purl.org/ircc-framework#MitigationAssertion_b9e82422_b072_494f_99c1_fcab07b90133
+M0926,Privileged Account Management,T0811,Data from Information Repositories,relationship--ba010007-6dde-4c9d-8452-69527cd1c2ba,https://purl.org/ircc-framework#MitigationAssertion_ba010007_6dde_4c9d_8452_69527cd1c2ba
+M0937,Filter Network Traffic,T0845,Program Upload,relationship--baf4bd30-4213-43c3-b70c-54418e734caf,https://purl.org/ircc-framework#MitigationAssertion_baf4bd30_4213_43c3_b70c_54418e734caf
+M0947,Audit,T0859,Valid Accounts,relationship--baf7daf3-2116-4051-91b5-f82e146167d0,https://purl.org/ircc-framework#MitigationAssertion_baf7daf3_2116_4051_91b5_f82e146167d0
+M0807,Network Allowlists,T1692.001,Command Message,relationship--bc0e4ff7-ed61-41c0-84ca-66210241c9ce,https://purl.org/ircc-framework#MitigationAssertion_bc0e4ff7_ed61_41c0_84ca_66210241c9ce
+M0926,Privileged Account Management,T0819,Exploit Public-Facing Application,relationship--bc3744d6-9275-4d91-8888-16d5f4d5187b,https://purl.org/ircc-framework#MitigationAssertion_bc3744d6_9275_4d91_8888_16d5f4d5187b
+M0803,Data Loss Prevention,T0882,Theft of Operational Information,relationship--bc74ff8f-d5fa-40fb-8c0b-f16af3ff36e3,https://purl.org/ircc-framework#MitigationAssertion_bc74ff8f_d5fa_40fb_8c0b_f16af3ff36e3
+M0949,Antivirus/Antimalware,T0865,Spearphishing Attachment,relationship--bda03e8d-5e06-4470-b786-11b11c7c97c7,https://purl.org/ircc-framework#MitigationAssertion_bda03e8d_5e06_4470_b786_11b11c7c97c7
+M0930,Network Segmentation,T0885,Commonly Used Port,relationship--bde941c6-2ca0-4f94-9336-027e7eee15a1,https://purl.org/ircc-framework#MitigationAssertion_bde941c6_2ca0_4f94_9336_027e7eee15a1
+M0813,Software Process and Device Authentication,T0806,Brute Force I/O,relationship--be950e87-80ac-49ea-810a-553c7f72151b,https://purl.org/ircc-framework#MitigationAssertion_be950e87_80ac_49ea_810a_553c7f72151b
+M0945,Code Signing,T0843.003,Program Append,relationship--beb0c5be-2b81-4d8d-9d9f-35e496be4e0f,https://purl.org/ircc-framework#MitigationAssertion_beb0c5be_2b81_4d8d_9d9f_35e496be4e0f
+M0807,Network Allowlists,T0845,Program Upload,relationship--c0efb24a-2329-401a-bba6-817f2867bb3f,https://purl.org/ircc-framework#MitigationAssertion_c0efb24a_2329_401a_bba6_817f2867bb3f
+M0921,Restrict Web-Based Content,T0865,Spearphishing Attachment,relationship--c195a0e9-d46c-487f-9a96-b138e9ca05d2,https://purl.org/ircc-framework#MitigationAssertion_c195a0e9_d46c_487f_9a96_b138e9ca05d2
+M0953,Data Backup,T0815,Denial of View,relationship--c2fe42b4-6750-4b51-86b7-6c37fbfdef2d,https://purl.org/ircc-framework#MitigationAssertion_c2fe42b4_6750_4b51_86b7_6c37fbfdef2d
+M0808,Encrypt Network Traffic,T0842,Network Sniffing,relationship--c5fd0969-c151-4849-94c2-83e2e208cff7,https://purl.org/ircc-framework#MitigationAssertion_c5fd0969_c151_4849_94c2_83e2e208cff7
+M0807,Network Allowlists,T1695.002,Ethernet,relationship--c6258ef7-95dc-43ef-b0c2-a20011a48699,https://purl.org/ircc-framework#MitigationAssertion_c6258ef7_95dc_43ef_b0c2_a20011a48699
+M0953,Data Backup,T0832,Manipulation of View,relationship--c64f2ed2-f7a7-4333-b0d3-d687ffb7ad6b,https://purl.org/ircc-framework#MitigationAssertion_c64f2ed2_f7a7_4333_b0d3_d687ffb7ad6b
+M0916,Vulnerability Scanning,T0862,Supply Chain Compromise,relationship--c67e3535-69a9-4234-8170-4ad6efc632b7,https://purl.org/ircc-framework#MitigationAssertion_c67e3535_69a9_4234_8170_4ad6efc632b7
+M0931,Network Intrusion Prevention,T0867,Lateral Tool Transfer,relationship--c69eab3c-861c-45f5-8858-a595fcc7e6f6,https://purl.org/ircc-framework#MitigationAssertion_c69eab3c_861c_45f5_8858_a595fcc7e6f6
+M0941,Encrypt Sensitive Information,T0873,Project File Infection,relationship--c78f497f-01c3-4efb-aa74-92b700b9c02b,https://purl.org/ircc-framework#MitigationAssertion_c78f497f_01c3_4efb_aa74_92b700b9c02b
+M0930,Network Segmentation,T0861,Point & Tag Identification,relationship--c7aac6c9-da16-46e2-8cfa-dca07a0a7562,https://purl.org/ircc-framework#MitigationAssertion_c7aac6c9_da16_46e2_8cfa_dca07a0a7562
+M0807,Network Allowlists,T1692,Unauthorized Message,relationship--c7ae1f86-2029-4354-896b-baace526bf3c,https://purl.org/ircc-framework#MitigationAssertion_c7ae1f86_2029_4354_896b_baace526bf3c
+M0817,Supply Chain Management,T0862,Supply Chain Compromise,relationship--c8a40335-90d6-496a-b4f9-1cc93d3fffc6,https://purl.org/ircc-framework#MitigationAssertion_c8a40335_90d6_496a_b4f9_1cc93d3fffc6
+M0807,Network Allowlists,T0884,Connection Proxy,relationship--c8dd2735-bd04-4413-847d-316b77c6de19,https://purl.org/ircc-framework#MitigationAssertion_c8dd2735_bd04_4413_847d_316b77c6de19
+M0801,Access Management,T0886,Remote Services,relationship--c9065f74-556d-4728-8072-f96642e70316,https://purl.org/ircc-framework#MitigationAssertion_c9065f74_556d_4728_8072_f96642e70316
+M0937,Filter Network Traffic,T0843.002,Online Edit,relationship--c91514db-4e02-459e-9ff4-5092fdffb049,https://purl.org/ircc-framework#MitigationAssertion_c91514db_4e02_459e_9ff4_5092fdffb049
+M0810,Out-of-Band Communications Channel,T0878,Alarm Suppression,relationship--c9395e2a-afaf-427c-bcb2-ae663d72c05c,https://purl.org/ircc-framework#MitigationAssertion_c9395e2a_afaf_427c_bcb2_ae663d72c05c
+M0948,Application Isolation and Sandboxing,T0817,Drive-by Compromise,relationship--ca5c7ae7-5273-4888-bc50-183d6e200972,https://purl.org/ircc-framework#MitigationAssertion_ca5c7ae7_5273_4888_bc50_183d6e200972
+M0942,Disable or Remove Feature or Program,T0885,Commonly Used Port,relationship--ca64a927-f050-41b3-80d3-93d22cdef26a,https://purl.org/ircc-framework#MitigationAssertion_ca64a927_f050_41b3_80d3_93d22cdef26a
+M0937,Filter Network Traffic,T0816,Device Restart/Shutdown,relationship--ca768c2a-0f14-471c-90a5-bce649e88d51,https://purl.org/ircc-framework#MitigationAssertion_ca768c2a_0f14_471c_90a5_bce649e88d51
+M0947,Audit,T0843.002,Online Edit,relationship--cae90fbb-ba0d-4a9a-9da3-b9f32ab1cd07,https://purl.org/ircc-framework#MitigationAssertion_cae90fbb_ba0d_4a9a_9da3_b9f32ab1cd07
+M0945,Code Signing,T0843,Program Download,relationship--cb30d507-edc6-4197-947c-7b3a6e395c0d,https://purl.org/ircc-framework#MitigationAssertion_cb30d507_edc6_4197_947c_7b3a6e395c0d
+M0941,Encrypt Sensitive Information,T0882,Theft of Operational Information,relationship--cb4d802e-df5b-4017-81dd-47f65fff23a3,https://purl.org/ircc-framework#MitigationAssertion_cb4d802e_df5b_4017_81dd_47f65fff23a3
+M0811,Redundancy of Service,T0892,Change Credential,relationship--cb6d67c0-33ba-4c49-ae70-d0e4f0f68794,https://purl.org/ircc-framework#MitigationAssertion_cb6d67c0_33ba_4c49_ae70_d0e4f0f68794
+M0946,Boot Integrity,T1693,Modify Firmware,relationship--cb993689-bb59-4c96-b9fd-42cfcb92d76f,https://purl.org/ircc-framework#MitigationAssertion_cb993689_bb59_4c96_b9fd_42cfcb92d76f
+M0938,Execution Prevention,T0849,Masquerading,relationship--cca191a1-3c50-4d4f-8f79-4247e58af610,https://purl.org/ircc-framework#MitigationAssertion_cca191a1_3c50_4d4f_8f79_4247e58af610
+M0813,Software Process and Device Authentication,T0843.002,Online Edit,relationship--cd645dbe-000a-43f9-86e6-622bb1ab1053,https://purl.org/ircc-framework#MitigationAssertion_cd645dbe_000a_43f9_86e6_622bb1ab1053
+M0930,Network Segmentation,T0843.003,Program Append,relationship--d03785b3-9b51-45f2-aff5-029555c53826,https://purl.org/ircc-framework#MitigationAssertion_d03785b3_9b51_45f2_aff5_029555c53826
+M0946,Boot Integrity,T1693.001,System Firmware,relationship--d1445579-245b-4698-a7df-365379e0d36d,https://purl.org/ircc-framework#MitigationAssertion_d1445579_245b_4698_a7df_365379e0d36d
+M0942,Disable or Remove Feature or Program,T0830,Adversary-in-the-Middle,relationship--d16e8909-d055-4174-aeb1-22c0613b2f73,https://purl.org/ircc-framework#MitigationAssertion_d16e8909_d055_4174_aeb1_22c0613b2f73
+M0812,Safety Instrumented Systems,T0879,Damage to Property,relationship--d1d98f8c-aea2-4f06-9b0d-c543ed42c6a4,https://purl.org/ircc-framework#MitigationAssertion_d1d98f8c_aea2_4f06_9b0d_c543ed42c6a4
+M0800,Authorization Enforcement,T0889,Modify Program,relationship--d2a434c7-4428-435e-ae6b-e54012f29606,https://purl.org/ircc-framework#MitigationAssertion_d2a434c7_4428_435e_ae6b_e54012f29606
+M0814,Static Network Configuration,T1691,Block Operational Technology Message,relationship--d3a24d5e-ae6e-4427-a1db-ae87b7a2b6e4,https://purl.org/ircc-framework#MitigationAssertion_d3a24d5e_ae6e_4427_a1db_ae87b7a2b6e4
+M0949,Antivirus/Antimalware,T0863,User Execution,relationship--d3c94120-e6b5-4bd2-88f0-9c73f76b0104,https://purl.org/ircc-framework#MitigationAssertion_d3c94120_e6b5_4bd2_88f0_9c73f76b0104
+M0941,Encrypt Sensitive Information,T1693,Modify Firmware,relationship--d462143c-69d1-44c9-b657-b64deb12eab8,https://purl.org/ircc-framework#MitigationAssertion_d462143c_69d1_44c9_b657_b64deb12eab8
+M0801,Access Management,T0843.003,Program Append,relationship--d4f64f95-42cd-46e6-8fcf-25ef0d868f5b,https://purl.org/ircc-framework#MitigationAssertion_d4f64f95_42cd_46e6_8fcf_25ef0d868f5b
+M0941,Encrypt Sensitive Information,T0873.001,Siemens Project File Format,relationship--d67feaac-73ac-47b1-91ec-f537105afc58,https://purl.org/ircc-framework#MitigationAssertion_d67feaac_73ac_47b1_91ec_f537105afc58
+M0945,Code Signing,T0862,Supply Chain Compromise,relationship--d6a2a1a8-8f5b-4e94-8fce-8edd8a17627a,https://purl.org/ircc-framework#MitigationAssertion_d6a2a1a8_8f5b_4e94_8fce_8edd8a17627a
+M0807,Network Allowlists,T0869,Standard Application Layer Protocol,relationship--d854cc38-adf7-485d-96b5-70606f6cb87e,https://purl.org/ircc-framework#MitigationAssertion_d854cc38_adf7_485d_96b5_70606f6cb87e
+M0942,Disable or Remove Feature or Program,T0847,Replication Through Removable Media,relationship--d8f45959-e0fc-4b4f-a074-a3acea926300,https://purl.org/ircc-framework#MitigationAssertion_d8f45959_e0fc_4b4f_a074_a3acea926300
+M0802,Communication Authenticity,T0861,Point & Tag Identification,relationship--dbdd9a97-81df-40b8-b72d-ac67d121b8b3,https://purl.org/ircc-framework#MitigationAssertion_dbdd9a97_81df_40b8_b72d_ac67d121b8b3
+M0932,Multi-factor Authentication,T0822,External Remote Services,relationship--dc35c44a-a90c-48a1-8811-af2618216e42,https://purl.org/ircc-framework#MitigationAssertion_dc35c44a_a90c_48a1_8811_af2618216e42
+M0953,Data Backup,T0828,Loss of Productivity and Revenue,relationship--dda89758-9d0b-446d-b594-85acc7f9cb90,https://purl.org/ircc-framework#MitigationAssertion_dda89758_9d0b_446d_b594_85acc7f9cb90
+M0804,Human User Authentication,T0871,Execution through API,relationship--dded2d68-35c7-42c4-af10-efe7731673e3,https://purl.org/ircc-framework#MitigationAssertion_dded2d68_35c7_42c4_af10_efe7731673e3
+M0945,Code Signing,T0843.002,Online Edit,relationship--de370506-01db-412f-a6fb-57c4014de788,https://purl.org/ircc-framework#MitigationAssertion_de370506_01db_412f_a6fb_57c4014de788
+M0801,Access Management,T1693,Modify Firmware,relationship--de6a1c7c-8d90-4f5c-8618-7c7ea9a2da89,https://purl.org/ircc-framework#MitigationAssertion_de6a1c7c_8d90_4f5c_8618_7c7ea9a2da89
+M0814,Static Network Configuration,T0842,Network Sniffing,relationship--df6da4ec-cbe8-4f93-a41f-3726a9491938,https://purl.org/ircc-framework#MitigationAssertion_df6da4ec_cbe8_4f93_a41f_3726a9491938
+M0945,Code Signing,T0863,User Execution,relationship--e09e253c-fd28-49ae-988e-1f80d769e8b8,https://purl.org/ircc-framework#MitigationAssertion_e09e253c_fd28_49ae_988e_1f80d769e8b8
+M0951,Update Software,T0866,Exploitation of Remote Services,relationship--e0d101cc-1284-4e88-82d6-227fe5d19d8a,https://purl.org/ircc-framework#MitigationAssertion_e0d101cc_1284_4e88_82d6_227fe5d19d8a
+M0807,Network Allowlists,T0843.001,Download All,relationship--e1653814-74cd-4885-906f-b3af88452917,https://purl.org/ircc-framework#MitigationAssertion_e1653814_74cd_4885_906f_b3af88452917
+M0950,Exploit Protection,T0817,Drive-by Compromise,relationship--e5afc447-a241-4773-9a8a-3d6fd205d926,https://purl.org/ircc-framework#MitigationAssertion_e5afc447_a241_4773_9a8a_3d6fd205d926
+M0805,Mechanical Protection Layers,T0879,Damage to Property,relationship--e607bb66-e53f-4684-b3f1-36a997e27d01,https://purl.org/ircc-framework#MitigationAssertion_e607bb66_e53f_4684_b3f1_36a997e27d01
+M0930,Network Segmentation,T1692,Unauthorized Message,relationship--e62235fe-0546-4755-ad01-fedce306ef89,https://purl.org/ircc-framework#MitigationAssertion_e62235fe_0546_4755_ad01_fedce306ef89
+M0807,Network Allowlists,T1695,Block Communications,relationship--e627461f-f2cc-427b-8896-72db160bca24,https://purl.org/ircc-framework#MitigationAssertion_e627461f_f2cc_427b_8896_72db160bca24
+M0800,Authorization Enforcement,T0836,Modify Parameter,relationship--e6be2fb4-3815-4e52-8dec-2aed1dc3b7cf,https://purl.org/ircc-framework#MitigationAssertion_e6be2fb4_3815_4e52_8dec_2aed1dc3b7cf
+M0930,Network Segmentation,T0858,Change Operating Mode,relationship--e6e0ef82-2cb6-43fe-8f4a-b9e4d5a57b13,https://purl.org/ircc-framework#MitigationAssertion_e6e0ef82_2cb6_43fe_8f4a_b9e4d5a57b13
+M0941,Encrypt Sensitive Information,T1693.002,Module Firmware,relationship--e70d04d1-51e3-4d43-b3dd-111daeea14f9,https://purl.org/ircc-framework#MitigationAssertion_e70d04d1_51e3_4d43_b3dd_111daeea14f9
+M0951,Update Software,T1693.001,System Firmware,relationship--e7564f70-9f10-4135-9803-842cd3d2a02f,https://purl.org/ircc-framework#MitigationAssertion_e7564f70_9f10_4135_9803_842cd3d2a02f
+M0948,Application Isolation and Sandboxing,T0819,Exploit Public-Facing Application,relationship--e767c178-e4b2-490a-b544-bb1b2d6c7de4,https://purl.org/ircc-framework#MitigationAssertion_e767c178_e4b2_490a_b544_bb1b2d6c7de4
+M0811,Redundancy of Service,T0815,Denial of View,relationship--e852e64c-b5e0-4e7f-a189-bbc7aa7932c7,https://purl.org/ircc-framework#MitigationAssertion_e852e64c_b5e0_4e7f_a189_bbc7aa7932c7
+M0801,Access Management,T0816,Device Restart/Shutdown,relationship--e8af0b34-4a67-4966-a34a-c4d1b346ea15,https://purl.org/ircc-framework#MitigationAssertion_e8af0b34_4a67_4966_a34a_c4d1b346ea15
+M0926,Privileged Account Management,T0809,Data Destruction,relationship--e8eaac2d-a4bf-408f-b24f-14471db7059b,https://purl.org/ircc-framework#MitigationAssertion_e8eaac2d_a4bf_408f_b24f_14471db7059b
+M0802,Communication Authenticity,T1692,Unauthorized Message,relationship--ea1ba63b-d0e1-4d1b-a098-72ce2c44a44a,https://purl.org/ircc-framework#MitigationAssertion_ea1ba63b_d0e1_4d1b_a098_72ce2c44a44a
+M0936,Account Use Policies,T0859,Valid Accounts,relationship--ea817c7a-9424-4204-90a5-6f8fb86037be,https://purl.org/ircc-framework#MitigationAssertion_ea817c7a_9424_4204_90a5_6f8fb86037be
+M0945,Code Signing,T1693.001,System Firmware,relationship--eaa0b30e-1dea-4dad-9a1e-33da933a8158,https://purl.org/ircc-framework#MitigationAssertion_eaa0b30e_1dea_4dad_9a1e_33da933a8158
+M0930,Network Segmentation,T0868,Detect Operating Mode,relationship--eac550b4-3bd2-4309-8b37-b797dd0bd8a7,https://purl.org/ircc-framework#MitigationAssertion_eac550b4_3bd2_4309_8b37_b797dd0bd8a7
+M0814,Static Network Configuration,T1691.001,Command Message,relationship--eba478bb-7b76-4889-b82c-eda10826ffcb,https://purl.org/ircc-framework#MitigationAssertion_eba478bb_7b76_4889_b82c_eda10826ffcb
+M0802,Communication Authenticity,T0843,Program Download,relationship--ebc34374-2dee-4dc1-b0b7-f31ae94dab11,https://purl.org/ircc-framework#MitigationAssertion_ebc34374_2dee_4dc1_b0b7_f31ae94dab11
+M0801,Access Management,T0843,Program Download,relationship--ec105f62-2552-41fa-8b07-619dc1bf9b19,https://purl.org/ircc-framework#MitigationAssertion_ec105f62_2552_41fa_8b07_619dc1bf9b19
+M0937,Filter Network Traffic,T1692,Unauthorized Message,relationship--eccbcd3d-ea6e-4e9d-aa15-7b6e0909b6e0,https://purl.org/ircc-framework#MitigationAssertion_eccbcd3d_ea6e_4e9d_aa15_7b6e0909b6e0
+M0810,Out-of-Band Communications Channel,T0829,Loss of View,relationship--ecf39e19-439f-4e9a-97c2-673ce4eb0a1a,https://purl.org/ircc-framework#MitigationAssertion_ecf39e19_439f_4e9a_97c2_673ce4eb0a1a
+M0937,Filter Network Traffic,T0800,Activate Firmware Update Mode,relationship--ee89466e-0655-4217-844d-fb8ea4f76247,https://purl.org/ircc-framework#MitigationAssertion_ee89466e_0655_4217_844d_fb8ea4f76247
+M0953,Data Backup,T0829,Loss of View,relationship--eecca3e7-4db5-40d4-b04c-13f84701acb3,https://purl.org/ircc-framework#MitigationAssertion_eecca3e7_4db5_40d4_b04c_13f84701acb3
+M0804,Human User Authentication,T1693.002,Module Firmware,relationship--eed98f8e-3eb9-4238-9acf-c2a0be136e87,https://purl.org/ircc-framework#MitigationAssertion_eed98f8e_3eb9_4238_9acf_c2a0be136e87
+M0915,Active Directory Configuration,T0859,Valid Accounts,relationship--eeeaa0d4-0ca0-468e-ae13-43ab7aba61b4,https://purl.org/ircc-framework#MitigationAssertion_eeeaa0d4_0ca0_468e_ae13_43ab7aba61b4
+M0800,Authorization Enforcement,T0858,Change Operating Mode,relationship--eeeff03f-7436-4f76-8591-42075e6647d4,https://purl.org/ircc-framework#MitigationAssertion_eeeff03f_7436_4f76_8591_42075e6647d4
+M0801,Access Management,T0871,Execution through API,relationship--efb80069-e4be-4055-bd34-06d1376b4601,https://purl.org/ircc-framework#MitigationAssertion_efb80069_e4be_4055_bd34_06d1376b4601
+M0937,Filter Network Traffic,T0886,Remote Services,relationship--f0c8a954-c1a0-453a-9c1d-484305abdab2,https://purl.org/ircc-framework#MitigationAssertion_f0c8a954_c1a0_453a_9c1d_484305abdab2
+M0930,Network Segmentation,T0800,Activate Firmware Update Mode,relationship--f15f24d2-e581-46ce-83e4-a924f572aae6,https://purl.org/ircc-framework#MitigationAssertion_f15f24d2_e581_46ce_83e4_a924f572aae6
+M0801,Access Management,T0838,Modify Alarm Settings,relationship--f20d8eed-b517-4297-b32a-9a5e0845de9f,https://purl.org/ircc-framework#MitigationAssertion_f20d8eed_b517_4297_b32a_9a5e0845de9f
+M0919,Threat Intelligence Program,T0890,Exploitation for Privilege Escalation,relationship--f40cc6f5-111c-418f-aa84-50d920fa6c48,https://purl.org/ircc-framework#MitigationAssertion_f40cc6f5_111c_418f_aa84_50d920fa6c48
+M0804,Human User Authentication,T0845,Program Upload,relationship--f45c2df8-30e7-45d0-8067-7b2870767574,https://purl.org/ircc-framework#MitigationAssertion_f45c2df8_30e7_45d0_8067_7b2870767574
+M0917,User Training,T0811,Data from Information Repositories,relationship--f497fd3e-8f05-4db2-97cc-48a8d35a8827,https://purl.org/ircc-framework#MitigationAssertion_f497fd3e_8f05_4db2_97cc_48a8d35a8827
+M0802,Communication Authenticity,T0830,Adversary-in-the-Middle,relationship--f6ff74c2-d088-4252-a8e0-189574863765,https://purl.org/ircc-framework#MitigationAssertion_f6ff74c2_d088_4252_a8e0_189574863765
+M0922,Restrict File and Directory Permissions,T0849,Masquerading,relationship--f703f8b2-b6b9-41f3-a551-6bb3647c45cc,https://purl.org/ircc-framework#MitigationAssertion_f703f8b2_b6b9_41f3_a551_6bb3647c45cc
+M0947,Audit,T0873.001,Siemens Project File Format,relationship--f710e99a-dfe9-4b2b-8b1b-97ab1c9d65f3,https://purl.org/ircc-framework#MitigationAssertion_f710e99a_dfe9_4b2b_8b1b_97ab1c9d65f3
+M0807,Network Allowlists,T1691,Block Operational Technology Message,relationship--f76dd26b-2aa3-4fc3-bdef-ddd0632d851b,https://purl.org/ircc-framework#MitigationAssertion_f76dd26b_2aa3_4fc3_bdef_ddd0632d851b
+M0813,Software Process and Device Authentication,T1692.002,Reporting Message,relationship--f7a466c2-acdf-49b1-9906-41388f7a5238,https://purl.org/ircc-framework#MitigationAssertion_f7a466c2_acdf_49b1_9906_41388f7a5238
+M0813,Software Process and Device Authentication,T0816,Device Restart/Shutdown,relationship--f862418a-e7b4-4783-8949-7145f3dee665,https://purl.org/ircc-framework#MitigationAssertion_f862418a_e7b4_4783_8949_7145f3dee665
+M0802,Communication Authenticity,T1692.002,Reporting Message,relationship--f86bc28e-6293-411e-8bbe-2e2717286529,https://purl.org/ircc-framework#MitigationAssertion_f86bc28e_6293_411e_8bbe_2e2717286529
+M0818,Validate Program Inputs,T0836,Modify Parameter,relationship--f86bde61-c4ec-4d40-9768-32e9b52c1702,https://purl.org/ircc-framework#MitigationAssertion_f86bde61_c4ec_4d40_9768_32e9b52c1702
+M0947,Audit,T0873,Project File Infection,relationship--f9aa3364-a1eb-4776-ae03-c39b250545a0,https://purl.org/ircc-framework#MitigationAssertion_f9aa3364_a1eb_4776_ae03_c39b250545a0
+M0945,Code Signing,T0873,Project File Infection,relationship--f9c29dd4-1c5e-4f7e-b60a-862319a6d0a0,https://purl.org/ircc-framework#MitigationAssertion_f9c29dd4_1c5e_4f7e_b60a_862319a6d0a0
+M0804,Human User Authentication,T0843,Program Download,relationship--fa1bde35-63d9-4c5c-969b-2c17c29089fa,https://purl.org/ircc-framework#MitigationAssertion_fa1bde35_63d9_4c5c_969b_2c17c29089fa
+M0804,Human User Authentication,T0889,Modify Program,relationship--fad25140-73de-40d5-a010-3464188db973,https://purl.org/ircc-framework#MitigationAssertion_fad25140_73de_40d5_a010_3464188db973
+M0922,Restrict File and Directory Permissions,T0873.001,Siemens Project File Format,relationship--fc02e858-0e4d-462c-8f66-f7289677c559,https://purl.org/ircc-framework#MitigationAssertion_fc02e858_0e4d_462c_8f66_f7289677c559
+M0937,Filter Network Traffic,T1693,Modify Firmware,relationship--fc77a4bc-1383-492a-a04b-9062345ced53,https://purl.org/ircc-framework#MitigationAssertion_fc77a4bc_1383_492a_a04b_9062345ced53
+M0930,Network Segmentation,T0819,Exploit Public-Facing Application,relationship--fcb7733f-553d-43de-a8c6-c85a5cd65041,https://purl.org/ircc-framework#MitigationAssertion_fcb7733f_553d_43de_a8c6_c85a5cd65041
+M0921,Restrict Web-Based Content,T0817,Drive-by Compromise,relationship--fcd3fdbf-4909-48ab-85c4-ce4b34172eb0,https://purl.org/ircc-framework#MitigationAssertion_fcd3fdbf_4909_48ab_85c4_ce4b34172eb0
+M0930,Network Segmentation,T1692.001,Command Message,relationship--fd52f382-115f-483a-82c1-bb31fe5d5eb6,https://purl.org/ircc-framework#MitigationAssertion_fd52f382_115f_483a_82c1_bb31fe5d5eb6
+M0813,Software Process and Device Authentication,T1693.002,Module Firmware,relationship--fd8cd074-9e66-45f3-b41f-71f7aaf00ee6,https://purl.org/ircc-framework#MitigationAssertion_fd8cd074_9e66_45f3_b41f_71f7aaf00ee6
+M0800,Authorization Enforcement,T0800,Activate Firmware Update Mode,relationship--ff3f0668-98df-44c1-88c2-711f05720eb8,https://purl.org/ircc-framework#MitigationAssertion_ff3f0668_98df_44c1_88c2_711f05720eb8

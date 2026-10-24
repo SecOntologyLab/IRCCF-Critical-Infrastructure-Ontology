@@ -1,0 +1,73 @@
+﻿Tactic ID,Tactic,Function,Total techniques in tactic,Distinct mapped techniques,Not linked to this Function,Percent coverage,Evidence path count,Distinct mapped techniques any Function
+TA0108,Initial Access,GV,12,3,9,25.0,8,12
+TA0108,Initial Access,ID,12,6,6,50.0,40,12
+TA0108,Initial Access,PR,12,12,0,100.0,131,12
+TA0108,Initial Access,DE,12,8,4,66.6667,19,12
+TA0108,Initial Access,RS,12,0,12,0.0,0,12
+TA0108,Initial Access,RC,12,0,12,0.0,0,12
+TA0104,Execution,GV,10,0,10,0.0,0,9
+TA0104,Execution,ID,10,3,7,30.0,8,9
+TA0104,Execution,PR,10,9,1,90.0,75,9
+TA0104,Execution,DE,10,3,7,30.0,9,9
+TA0104,Execution,RS,10,0,10,0.0,0,9
+TA0104,Execution,RC,10,0,10,0.0,0,9
+TA0110,Persistence,GV,10,0,10,0.0,0,10
+TA0110,Persistence,ID,10,7,3,70.0,19,10
+TA0110,Persistence,PR,10,10,0,100.0,176,10
+TA0110,Persistence,DE,10,7,3,70.0,24,10
+TA0110,Persistence,RS,10,0,10,0.0,0,10
+TA0110,Persistence,RC,10,0,10,0.0,0,10
+TA0111,Privilege Escalation,GV,2,0,2,0.0,0,2
+TA0111,Privilege Escalation,ID,2,2,0,100.0,4,2
+TA0111,Privilege Escalation,PR,2,2,0,100.0,10,2
+TA0111,Privilege Escalation,DE,2,1,1,50.0,1,2
+TA0111,Privilege Escalation,RS,2,0,2,0.0,0,2
+TA0111,Privilege Escalation,RC,2,0,2,0.0,0,2
+TA0103,Evasion,GV,9,0,9,0.0,0,9
+TA0103,Evasion,ID,9,3,6,33.3333,6,9
+TA0103,Evasion,PR,9,9,0,100.0,91,9
+TA0103,Evasion,DE,9,5,4,55.5556,6,9
+TA0103,Evasion,RS,9,0,9,0.0,0,9
+TA0103,Evasion,RC,9,0,9,0.0,0,9
+TA0102,Discovery,GV,8,0,8,0.0,0,7
+TA0102,Discovery,ID,8,1,7,12.5,4,7
+TA0102,Discovery,PR,8,7,1,87.5,30,7
+TA0102,Discovery,DE,8,2,6,25.0,7,7
+TA0102,Discovery,RS,8,0,8,0.0,0,7
+TA0102,Discovery,RC,8,0,8,0.0,0,7
+TA0109,Lateral Movement,GV,11,1,10,9.0909,1,11
+TA0109,Lateral Movement,ID,11,7,4,63.6364,21,11
+TA0109,Lateral Movement,PR,11,11,0,100.0,208,11
+TA0109,Lateral Movement,DE,11,8,3,72.7273,28,11
+TA0109,Lateral Movement,RS,11,0,11,0.0,0,11
+TA0109,Lateral Movement,RC,11,0,11,0.0,0,11
+TA0100,Collection,GV,11,0,11,0.0,0,8
+TA0100,Collection,ID,11,2,9,18.1818,6,8
+TA0100,Collection,PR,11,8,3,72.7273,112,8
+TA0100,Collection,DE,11,5,6,45.4545,14,8
+TA0100,Collection,RS,11,0,11,0.0,0,8
+TA0100,Collection,RC,11,0,11,0.0,0,8
+TA0101,Command and Control,GV,3,0,3,0.0,0,3
+TA0101,Command and Control,ID,3,3,0,100.0,12,3
+TA0101,Command and Control,PR,3,3,0,100.0,31,3
+TA0101,Command and Control,DE,3,3,0,100.0,16,3
+TA0101,Command and Control,RS,3,0,3,0.0,0,3
+TA0101,Command and Control,RC,3,0,3,0.0,0,3
+TA0107,Inhibit Response Function,GV,20,0,20,0.0,0,18
+TA0107,Inhibit Response Function,ID,20,4,16,20.0,14,18
+TA0107,Inhibit Response Function,PR,20,18,2,90.0,248,18
+TA0107,Inhibit Response Function,DE,20,9,11,45.0,22,18
+TA0107,Inhibit Response Function,RS,20,0,20,0.0,0,18
+TA0107,Inhibit Response Function,RC,20,2,18,10.0,3,18
+TA0106,Impair Process Control,GV,8,0,8,0.0,0,8
+TA0106,Impair Process Control,ID,8,4,4,50.0,13,8
+TA0106,Impair Process Control,PR,8,8,0,100.0,180,8
+TA0106,Impair Process Control,DE,8,8,0,100.0,17,8
+TA0106,Impair Process Control,RS,8,0,8,0.0,0,8
+TA0106,Impair Process Control,RC,8,0,8,0.0,0,8
+TA0105,Impact,GV,12,0,12,0.0,0,10
+TA0105,Impact,ID,12,0,12,0.0,0,10
+TA0105,Impact,PR,12,10,2,83.3333,46,10
+TA0105,Impact,DE,12,0,12,0.0,0,10
+TA0105,Impact,RS,12,0,12,0.0,0,10
+TA0105,Impact,RC,12,8,4,66.6667,13,10

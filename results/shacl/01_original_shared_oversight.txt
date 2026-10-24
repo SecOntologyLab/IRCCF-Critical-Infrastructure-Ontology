@@ -1,0 +1,16 @@
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: irccf:SharedHumanOversightShape
+	Focus Node: irccf:HumanOversight
+	Value Node: irccf:HumanOversight
+	Source Constraint: [ rdf:type sh:SPARQLConstraint ; sh:message Literal("The same generic HumanOversight requirement is imposed by GDPR and AIAct; the two legal provisions must be modelled separately.") ; sh:select Literal("
+      PREFIX irccf: <https://purl.org/ircc-framework#>
+      SELECT $this WHERE {
+        irccf:GDPR irccf:imposesRequirement $this .
+        irccf:AIAct irccf:imposesRequirement $this .
+      }
+    ") ]
+	Message: The same generic HumanOversight requirement is imposed by GDPR and AIAct; the two legal provisions must be modelled separately.

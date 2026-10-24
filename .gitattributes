@@ -1,0 +1,12 @@
+﻿# Consistent text-file line endings
+*.py   text eol=lf
+*.ttl  text eol=lf
+*.rq   text eol=lf
+*.md   text eol=lf
+*.csv  text eol=lf
+*.json text eol=lf
+*.txt  text eol=lf
+
+# Preserve binary files
+*.xlsx binary
+*.pdf  binary

@@ -1,0 +1,21 @@
+{
+  "requested_multiplier": 5,
+  "original_triples": 9420,
+  "instance_triples_per_replica": 9291,
+  "replica_count": 4,
+  "asserted_triples": 46584,
+  "actual_multiplier": 4.945,
+  "synthetic_added_triples": 37164,
+  "profile": "RDFS",
+  "status": "ok",
+  "construction_seconds": 0.65995,
+  "reasoning_seconds": 4.72042,
+  "new_triples": 8621,
+  "closure_triples": 55205,
+  "inferred_types": 7827,
+  "inferred_subclasses": 0,
+  "inferred_sameas": 0,
+  "final_rss_mb": 98.68,
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0"
+}

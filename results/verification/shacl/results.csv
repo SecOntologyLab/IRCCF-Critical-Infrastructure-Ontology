@@ -1,0 +1,5 @@
+scenario,conforms,triple_count
+01_original_shared_oversight,False,689
+02_revised_separate_articles,True,9420
+03_erroneous_sameAs_forward,False,9421
+04_erroneous_sameAs_reverse,False,9421

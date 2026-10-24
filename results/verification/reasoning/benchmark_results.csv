@@ -1,0 +1,7 @@
+rdf_triples_before,explicit_subclass_axioms,explicit_equivalentclass_axioms,load_seconds,profile,rdflib_version,owlrl_version,python_version,platform,status,inference_seconds,rdf_triples_after,newly_entailed_triples,inferred_type_triples,inferred_subclass_triples,inferred_subproperty_triples,inferred_sameas_triples,named_to_named_inferences,peak_memory_mb_at_end,run,wall_seconds,observed_peak_rss_mb
+9420,2,0,0.24251,RDFS,7.1.1,7.1.2,3.12.10,Windows-11-10.0.26300-SP0,ok,1.49258,13021,3601,3379,0,79,0,96,54.36,1,2.482,53.44
+9420,2,0,0.24382,RDFS,7.1.1,7.1.2,3.12.10,Windows-11-10.0.26300-SP0,ok,1.48567,13021,3601,3379,0,79,0,96,54.75,2,2.18,53.59
+9420,2,0,0.25926,RDFS,7.1.1,7.1.2,3.12.10,Windows-11-10.0.26300-SP0,ok,1.45378,13021,3601,3379,0,79,0,96,54.78,3,2.212,53.62
+9420,2,0,0.22291,OWL_RL,7.1.1,7.1.2,3.12.10,Windows-11-10.0.26300-SP0,ok,2.03346,14329,4909,1324,87,61,3330,1393,56.36,1,2.781,55.66
+9420,2,0,0.25165,OWL_RL,7.1.1,7.1.2,3.12.10,Windows-11-10.0.26300-SP0,ok,2.19679,14329,4909,1324,87,61,3330,1393,56.33,2,2.938,54.62
+9420,2,0,0.2545,OWL_RL,7.1.1,7.1.2,3.12.10,Windows-11-10.0.26300-SP0,ok,2.17547,14329,4909,1324,87,61,3330,1393,56.49,3,2.943,54.64

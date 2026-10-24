@@ -1,0 +1,13 @@
+﻿Tactic ID,Tactic,Total technique memberships,Mapped technique memberships,Unmapped technique memberships,GV,ID,PR,DE,RS,RC
+TA0108,Initial Access,12,12,0,25.0,50.0,100.0,66.67,0.0,0.0
+TA0104,Execution,10,9,1,0.0,30.0,90.0,30.0,0.0,0.0
+TA0110,Persistence,10,10,0,0.0,70.0,100.0,70.0,0.0,0.0
+TA0111,Privilege Escalation,2,2,0,0.0,100.0,100.0,50.0,0.0,0.0
+TA0103,Evasion,9,9,0,0.0,33.33,100.0,55.56,0.0,0.0
+TA0102,Discovery,8,7,1,0.0,12.5,87.5,25.0,0.0,0.0
+TA0109,Lateral Movement,11,11,0,9.09,63.64,100.0,72.73,0.0,0.0
+TA0100,Collection,11,8,3,0.0,18.18,72.73,45.45,0.0,0.0
+TA0101,Command and Control,3,3,0,0.0,100.0,100.0,100.0,0.0,0.0
+TA0107,Inhibit Response Function,20,18,2,0.0,20.0,90.0,45.0,0.0,10.0
+TA0106,Impair Process Control,8,8,0,0.0,50.0,100.0,100.0,0.0,0.0
+TA0105,Impact,12,10,2,0.0,0.0,83.33,0.0,0.0,66.67

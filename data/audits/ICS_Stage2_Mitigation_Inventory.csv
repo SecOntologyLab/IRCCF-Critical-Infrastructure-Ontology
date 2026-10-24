@@ -1,0 +1,53 @@
+mitigation_id,name,technique_relationship_count,mitre_stix_id
+M0800,Authorization Enforcement,16,course-of-action--e0d38502-decb-481d-ad8b-b8f0a0c330bd
+M0801,Access Management,20,course-of-action--3992ce42-43e9-4bea-b8db-a102ec3ec1e3
+M0802,Communication Authenticity,21,course-of-action--c7257b6e-4159-4771-b1f3-2bb93adaecac
+M0803,Data Loss Prevention,2,course-of-action--337c4e2a-21a7-4d9a-bfee-9efd6cebf0e5
+M0804,Human User Authentication,20,course-of-action--66cfe23e-34b6-4583-b178-ed6a412db2b0
+M0805,Mechanical Protection Layers,2,course-of-action--8bc4a54e-810c-4600-8b6c-08fa8413a401
+M0806,Minimize Wireless Signal Propagation,2,course-of-action--fce6866f-9a87-4d3e-a73c-f02d8937fe0e
+M0807,Network Allowlists,32,course-of-action--aadac250-bcdc-44e3-a4ae-f52bd0a7a16a
+M0808,Encrypt Network Traffic,6,course-of-action--7f153c28-e5f1-4764-88fb-eea1d9b0ad4a
+M0809,Operational Information Confidentiality,1,course-of-action--99c746d7-a08a-4169-94f9-b8c0dad716fa
+M0810,Out-of-Band Communications Channel,16,course-of-action--b11cad63-ef30-4eb8-af0d-6cc46eef3f3e
+M0811,Redundancy of Service,6,course-of-action--f0f5c87a-a58d-440a-b3b5-ca679d98c6dd
+M0812,Safety Instrumented Systems,2,course-of-action--da44255d-85c5-492c-baf3-ee823d44f848
+M0813,Software Process and Device Authentication,22,course-of-action--72e46e53-e12d-4106-9c70-33241b6ed549
+M0814,Static Network Configuration,11,course-of-action--52c7a1a9-3a78-4528-a44f-cd7b0fa3541a
+M0815,Watchdog Timers,1,course-of-action--98aa0d61-fc9d-4b2d-8f18-b25d03549f53
+M0816,Mitigation Limited or Not Effective,6,course-of-action--469b78dd-a54d-4f7c-8c3b-4a1dd916b433
+M0817,Supply Chain Management,1,course-of-action--ac8f3492-7fbb-4a0a-b0b4-b75ec676136c
+M0818,Validate Program Inputs,2,course-of-action--1cbcceef-3233-4062-aa86-ec91afe39517
+M0913,Application Developer Guidance,1,course-of-action--8a3aadd0-b5f4-433a-800e-4893e4196bb7
+M0915,Active Directory Configuration,1,course-of-action--2f0160b7-e982-49d7-9612-f19b810f1722
+M0916,Vulnerability Scanning,3,course-of-action--de0bc375-50e1-4e26-a342-a8ff8c9d3037
+M0917,User Training,4,course-of-action--dc61c280-c29d-44e5-a960-c0dd1623d2ba
+M0918,User Account Management,6,course-of-action--e57ebc6d-785f-40c8-adb1-b5b5e09b3b48
+M0919,Threat Intelligence Program,3,course-of-action--d48b79b2-076d-483e-949c-0d38aa347499
+M0920,SSL/TLS Inspection,1,course-of-action--6a02e38a-9629-40c0-8c7d-e98e3470315c
+M0921,Restrict Web-Based Content,3,course-of-action--143b4398-3222-480a-b6a4-e131bc2d3144
+M0922,Restrict File and Directory Permissions,9,course-of-action--f9fcb3ec-6de0-4559-8cd9-ef1c0c7d1971
+M0924,Restrict Registry Permissions,1,course-of-action--3222a807-521b-4a1a-aa13-f1cda45734b3
+M0926,Privileged Account Management,6,course-of-action--622fe4d4-0e8e-4d17-9c25-6c9cef1f15d5
+M0927,Password Policies,5,course-of-action--5d97c693-e054-48ba-a3a3-eaf6942dfb65
+M0928,Operating System Configuration,2,course-of-action--9a945a29-5233-4422-a9e3-3e957b0e8bce
+M0930,Network Segmentation,39,course-of-action--1e7ccfc0-94c8-496e-8d27-032120892291
+M0931,Network Intrusion Prevention,8,course-of-action--3172222b-4983-43f7-8983-753ded4f13bc
+M0932,Multi-factor Authentication,3,course-of-action--ddf3e568-f065-49e2-9106-42029a28ddbd
+M0934,Limit Hardware Installation,1,course-of-action--9e3adcad-0b8f-4ecc-a2f3-06f607f53bf0
+M0935,Limit Access to Resource Over Network,1,course-of-action--49b306c1-a046-42c5-a4d2-30f264ada110
+M0936,Account Use Policies,2,course-of-action--86b455f2-fb63-4043-93a8-32a3a7703a02
+M0937,Filter Network Traffic,20,course-of-action--11f242bc-3121-438c-84b2-5cbd46a4bb17
+M0938,Execution Prevention,7,course-of-action--4fa717d9-cabe-47c8-8cdd-86e9e2e37f30
+M0941,Encrypt Sensitive Information,9,course-of-action--9f99fcfd-772e-4e63-9d39-e45612e546dc
+M0942,Disable or Remove Feature or Program,8,course-of-action--d0909119-2f71-4923-87db-b649881672d7
+M0944,Restrict Library Loading,1,course-of-action--2ab9fc6d-3cf6-4d7b-85f1-3ad6949233b3
+M0945,Code Signing,15,course-of-action--71eb7dad-07eb-4bbc-9df0-ac57bf2fba4a
+M0946,Boot Integrity,3,course-of-action--8ac1d6e1-b07f-476a-9732-84984ebc2405
+M0947,Audit,19,course-of-action--bcf91ebc-f316-4e19-b2f6-444e9940c697
+M0948,Application Isolation and Sandboxing,6,course-of-action--059ba11e-e3dc-49aa-84ca-88197f40d4ea
+M0949,Antivirus/Antimalware,3,course-of-action--faf2b40e-5981-433f-aa46-17458e0026f7
+M0950,Exploit Protection,5,course-of-action--49363b74-d506-4342-bd63-320586ebadb9
+M0951,Update Software,8,course-of-action--97f33c84-8508-45b9-8a1d-cac921828c9e
+M0953,Data Backup,10,course-of-action--ad12819e-3211-4291-b360-069f280cff0a
+M0954,Software Configuration,0,course-of-action--facb8840-ebe7-49f1-b464-8ef6c8131e21

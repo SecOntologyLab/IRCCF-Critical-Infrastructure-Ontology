@@ -1,0 +1,217 @@
+﻿Tactic ID,Tactic,Function,Threshold %,Baseline coverage %,Expanded coverage %,Baseline assigned,Expanded assigned,Assignment changed
+TA0108,Initial Access,GV,25,25.0,25.0,YES,YES,unchanged
+TA0108,Initial Access,GV,50,25.0,25.0,NO,NO,unchanged
+TA0108,Initial Access,GV,75,25.0,25.0,NO,NO,unchanged
+TA0108,Initial Access,ID,25,50.0,50.0,YES,YES,unchanged
+TA0108,Initial Access,ID,50,50.0,50.0,YES,YES,unchanged
+TA0108,Initial Access,ID,75,50.0,50.0,NO,NO,unchanged
+TA0108,Initial Access,PR,25,100.0,100.0,YES,YES,unchanged
+TA0108,Initial Access,PR,50,100.0,100.0,YES,YES,unchanged
+TA0108,Initial Access,PR,75,100.0,100.0,YES,YES,unchanged
+TA0108,Initial Access,DE,25,66.6667,66.6667,YES,YES,unchanged
+TA0108,Initial Access,DE,50,66.6667,66.6667,YES,YES,unchanged
+TA0108,Initial Access,DE,75,66.6667,66.6667,NO,NO,unchanged
+TA0108,Initial Access,RS,25,0.0,0.0,NO,NO,unchanged
+TA0108,Initial Access,RS,50,0.0,0.0,NO,NO,unchanged
+TA0108,Initial Access,RS,75,0.0,0.0,NO,NO,unchanged
+TA0108,Initial Access,RC,25,0.0,0.0,NO,NO,unchanged
+TA0108,Initial Access,RC,50,0.0,0.0,NO,NO,unchanged
+TA0108,Initial Access,RC,75,0.0,0.0,NO,NO,unchanged
+TA0104,Execution,GV,25,0.0,0.0,NO,NO,unchanged
+TA0104,Execution,GV,50,0.0,0.0,NO,NO,unchanged
+TA0104,Execution,GV,75,0.0,0.0,NO,NO,unchanged
+TA0104,Execution,ID,25,30.0,30.0,YES,YES,unchanged
+TA0104,Execution,ID,50,30.0,30.0,NO,NO,unchanged
+TA0104,Execution,ID,75,30.0,30.0,NO,NO,unchanged
+TA0104,Execution,PR,25,90.0,90.0,YES,YES,unchanged
+TA0104,Execution,PR,50,90.0,90.0,YES,YES,unchanged
+TA0104,Execution,PR,75,90.0,90.0,YES,YES,unchanged
+TA0104,Execution,DE,25,30.0,30.0,YES,YES,unchanged
+TA0104,Execution,DE,50,30.0,30.0,NO,NO,unchanged
+TA0104,Execution,DE,75,30.0,30.0,NO,NO,unchanged
+TA0104,Execution,RS,25,0.0,0.0,NO,NO,unchanged
+TA0104,Execution,RS,50,0.0,0.0,NO,NO,unchanged
+TA0104,Execution,RS,75,0.0,0.0,NO,NO,unchanged
+TA0104,Execution,RC,25,0.0,0.0,NO,NO,unchanged
+TA0104,Execution,RC,50,0.0,0.0,NO,NO,unchanged
+TA0104,Execution,RC,75,0.0,0.0,NO,NO,unchanged
+TA0110,Persistence,GV,25,0.0,0.0,NO,NO,unchanged
+TA0110,Persistence,GV,50,0.0,0.0,NO,NO,unchanged
+TA0110,Persistence,GV,75,0.0,0.0,NO,NO,unchanged
+TA0110,Persistence,ID,25,80.0,80.0,YES,YES,unchanged
+TA0110,Persistence,ID,50,80.0,80.0,YES,YES,unchanged
+TA0110,Persistence,ID,75,80.0,80.0,YES,YES,unchanged
+TA0110,Persistence,PR,25,100.0,100.0,YES,YES,unchanged
+TA0110,Persistence,PR,50,100.0,100.0,YES,YES,unchanged
+TA0110,Persistence,PR,75,100.0,100.0,YES,YES,unchanged
+TA0110,Persistence,DE,25,80.0,80.0,YES,YES,unchanged
+TA0110,Persistence,DE,50,80.0,80.0,YES,YES,unchanged
+TA0110,Persistence,DE,75,80.0,80.0,YES,YES,unchanged
+TA0110,Persistence,RS,25,0.0,0.0,NO,NO,unchanged
+TA0110,Persistence,RS,50,0.0,0.0,NO,NO,unchanged
+TA0110,Persistence,RS,75,0.0,0.0,NO,NO,unchanged
+TA0110,Persistence,RC,25,0.0,0.0,NO,NO,unchanged
+TA0110,Persistence,RC,50,0.0,0.0,NO,NO,unchanged
+TA0110,Persistence,RC,75,0.0,0.0,NO,NO,unchanged
+TA0111,Privilege Escalation,GV,25,0.0,0.0,NO,NO,unchanged
+TA0111,Privilege Escalation,GV,50,0.0,0.0,NO,NO,unchanged
+TA0111,Privilege Escalation,GV,75,0.0,0.0,NO,NO,unchanged
+TA0111,Privilege Escalation,ID,25,100.0,100.0,YES,YES,unchanged
+TA0111,Privilege Escalation,ID,50,100.0,100.0,YES,YES,unchanged
+TA0111,Privilege Escalation,ID,75,100.0,100.0,YES,YES,unchanged
+TA0111,Privilege Escalation,PR,25,100.0,100.0,YES,YES,unchanged
+TA0111,Privilege Escalation,PR,50,100.0,100.0,YES,YES,unchanged
+TA0111,Privilege Escalation,PR,75,100.0,100.0,YES,YES,unchanged
+TA0111,Privilege Escalation,DE,25,50.0,100.0,YES,YES,unchanged
+TA0111,Privilege Escalation,DE,50,50.0,100.0,YES,YES,unchanged
+TA0111,Privilege Escalation,DE,75,50.0,100.0,NO,YES,CHANGED
+TA0111,Privilege Escalation,RS,25,0.0,0.0,NO,NO,unchanged
+TA0111,Privilege Escalation,RS,50,0.0,0.0,NO,NO,unchanged
+TA0111,Privilege Escalation,RS,75,0.0,0.0,NO,NO,unchanged
+TA0111,Privilege Escalation,RC,25,0.0,0.0,NO,NO,unchanged
+TA0111,Privilege Escalation,RC,50,0.0,0.0,NO,NO,unchanged
+TA0111,Privilege Escalation,RC,75,0.0,0.0,NO,NO,unchanged
+TA0103,Evasion,GV,25,0.0,0.0,NO,NO,unchanged
+TA0103,Evasion,GV,50,0.0,0.0,NO,NO,unchanged
+TA0103,Evasion,GV,75,0.0,0.0,NO,NO,unchanged
+TA0103,Evasion,ID,25,42.8571,42.8571,YES,YES,unchanged
+TA0103,Evasion,ID,50,42.8571,42.8571,NO,NO,unchanged
+TA0103,Evasion,ID,75,42.8571,42.8571,NO,NO,unchanged
+TA0103,Evasion,PR,25,100.0,100.0,YES,YES,unchanged
+TA0103,Evasion,PR,50,100.0,100.0,YES,YES,unchanged
+TA0103,Evasion,PR,75,100.0,100.0,YES,YES,unchanged
+TA0103,Evasion,DE,25,42.8571,57.1429,YES,YES,unchanged
+TA0103,Evasion,DE,50,42.8571,57.1429,NO,YES,CHANGED
+TA0103,Evasion,DE,75,42.8571,57.1429,NO,NO,unchanged
+TA0103,Evasion,RS,25,0.0,0.0,NO,NO,unchanged
+TA0103,Evasion,RS,50,0.0,0.0,NO,NO,unchanged
+TA0103,Evasion,RS,75,0.0,0.0,NO,NO,unchanged
+TA0103,Evasion,RC,25,0.0,0.0,NO,NO,unchanged
+TA0103,Evasion,RC,50,0.0,0.0,NO,NO,unchanged
+TA0103,Evasion,RC,75,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,GV,25,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,GV,50,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,GV,75,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,ID,25,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,ID,50,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,ID,75,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,PR,25,80.0,80.0,YES,YES,unchanged
+TA0102,Discovery,PR,50,80.0,80.0,YES,YES,unchanged
+TA0102,Discovery,PR,75,80.0,80.0,YES,YES,unchanged
+TA0102,Discovery,DE,25,20.0,20.0,NO,NO,unchanged
+TA0102,Discovery,DE,50,20.0,20.0,NO,NO,unchanged
+TA0102,Discovery,DE,75,20.0,20.0,NO,NO,unchanged
+TA0102,Discovery,RS,25,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,RS,50,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,RS,75,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,RC,25,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,RC,50,0.0,0.0,NO,NO,unchanged
+TA0102,Discovery,RC,75,0.0,0.0,NO,NO,unchanged
+TA0109,Lateral Movement,GV,25,16.6667,16.6667,NO,NO,unchanged
+TA0109,Lateral Movement,GV,50,16.6667,16.6667,NO,NO,unchanged
+TA0109,Lateral Movement,GV,75,16.6667,16.6667,NO,NO,unchanged
+TA0109,Lateral Movement,ID,25,66.6667,66.6667,YES,YES,unchanged
+TA0109,Lateral Movement,ID,50,66.6667,66.6667,YES,YES,unchanged
+TA0109,Lateral Movement,ID,75,66.6667,66.6667,NO,NO,unchanged
+TA0109,Lateral Movement,PR,25,100.0,100.0,YES,YES,unchanged
+TA0109,Lateral Movement,PR,50,100.0,100.0,YES,YES,unchanged
+TA0109,Lateral Movement,PR,75,100.0,100.0,YES,YES,unchanged
+TA0109,Lateral Movement,DE,25,83.3333,83.3333,YES,YES,unchanged
+TA0109,Lateral Movement,DE,50,83.3333,83.3333,YES,YES,unchanged
+TA0109,Lateral Movement,DE,75,83.3333,83.3333,YES,YES,unchanged
+TA0109,Lateral Movement,RS,25,0.0,0.0,NO,NO,unchanged
+TA0109,Lateral Movement,RS,50,0.0,0.0,NO,NO,unchanged
+TA0109,Lateral Movement,RS,75,0.0,0.0,NO,NO,unchanged
+TA0109,Lateral Movement,RC,25,0.0,0.0,NO,NO,unchanged
+TA0109,Lateral Movement,RC,50,0.0,0.0,NO,NO,unchanged
+TA0109,Lateral Movement,RC,75,0.0,0.0,NO,NO,unchanged
+TA0100,Collection,GV,25,0.0,0.0,NO,NO,unchanged
+TA0100,Collection,GV,50,0.0,0.0,NO,NO,unchanged
+TA0100,Collection,GV,75,0.0,0.0,NO,NO,unchanged
+TA0100,Collection,ID,25,18.1818,18.1818,NO,NO,unchanged
+TA0100,Collection,ID,50,18.1818,18.1818,NO,NO,unchanged
+TA0100,Collection,ID,75,18.1818,18.1818,NO,NO,unchanged
+TA0100,Collection,PR,25,72.7273,72.7273,YES,YES,unchanged
+TA0100,Collection,PR,50,72.7273,72.7273,YES,YES,unchanged
+TA0100,Collection,PR,75,72.7273,72.7273,NO,NO,unchanged
+TA0100,Collection,DE,25,45.4545,45.4545,YES,YES,unchanged
+TA0100,Collection,DE,50,45.4545,45.4545,NO,NO,unchanged
+TA0100,Collection,DE,75,45.4545,45.4545,NO,NO,unchanged
+TA0100,Collection,RS,25,0.0,0.0,NO,NO,unchanged
+TA0100,Collection,RS,50,0.0,0.0,NO,NO,unchanged
+TA0100,Collection,RS,75,0.0,0.0,NO,NO,unchanged
+TA0100,Collection,RC,25,0.0,0.0,NO,NO,unchanged
+TA0100,Collection,RC,50,0.0,0.0,NO,NO,unchanged
+TA0100,Collection,RC,75,0.0,0.0,NO,NO,unchanged
+TA0101,Command and Control,GV,25,0.0,0.0,NO,NO,unchanged
+TA0101,Command and Control,GV,50,0.0,0.0,NO,NO,unchanged
+TA0101,Command and Control,GV,75,0.0,0.0,NO,NO,unchanged
+TA0101,Command and Control,ID,25,100.0,100.0,YES,YES,unchanged
+TA0101,Command and Control,ID,50,100.0,100.0,YES,YES,unchanged
+TA0101,Command and Control,ID,75,100.0,100.0,YES,YES,unchanged
+TA0101,Command and Control,PR,25,100.0,100.0,YES,YES,unchanged
+TA0101,Command and Control,PR,50,100.0,100.0,YES,YES,unchanged
+TA0101,Command and Control,PR,75,100.0,100.0,YES,YES,unchanged
+TA0101,Command and Control,DE,25,100.0,100.0,YES,YES,unchanged
+TA0101,Command and Control,DE,50,100.0,100.0,YES,YES,unchanged
+TA0101,Command and Control,DE,75,100.0,100.0,YES,YES,unchanged
+TA0101,Command and Control,RS,25,0.0,0.0,NO,NO,unchanged
+TA0101,Command and Control,RS,50,0.0,0.0,NO,NO,unchanged
+TA0101,Command and Control,RS,75,0.0,0.0,NO,NO,unchanged
+TA0101,Command and Control,RC,25,0.0,0.0,NO,NO,unchanged
+TA0101,Command and Control,RC,50,0.0,0.0,NO,NO,unchanged
+TA0101,Command and Control,RC,75,0.0,0.0,NO,NO,unchanged
+TA0107,Inhibit Response Function,GV,25,0.0,0.0,NO,NO,unchanged
+TA0107,Inhibit Response Function,GV,50,0.0,0.0,NO,NO,unchanged
+TA0107,Inhibit Response Function,GV,75,0.0,0.0,NO,NO,unchanged
+TA0107,Inhibit Response Function,ID,25,15.3846,15.3846,NO,NO,unchanged
+TA0107,Inhibit Response Function,ID,50,15.3846,15.3846,NO,NO,unchanged
+TA0107,Inhibit Response Function,ID,75,15.3846,15.3846,NO,NO,unchanged
+TA0107,Inhibit Response Function,PR,25,84.6154,84.6154,YES,YES,unchanged
+TA0107,Inhibit Response Function,PR,50,84.6154,84.6154,YES,YES,unchanged
+TA0107,Inhibit Response Function,PR,75,84.6154,84.6154,YES,YES,unchanged
+TA0107,Inhibit Response Function,DE,25,53.8462,53.8462,YES,YES,unchanged
+TA0107,Inhibit Response Function,DE,50,53.8462,53.8462,YES,YES,unchanged
+TA0107,Inhibit Response Function,DE,75,53.8462,53.8462,NO,NO,unchanged
+TA0107,Inhibit Response Function,RS,25,0.0,0.0,NO,NO,unchanged
+TA0107,Inhibit Response Function,RS,50,0.0,0.0,NO,NO,unchanged
+TA0107,Inhibit Response Function,RS,75,0.0,0.0,NO,NO,unchanged
+TA0107,Inhibit Response Function,RC,25,15.3846,15.3846,NO,NO,unchanged
+TA0107,Inhibit Response Function,RC,50,15.3846,15.3846,NO,NO,unchanged
+TA0107,Inhibit Response Function,RC,75,15.3846,15.3846,NO,NO,unchanged
+TA0106,Impair Process Control,GV,25,0.0,0.0,NO,NO,unchanged
+TA0106,Impair Process Control,GV,50,0.0,0.0,NO,NO,unchanged
+TA0106,Impair Process Control,GV,75,0.0,0.0,NO,NO,unchanged
+TA0106,Impair Process Control,ID,25,50.0,50.0,YES,YES,unchanged
+TA0106,Impair Process Control,ID,50,50.0,50.0,YES,YES,unchanged
+TA0106,Impair Process Control,ID,75,50.0,50.0,NO,NO,unchanged
+TA0106,Impair Process Control,PR,25,100.0,100.0,YES,YES,unchanged
+TA0106,Impair Process Control,PR,50,100.0,100.0,YES,YES,unchanged
+TA0106,Impair Process Control,PR,75,100.0,100.0,YES,YES,unchanged
+TA0106,Impair Process Control,DE,25,100.0,100.0,YES,YES,unchanged
+TA0106,Impair Process Control,DE,50,100.0,100.0,YES,YES,unchanged
+TA0106,Impair Process Control,DE,75,100.0,100.0,YES,YES,unchanged
+TA0106,Impair Process Control,RS,25,0.0,0.0,NO,NO,unchanged
+TA0106,Impair Process Control,RS,50,0.0,0.0,NO,NO,unchanged
+TA0106,Impair Process Control,RS,75,0.0,0.0,NO,NO,unchanged
+TA0106,Impair Process Control,RC,25,0.0,0.0,NO,NO,unchanged
+TA0106,Impair Process Control,RC,50,0.0,0.0,NO,NO,unchanged
+TA0106,Impair Process Control,RC,75,0.0,0.0,NO,NO,unchanged
+TA0105,Impact,GV,25,0.0,0.0,NO,NO,unchanged
+TA0105,Impact,GV,50,0.0,0.0,NO,NO,unchanged
+TA0105,Impact,GV,75,0.0,0.0,NO,NO,unchanged
+TA0105,Impact,ID,25,0.0,0.0,NO,NO,unchanged
+TA0105,Impact,ID,50,0.0,0.0,NO,NO,unchanged
+TA0105,Impact,ID,75,0.0,0.0,NO,NO,unchanged
+TA0105,Impact,PR,25,83.3333,91.6667,YES,YES,unchanged
+TA0105,Impact,PR,50,83.3333,91.6667,YES,YES,unchanged
+TA0105,Impact,PR,75,83.3333,91.6667,YES,YES,unchanged
+TA0105,Impact,DE,25,0.0,16.6667,NO,NO,unchanged
+TA0105,Impact,DE,50,0.0,16.6667,NO,NO,unchanged
+TA0105,Impact,DE,75,0.0,16.6667,NO,NO,unchanged
+TA0105,Impact,RS,25,0.0,0.0,NO,NO,unchanged
+TA0105,Impact,RS,50,0.0,0.0,NO,NO,unchanged
+TA0105,Impact,RS,75,0.0,0.0,NO,NO,unchanged
+TA0105,Impact,RC,25,66.6667,66.6667,YES,YES,unchanged
+TA0105,Impact,RC,50,66.6667,66.6667,YES,YES,unchanged
+TA0105,Impact,RC,75,66.6667,66.6667,NO,NO,unchanged

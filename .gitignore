@@ -1,0 +1,29 @@
+# Sensitive or restricted files kept outside the public project
+local-not-for-github/
+
+# Python environment and generated caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE / OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Generated raw runs (curated results and reproducibility reruns remain trackable)
+results/**/raw-runs/
+
+# Locally generated inventories and editor backups
+repository_inventory.txt
+*~
+
+# Local backup scripts
+BAK_*
+*.lnk

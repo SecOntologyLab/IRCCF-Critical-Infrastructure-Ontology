@@ -1,0 +1,57 @@
+﻿Mitigation ID,Mitigation,Technique ID,Technique,Tactic ID,Proposed NIST control,CSF subcategory,Function,Crosswalk row,Coverage contribution,Provenance
+M0915,Active Directory Configuration,T0859,Valid Accounts,TA0109,AC-2,PR.AA-01,PR,460,Existing in baseline,Author-derived conditional; not MITRE-published
+M0915,Active Directory Configuration,T0859,Valid Accounts,TA0109,AC-2,PR.AA-05,PR,486,Existing in baseline,Author-derived conditional; not MITRE-published
+M0915,Active Directory Configuration,T0859,Valid Accounts,TA0109,AC-2,PR.DS-10,PR,539,Existing in baseline,Author-derived conditional; not MITRE-published
+M0915,Active Directory Configuration,T0859,Valid Accounts,TA0109,AC-2,DE.CM-01,DE,637,Existing in baseline,Author-derived conditional; not MITRE-published
+M0915,Active Directory Configuration,T0859,Valid Accounts,TA0109,AC-2,DE.CM-03,DE,648,Existing in baseline,Author-derived conditional; not MITRE-published
+M0915,Active Directory Configuration,T0859,Valid Accounts, TA0110,AC-2,PR.AA-01,PR,460,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0915,Active Directory Configuration,T0859,Valid Accounts, TA0110,AC-2,PR.AA-05,PR,486,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0915,Active Directory Configuration,T0859,Valid Accounts, TA0110,AC-2,PR.DS-10,PR,539,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0915,Active Directory Configuration,T0859,Valid Accounts, TA0110,AC-2,DE.CM-01,DE,637,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0915,Active Directory Configuration,T0859,Valid Accounts, TA0110,AC-2,DE.CM-03,DE,648,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0812,Safety Instrumented Systems,T0879,Damage to Property,TA0105,SC-7,PR.DS-01,PR,515,Existing in baseline,Author-derived conditional; not MITRE-published
+M0812,Safety Instrumented Systems,T0879,Damage to Property,TA0105,SC-7,PR.DS-02,PR,528,Existing in baseline,Author-derived conditional; not MITRE-published
+M0812,Safety Instrumented Systems,T0879,Damage to Property,TA0105,SC-7,PR.DS-10,PR,548,Existing in baseline,Author-derived conditional; not MITRE-published
+M0812,Safety Instrumented Systems,T0879,Damage to Property,TA0105,SC-7,PR.IR-01,PR,610,Existing in baseline,Author-derived conditional; not MITRE-published
+M0812,Safety Instrumented Systems,T0879,Damage to Property,TA0105,SC-7,DE.CM-01,DE,642,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0812,Safety Instrumented Systems,T0880,Loss of Safety,TA0105,SC-7,PR.DS-01,PR,515,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0812,Safety Instrumented Systems,T0880,Loss of Safety,TA0105,SC-7,PR.DS-02,PR,528,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0812,Safety Instrumented Systems,T0880,Loss of Safety,TA0105,SC-7,PR.DS-10,PR,548,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0812,Safety Instrumented Systems,T0880,Loss of Safety,TA0105,SC-7,PR.IR-01,PR,610,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0812,Safety Instrumented Systems,T0880,Loss of Safety,TA0105,SC-7,DE.CM-01,DE,642,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,ID.RA-01,ID,297,Existing in baseline,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,ID.IM-01,ID,372,Existing in baseline,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,ID.IM-02,ID,412,Existing in baseline,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,ID.IM-03,ID,451,Existing in baseline,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,PR.DS-01,PR,523,Existing in baseline,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,PR.DS-02,PR,537,Existing in baseline,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,PR.DS-10,PR,557,Existing in baseline,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,DE.CM-01,DE,643,Existing in baseline,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,DE.CM-06,DE,658,Existing in baseline,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,DE.CM-09,DE,669,Existing in baseline,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,DE.AE-02,DE,675,Existing in baseline,Author-derived conditional; not MITRE-published
+M0920,SSL/TLS Inspection,T0884,Connection Proxy,TA0101,SI-4,DE.AE-03,DE,682,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0820,Exploitation for Evasion,TA0103,PM-16,ID.RA-02,ID,301,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0820,Exploitation for Evasion,TA0103,PM-16,ID.RA-03,ID,303,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0820,Exploitation for Evasion,TA0103,PM-16,ID.RA-05,ID,312,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0820,Exploitation for Evasion,TA0103,PM-16,DE.AE-03,DE,678,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0820,Exploitation for Evasion,TA0103,PM-16,DE.AE-06,DE,690,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0820,Exploitation for Evasion,TA0103,PM-16,DE.AE-07,DE,693,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services,TA0108,PM-16,ID.RA-02,ID,301,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services,TA0108,PM-16,ID.RA-03,ID,303,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services,TA0108,PM-16,ID.RA-05,ID,312,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services,TA0108,PM-16,DE.AE-03,DE,678,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services,TA0108,PM-16,DE.AE-06,DE,690,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services,TA0108,PM-16,DE.AE-07,DE,693,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services, TA0109,PM-16,ID.RA-02,ID,301,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services, TA0109,PM-16,ID.RA-03,ID,303,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services, TA0109,PM-16,ID.RA-05,ID,312,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services, TA0109,PM-16,DE.AE-03,DE,678,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services, TA0109,PM-16,DE.AE-06,DE,690,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0866,Exploitation of Remote Services, TA0109,PM-16,DE.AE-07,DE,693,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0890,Exploitation for Privilege Escalation,TA0111,PM-16,ID.RA-02,ID,301,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0890,Exploitation for Privilege Escalation,TA0111,PM-16,ID.RA-03,ID,303,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0890,Exploitation for Privilege Escalation,TA0111,PM-16,ID.RA-05,ID,312,Existing in baseline,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0890,Exploitation for Privilege Escalation,TA0111,PM-16,DE.AE-03,DE,678,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0890,Exploitation for Privilege Escalation,TA0111,PM-16,DE.AE-06,DE,690,New technique-Function coverage,Author-derived conditional; not MITRE-published
+M0919,Threat Intelligence Program,T0890,Exploitation for Privilege Escalation,TA0111,PM-16,DE.AE-07,DE,693,New technique-Function coverage,Author-derived conditional; not MITRE-published

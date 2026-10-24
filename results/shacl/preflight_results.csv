@@ -1,0 +1,5 @@
+scenario,triples,expected_flags,SPARQL_preflight_flags,pass,SHACL_engine_executed
+1_legacy_shared,689,1,1,1,No
+2_revised_distinct,9420,0,0,1,No
+3_revised_false_sameas,9421,1,1,1,No
+4_revised_reverse_sameas,9421,1,1,1,No

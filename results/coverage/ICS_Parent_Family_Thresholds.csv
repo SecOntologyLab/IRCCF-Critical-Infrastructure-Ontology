@@ -1,0 +1,37 @@
+﻿Tactic ID,Tactic,Threshold %,A parent-only,B parent-family,Added functions B,A count,B count
+TA0108,Initial Access,25,"GV, ID, PR, DE","GV, ID, PR, DE",,4,4
+TA0108,Initial Access,50,"ID, PR, DE","ID, PR, DE",,3,3
+TA0108,Initial Access,75,PR,PR,,1,1
+TA0104,Execution,25,"ID, PR, DE","ID, PR, DE",,3,3
+TA0104,Execution,50,PR,PR,,1,1
+TA0104,Execution,75,PR,PR,,1,1
+TA0110,Persistence,25,"ID, PR, DE","ID, PR, DE",,3,3
+TA0110,Persistence,50,"ID, PR, DE","ID, PR, DE",,3,3
+TA0110,Persistence,75,"ID, PR, DE","ID, PR, DE",,3,3
+TA0111,Privilege Escalation,25,"ID, PR, DE","ID, PR, DE",,3,3
+TA0111,Privilege Escalation,50,"ID, PR, DE","ID, PR, DE",,3,3
+TA0111,Privilege Escalation,75,"ID, PR","ID, PR",,2,2
+TA0103,Evasion,25,"ID, PR, DE","ID, PR, DE",,3,3
+TA0103,Evasion,50,PR,PR,,1,1
+TA0103,Evasion,75,PR,PR,,1,1
+TA0102,Discovery,25,PR,"PR, DE",DE,1,2
+TA0102,Discovery,50,PR,PR,,1,1
+TA0102,Discovery,75,PR,PR,,1,1
+TA0109,Lateral Movement,25,"ID, PR, DE","ID, PR, DE",,3,3
+TA0109,Lateral Movement,50,"ID, PR, DE","ID, PR, DE",,3,3
+TA0109,Lateral Movement,75,"PR, DE","PR, DE",,2,2
+TA0100,Collection,25,"PR, DE","PR, DE",,2,2
+TA0100,Collection,50,PR,PR,,1,1
+TA0100,Collection,75,,,,0,0
+TA0101,Command and Control,25,"ID, PR, DE","ID, PR, DE",,3,3
+TA0101,Command and Control,50,"ID, PR, DE","ID, PR, DE",,3,3
+TA0101,Command and Control,75,"ID, PR, DE","ID, PR, DE",,3,3
+TA0107,Inhibit Response Function,25,"PR, DE","PR, DE",,2,2
+TA0107,Inhibit Response Function,50,"PR, DE","PR, DE",,2,2
+TA0107,Inhibit Response Function,75,PR,PR,,1,1
+TA0106,Impair Process Control,25,"ID, PR, DE","ID, PR, DE",,3,3
+TA0106,Impair Process Control,50,"ID, PR, DE","ID, PR, DE",,3,3
+TA0106,Impair Process Control,75,"PR, DE","PR, DE",,2,2
+TA0105,Impact,25,"PR, RC","PR, RC",,2,2
+TA0105,Impact,50,"PR, RC","PR, RC",,2,2
+TA0105,Impact,75,PR,PR,,1,1

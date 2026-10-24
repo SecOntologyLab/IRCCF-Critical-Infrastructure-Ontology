@@ -1,0 +1,25 @@
+{
+  "ontology": "C:\\Users\\andre\\irccf-shacl\\IRCCF_Reasoning_Benchmark\\irccf_stage5_3_PRELIMINARY_all47_active.ttl",
+  "positive_control": {
+    "RDFS": {
+      "transitive_subclass_entailment": true,
+      "inferred_instance_type": true
+    },
+    "OWL_RL": {
+      "transitive_subclass_entailment": true,
+      "inferred_instance_type": true
+    }
+  },
+  "timings": {
+    "RDFS": {
+      "successful_runs": 3,
+      "mean_seconds": 1.54708,
+      "median_seconds": 1.49867
+    },
+    "OWL_RL": {
+      "successful_runs": 3,
+      "mean_seconds": 2.29291,
+      "median_seconds": 2.25718
+    }
+  }
+}

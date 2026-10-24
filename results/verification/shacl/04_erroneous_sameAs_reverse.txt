@@ -1,0 +1,18 @@
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: irccf:FalseArticleEquivalenceShape
+	Focus Node: irccf:GDPR_Art__22_1
+	Value Node: irccf:GDPR_Art__22_1
+	Source Constraint: [ rdf:type sh:SPARQLConstraint ; sh:message Literal("A GDPR Article 22 requirement has been asserted owl:sameAs an AI Act Article 14 requirement.") ; sh:select Literal("
+      PREFIX irccf: <https://purl.org/ircc-framework#>
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      SELECT $this WHERE {
+        { $this owl:sameAs irccf:AIAct_Art__14_1__4 }
+        UNION
+        { irccf:AIAct_Art__14_1__4 owl:sameAs $this }
+      }
+    ") ]
+	Message: A GDPR Article 22 requirement has been asserted owl:sameAs an AI Act Article 14 requirement.

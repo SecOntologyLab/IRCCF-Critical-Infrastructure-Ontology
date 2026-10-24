@@ -1,0 +1,982 @@
+@prefix irccf: <https://purl.org/ircc-framework#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+irccf:Ontology a owl:Ontology ;
+    rdfs:label "Integrated Regulatory Compliance and Cybersecurity Framework Ontology" .
+
+### ===================================================================
+### CORE CLASSES
+### ===================================================================
+
+irccf:Regulation a owl:Class .
+irccf:RegulatoryRequirement a owl:Class .
+irccf:CybersecurityFramework a owl:Class .
+irccf:FrameworkFunction a owl:Class .
+irccf:TechnicalStandard a owl:Class .
+irccf:SecurityControl a owl:Class .
+irccf:ThreatModel a owl:Class .
+irccf:Tactic a owl:Class .
+irccf:ThreatTechnique a owl:Class .
+irccf:Asset a owl:Class .
+irccf:AIEnabledSystem a owl:Class ;
+    rdfs:subClassOf irccf:Asset .
+irccf:Stakeholder a owl:Class .
+irccf:ProcessingActivity a owl:Class .
+irccf:ComplianceMeasure a owl:Class .
+irccf:CaseStudy a owl:Class .
+
+### ===================================================================
+### OBJECT PROPERTIES
+### ===================================================================
+
+irccf:imposesRequirement a owl:ObjectProperty ;
+    rdfs:domain irccf:Regulation ;
+    rdfs:range irccf:RegulatoryRequirement .
+
+irccf:appliesTo a owl:ObjectProperty ;
+    rdfs:domain irccf:RegulatoryRequirement ;
+    rdfs:range irccf:Asset .
+
+irccf:mapsToFunction a owl:ObjectProperty ;
+    rdfs:comment "Links requirements, tactics, or controls to NIST CSF functions." .
+
+irccf:implementedBy a owl:ObjectProperty ;
+    rdfs:domain irccf:RegulatoryRequirement ;
+    rdfs:range irccf:SecurityControl .
+
+irccf:mitigates a owl:ObjectProperty ;
+    rdfs:domain irccf:SecurityControl ;
+    rdfs:range irccf:ThreatTechnique .
+
+irccf:detects a owl:ObjectProperty ;
+    rdfs:domain irccf:Asset ;
+    rdfs:range irccf:ThreatTechnique .
+
+irccf:supportsComplianceWith a owl:ObjectProperty .
+
+irccf:belongsToFramework a owl:ObjectProperty ;
+    rdfs:domain irccf:FrameworkFunction ;
+    rdfs:range irccf:CybersecurityFramework .
+
+irccf:belongsToStandard a owl:ObjectProperty ;
+    rdfs:domain irccf:SecurityControl ;
+    rdfs:range irccf:TechnicalStandard .
+
+irccf:belongsToThreatModel a owl:ObjectProperty ;
+    rdfs:comment "Links tactics or techniques to a threat model." .
+
+irccf:belongsToTactic a owl:ObjectProperty ;
+    rdfs:domain irccf:ThreatTechnique ;
+    rdfs:range irccf:Tactic .
+
+irccf:usedInCaseStudy a owl:ObjectProperty .
+irccf:involvesProcessing a owl:ObjectProperty .
+irccf:performedBy a owl:ObjectProperty .
+irccf:governsProcessing a owl:ObjectProperty .
+
+### Datatype Property
+
+irccf:description a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+### ===================================================================
+### REGULATIONS
+### ===================================================================
+
+irccf:GDPR a irccf:Regulation ;
+    rdfs:label "GDPR" .
+
+irccf:NIS2 a irccf:Regulation ;
+    rdfs:label "NIS2 Directive" .
+
+irccf:AIAct a irccf:Regulation ;
+    rdfs:label "EU AI Act" .
+
+irccf:CRA a irccf:Regulation ;
+    rdfs:label "Cyber Resilience Act" .
+
+### ===================================================================
+### FRAMEWORKS, STANDARDS, THREAT MODELS
+### ===================================================================
+
+irccf:NIST_CSF_2_0 a irccf:CybersecurityFramework ;
+    rdfs:label "NIST CSF 2.0" .
+
+irccf:IEC_62443_3_3 a irccf:TechnicalStandard ;
+    rdfs:label "IEC 62443-3-3" .
+
+irccf:MITRE_ATTACK_ICS a irccf:ThreatModel ;
+    rdfs:label "MITRE ATT&CK for ICS" .
+
+### ===================================================================
+### NIST CSF 2.0 FUNCTIONS (complete set of six)
+### ===================================================================
+
+irccf:Govern a irccf:FrameworkFunction ;
+    rdfs:label "Govern" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+irccf:Identify a irccf:FrameworkFunction ;
+    rdfs:label "Identify" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+irccf:Protect a irccf:FrameworkFunction ;
+    rdfs:label "Protect" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+irccf:Detect a irccf:FrameworkFunction ;
+    rdfs:label "Detect" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+irccf:Respond a irccf:FrameworkFunction ;
+    rdfs:label "Respond" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+irccf:Recover a irccf:FrameworkFunction ;
+    rdfs:label "Recover" ;
+    irccf:belongsToFramework irccf:NIST_CSF_2_0 .
+
+### ===================================================================
+### REGULATORY REQUIREMENTS
+### ===================================================================
+
+irccf:DataMinimization a irccf:RegulatoryRequirement ;
+    rdfs:label "Data minimization requirement" ;
+    irccf:mapsToFunction irccf:Protect ;
+    irccf:description "Personal data must be limited to what is necessary." .
+
+irccf:IncidentReporting a irccf:RegulatoryRequirement ;
+    rdfs:label "Incident reporting requirement" ;
+    irccf:mapsToFunction irccf:Respond .
+
+irccf:HumanOversight a irccf:RegulatoryRequirement ;
+    rdfs:label "Human oversight requirement" ;
+    irccf:mapsToFunction irccf:Detect .
+
+irccf:SecurityByDesign a irccf:RegulatoryRequirement ;
+    rdfs:label "Security by design requirement" ;
+    irccf:mapsToFunction irccf:Protect .
+
+irccf:RiskManagement a irccf:RegulatoryRequirement ;
+    rdfs:label "Risk management requirement" ;
+    irccf:mapsToFunction irccf:Identify ;
+    irccf:description "Organizations must identify and manage cybersecurity risks." .
+
+irccf:VulnerabilityHandling a irccf:RegulatoryRequirement ;
+    rdfs:label "Vulnerability handling requirement" ;
+    irccf:mapsToFunction irccf:Protect ;
+    irccf:description "Products with digital elements must have vulnerability handling processes." .
+
+irccf:SupplyChainSecurity a irccf:RegulatoryRequirement ;
+    rdfs:label "Supply chain security requirement" ;
+    irccf:mapsToFunction irccf:Govern ;
+    irccf:description "Organizations must manage cybersecurity risks in supply chains." .
+
+irccf:BusinessContinuity a irccf:RegulatoryRequirement ;
+    rdfs:label "Business continuity requirement" ;
+    irccf:mapsToFunction irccf:Recover ;
+    irccf:description "Organizations must ensure continuity of essential services." .
+
+irccf:AccessControl a irccf:RegulatoryRequirement ;
+    rdfs:label "Access control requirement" ;
+    irccf:mapsToFunction irccf:Protect ;
+    irccf:description "Appropriate access control policies and procedures." .
+
+irccf:TransparencyObligation a irccf:RegulatoryRequirement ;
+    rdfs:label "Transparency obligation" ;
+    irccf:mapsToFunction irccf:Govern ;
+    irccf:description "AI systems must provide transparency regarding logic involved." .
+
+### ===================================================================
+### REGULATION → REQUIREMENT LINKS
+### ===================================================================
+
+irccf:GDPR irccf:imposesRequirement irccf:DataMinimization .
+irccf:GDPR irccf:imposesRequirement irccf:HumanOversight .
+irccf:GDPR irccf:imposesRequirement irccf:TransparencyObligation .
+
+irccf:NIS2 irccf:imposesRequirement irccf:IncidentReporting .
+irccf:NIS2 irccf:imposesRequirement irccf:RiskManagement .
+irccf:NIS2 irccf:imposesRequirement irccf:SupplyChainSecurity .
+irccf:NIS2 irccf:imposesRequirement irccf:BusinessContinuity .
+irccf:NIS2 irccf:imposesRequirement irccf:AccessControl .
+
+irccf:AIAct irccf:imposesRequirement irccf:HumanOversight .
+irccf:AIAct irccf:imposesRequirement irccf:SecurityByDesign .
+irccf:AIAct irccf:imposesRequirement irccf:RiskManagement .
+irccf:AIAct irccf:imposesRequirement irccf:TransparencyObligation .
+
+irccf:CRA irccf:imposesRequirement irccf:SecurityByDesign .
+irccf:CRA irccf:imposesRequirement irccf:VulnerabilityHandling .
+
+### ===================================================================
+### MITRE ATT&CK FOR ICS — TACTIC LAYER (12 tactics)
+### ===================================================================
+### Each tactic is mapped to one or more NIST CSF 2.0 functions,
+### establishing the bridge between the threat model and the
+### organizational cybersecurity governance framework.
+### ===================================================================
+
+irccf:TA0108_InitialAccess a irccf:Tactic ;
+    rdfs:label "Initial Access" ;
+    irccf:description "Techniques used to gain an initial foothold within an ICS environment." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Protect .
+
+irccf:TA0104_Execution a irccf:Tactic ;
+    rdfs:label "Execution" ;
+    irccf:description "Techniques that result in adversary-controlled code running on a local or remote system." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Protect , irccf:Detect .
+
+irccf:TA0110_Persistence a irccf:Tactic ;
+    rdfs:label "Persistence" ;
+    irccf:description "Techniques used to maintain access to ICS environments across restarts or credential changes." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Protect , irccf:Detect .
+
+irccf:TA0111_PrivilegeEscalation a irccf:Tactic ;
+    rdfs:label "Privilege Escalation" ;
+    irccf:description "Techniques used to gain higher-level permissions on a system or network." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Protect .
+
+irccf:TA0103_Evasion a irccf:Tactic ;
+    rdfs:label "Evasion" ;
+    irccf:description "Techniques used to avoid detection throughout a compromise." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Detect .
+
+irccf:TA0102_Discovery a irccf:Tactic ;
+    rdfs:label "Discovery" ;
+    irccf:description "Techniques used to gain knowledge about the system and internal network." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Detect , irccf:Identify .
+
+irccf:TA0109_LateralMovement a irccf:Tactic ;
+    rdfs:label "Lateral Movement" ;
+    irccf:description "Techniques used to move through the ICS environment." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Protect , irccf:Detect .
+
+irccf:TA0100_Collection a irccf:Tactic ;
+    rdfs:label "Collection" ;
+    irccf:description "Techniques used to gather data of interest and domain knowledge." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Detect , irccf:Protect .
+
+irccf:TA0101_CommandAndControl a irccf:Tactic ;
+    rdfs:label "Command and Control" ;
+    irccf:description "Techniques used to communicate with systems under adversary control." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Detect , irccf:Protect .
+
+irccf:TA0107_InhibitResponseFunction a irccf:Tactic ;
+    rdfs:label "Inhibit Response Function" ;
+    irccf:description "Techniques that prevent safety, protection, and quality assurance functions from responding to a failure, hazard, or unsafe state." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Respond , irccf:Recover , irccf:Detect .
+
+irccf:TA0106_ImpairProcessControl a irccf:Tactic ;
+    rdfs:label "Impair Process Control" ;
+    irccf:description "Techniques that manipulate, disable, or damage physical control processes." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Detect , irccf:Respond .
+
+irccf:TA0105_Impact a irccf:Tactic ;
+    rdfs:label "Impact" ;
+    irccf:description "Techniques used to disrupt, deny, degrade, or destroy ICS systems and data." ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS ;
+    irccf:mapsToFunction irccf:Respond , irccf:Recover .
+
+### ===================================================================
+### MITRE ATT&CK FOR ICS — TIER 1 TECHNIQUES
+### Regulatory-salient: direct hooks to regulatory requirements
+### ===================================================================
+
+## --- Initial Access (TA0108) ---
+
+irccf:T0862_SupplyChainCompromise a irccf:ThreatTechnique ;
+    rdfs:label "Supply Chain Compromise" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0865_SpearphishingAttachment a irccf:ThreatTechnique ;
+    rdfs:label "Spearphishing Attachment" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0819_ExploitPublicFacingApplication a irccf:ThreatTechnique ;
+    rdfs:label "Exploit Public-Facing Application" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0822_ExternalRemoteServices a irccf:ThreatTechnique ;
+    rdfs:label "External Remote Services" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0817_DriveByCompromise a irccf:ThreatTechnique ;
+    rdfs:label "Drive-by Compromise" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0866_ExploitationOfRemoteServices a irccf:ThreatTechnique ;
+    rdfs:label "Exploitation of Remote Services" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0883_InternetAccessibleDevice a irccf:ThreatTechnique ;
+    rdfs:label "Internet Accessible Device" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0886_RemoteServices a irccf:ThreatTechnique ;
+    rdfs:label "Remote Services" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0847_ReplicationThroughRemovableMedia a irccf:ThreatTechnique ;
+    rdfs:label "Replication Through Removable Media" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0848_RogueMaster a irccf:ThreatTechnique ;
+    rdfs:label "Rogue Master" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0864_TransientCyberAsset a irccf:ThreatTechnique ;
+    rdfs:label "Transient Cyber Asset" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0860_WirelessCompromise a irccf:ThreatTechnique ;
+    rdfs:label "Wireless Compromise" ;
+    irccf:belongsToTactic irccf:TA0108_InitialAccess ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+## --- Execution (TA0104) ---
+
+irccf:T0807_CommandLineInterface a irccf:ThreatTechnique ;
+    rdfs:label "Command-Line Interface" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0871_ExecutionThroughAPI a irccf:ThreatTechnique ;
+    rdfs:label "Execution through API" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0853_Scripting a irccf:ThreatTechnique ;
+    rdfs:label "Scripting" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0821_ModifyControllerTasking a irccf:ThreatTechnique ;
+    rdfs:label "Modify Controller Tasking" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0858_ChangeOperatingMode a irccf:ThreatTechnique ;
+    rdfs:label "Change Operating Mode" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0863_UserExecution a irccf:ThreatTechnique ;
+    rdfs:label "User Execution" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0823_GraphicalUserInterface a irccf:ThreatTechnique ;
+    rdfs:label "Graphical User Interface" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0874_Hooking a irccf:ThreatTechnique ;
+    rdfs:label "Hooking" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0834_NativeAPI a irccf:ThreatTechnique ;
+    rdfs:label "Native API" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0895_AutorunImage a irccf:ThreatTechnique ;
+    rdfs:label "Autorun Image" ;
+    irccf:belongsToTactic irccf:TA0104_Execution ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+## --- Evasion (TA0103) ---
+
+irccf:T0856_SpoofReportingMessage a irccf:ThreatTechnique ;
+    rdfs:label "Spoof Reporting Message" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0851_Rootkit a irccf:ThreatTechnique ;
+    rdfs:label "Rootkit" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0849_Masquerading a irccf:ThreatTechnique ;
+    rdfs:label "Masquerading" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0820_ExploitationForEvasion a irccf:ThreatTechnique ;
+    rdfs:label "Exploitation for Evasion" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0872_IndicatorRemovalOnHost a irccf:ThreatTechnique ;
+    rdfs:label "Indicator Removal on Host" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0894_SystemBinaryProxyExecution a irccf:ThreatTechnique ;
+    rdfs:label "System Binary Proxy Execution" ;
+    irccf:belongsToTactic irccf:TA0103_Evasion ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+## --- Collection (TA0100) — high GDPR salience ---
+
+irccf:T0830_AdversaryInTheMiddle a irccf:ThreatTechnique ;
+    rdfs:label "Adversary-in-the-Middle" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0802_AutomatedCollection a irccf:ThreatTechnique ;
+    rdfs:label "Automated Collection" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0811_DataFromInformationRepositories a irccf:ThreatTechnique ;
+    rdfs:label "Data from Information Repositories" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0893_DataFromLocalSystem a irccf:ThreatTechnique ;
+    rdfs:label "Data from Local System" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0852_ScreenCapture a irccf:ThreatTechnique ;
+    rdfs:label "Screen Capture" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0887_WirelessSniffing a irccf:ThreatTechnique ;
+    rdfs:label "Wireless Sniffing" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0868_DetectOperatingMode a irccf:ThreatTechnique ;
+    rdfs:label "Detect Operating Mode" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0877_IOImage a irccf:ThreatTechnique ;
+    rdfs:label "I/O Image" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0801_MonitorProcessState a irccf:ThreatTechnique ;
+    rdfs:label "Monitor Process State" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0861_PointAndTagIdentification a irccf:ThreatTechnique ;
+    rdfs:label "Point & Tag Identification" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0845_ProgramUpload a irccf:ThreatTechnique ;
+    rdfs:label "Program Upload" ;
+    irccf:belongsToTactic irccf:TA0100_Collection ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+## --- Inhibit Response Function (TA0107) — high NIS2/AI Act salience ---
+
+irccf:T0800_ActivateFirmwareUpdateMode a irccf:ThreatTechnique ;
+    rdfs:label "Activate Firmware Update Mode" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0878_AlarmSuppression a irccf:ThreatTechnique ;
+    rdfs:label "Alarm Suppression" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0803_BlockCommandMessage a irccf:ThreatTechnique ;
+    rdfs:label "Block Command Message" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0804_BlockReportingMessage a irccf:ThreatTechnique ;
+    rdfs:label "Block Reporting Message" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0805_BlockSerialCOM a irccf:ThreatTechnique ;
+    rdfs:label "Block Serial COM" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0809_DataDestruction a irccf:ThreatTechnique ;
+    rdfs:label "Data Destruction" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0814_DenialOfService a irccf:ThreatTechnique ;
+    rdfs:label "Denial of Service" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0816_DeviceRestartShutdown a irccf:ThreatTechnique ;
+    rdfs:label "Device Restart/Shutdown" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0835_ManipulateIOImage a irccf:ThreatTechnique ;
+    rdfs:label "Manipulate I/O Image" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0838_ModifyAlarmSettings a irccf:ThreatTechnique ;
+    rdfs:label "Modify Alarm Settings" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0881_ServiceStop a irccf:ThreatTechnique ;
+    rdfs:label "Service Stop" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0892_ChangeCredential a irccf:ThreatTechnique ;
+    rdfs:label "Change Credential" ;
+    irccf:belongsToTactic irccf:TA0107_InhibitResponseFunction ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+## --- Impair Process Control (TA0106) ---
+
+irccf:T0806_BruteForceIO a irccf:ThreatTechnique ;
+    rdfs:label "Brute Force I/O" ;
+    irccf:belongsToTactic irccf:TA0106_ImpairProcessControl ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0836_ModifyParameter a irccf:ThreatTechnique ;
+    rdfs:label "Modify Parameter" ;
+    irccf:belongsToTactic irccf:TA0106_ImpairProcessControl ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0855_UnauthorizedCommandMessage a irccf:ThreatTechnique ;
+    rdfs:label "Unauthorized Command Message" ;
+    irccf:belongsToTactic irccf:TA0106_ImpairProcessControl ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+## --- Impact (TA0105) — high NIS2 incident-reporting salience ---
+
+irccf:T0879_DamageToProperty a irccf:ThreatTechnique ;
+    rdfs:label "Damage to Property" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0813_DenialOfControl a irccf:ThreatTechnique ;
+    rdfs:label "Denial of Control" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0815_DenialOfView a irccf:ThreatTechnique ;
+    rdfs:label "Denial of View" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0826_LossOfAvailability a irccf:ThreatTechnique ;
+    rdfs:label "Loss of Availability" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0827_LossOfControl a irccf:ThreatTechnique ;
+    rdfs:label "Loss of Control" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0828_LossOfProductivityAndRevenue a irccf:ThreatTechnique ;
+    rdfs:label "Loss of Productivity and Revenue" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0837_LossOfProtection a irccf:ThreatTechnique ;
+    rdfs:label "Loss of Protection" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0880_LossOfSafety a irccf:ThreatTechnique ;
+    rdfs:label "Loss of Safety" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0829_LossOfView a irccf:ThreatTechnique ;
+    rdfs:label "Loss of View" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0831_ManipulationOfControl a irccf:ThreatTechnique ;
+    rdfs:label "Manipulation of Control" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0832_ManipulationOfView a irccf:ThreatTechnique ;
+    rdfs:label "Manipulation of View" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0882_TheftOfOperationalInformation a irccf:ThreatTechnique ;
+    rdfs:label "Theft of Operational Information" ;
+    irccf:belongsToTactic irccf:TA0105_Impact ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+### ===================================================================
+### MITRE ATT&CK FOR ICS — TIER 2 TECHNIQUES
+### Control-mediated: linked to regulatory requirements via IEC 62443
+### ===================================================================
+
+## --- Persistence (TA0110) ---
+
+irccf:T0891_HardcodedCredentials a irccf:ThreatTechnique ;
+    rdfs:label "Hardcoded Credentials" ;
+    irccf:belongsToTactic irccf:TA0110_Persistence ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0889_ModifyProgram a irccf:ThreatTechnique ;
+    rdfs:label "Modify Program" ;
+    irccf:belongsToTactic irccf:TA0110_Persistence ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0839_ModuleFirmware a irccf:ThreatTechnique ;
+    rdfs:label "Module Firmware" ;
+    irccf:belongsToTactic irccf:TA0110_Persistence ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0873_ProjectFileInfection a irccf:ThreatTechnique ;
+    rdfs:label "Project File Infection" ;
+    irccf:belongsToTactic irccf:TA0110_Persistence ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0857_SystemFirmware a irccf:ThreatTechnique ;
+    rdfs:label "System Firmware" ;
+    irccf:belongsToTactic irccf:TA0110_Persistence ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0859_ValidAccounts a irccf:ThreatTechnique ;
+    rdfs:label "Valid Accounts" ;
+    irccf:belongsToTactic irccf:TA0110_Persistence ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+## --- Privilege Escalation (TA0111) ---
+
+irccf:T0890_ExploitationForPrivilegeEscalation a irccf:ThreatTechnique ;
+    rdfs:label "Exploitation for Privilege Escalation" ;
+    irccf:belongsToTactic irccf:TA0111_PrivilegeEscalation ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+## --- Discovery (TA0102) ---
+
+irccf:T0840_NetworkConnectionEnumeration a irccf:ThreatTechnique ;
+    rdfs:label "Network Connection Enumeration" ;
+    irccf:belongsToTactic irccf:TA0102_Discovery ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0842_NetworkSniffing a irccf:ThreatTechnique ;
+    rdfs:label "Network Sniffing" ;
+    irccf:belongsToTactic irccf:TA0102_Discovery ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0846_RemoteSystemDiscovery a irccf:ThreatTechnique ;
+    rdfs:label "Remote System Discovery" ;
+    irccf:belongsToTactic irccf:TA0102_Discovery ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0888_RemoteSystemInformationDiscovery a irccf:ThreatTechnique ;
+    rdfs:label "Remote System Information Discovery" ;
+    irccf:belongsToTactic irccf:TA0102_Discovery ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+## --- Lateral Movement (TA0109) ---
+
+irccf:T0812_DefaultCredentials a irccf:ThreatTechnique ;
+    rdfs:label "Default Credentials" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0867_LateralToolTransfer a irccf:ThreatTechnique ;
+    rdfs:label "Lateral Tool Transfer" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0843_ProgramDownload a irccf:ThreatTechnique ;
+    rdfs:label "Program Download" ;
+    irccf:belongsToTactic irccf:TA0109_LateralMovement ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+## --- Command and Control (TA0101) ---
+
+irccf:T0885_CommonlyUsedPort a irccf:ThreatTechnique ;
+    rdfs:label "Commonly Used Port" ;
+    irccf:belongsToTactic irccf:TA0101_CommandAndControl ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0884_ConnectionProxy a irccf:ThreatTechnique ;
+    rdfs:label "Connection Proxy" ;
+    irccf:belongsToTactic irccf:TA0101_CommandAndControl ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+irccf:T0869_StandardApplicationLayerProtocol a irccf:ThreatTechnique ;
+    rdfs:label "Standard Application Layer Protocol" ;
+    irccf:belongsToTactic irccf:TA0101_CommandAndControl ;
+    irccf:belongsToThreatModel irccf:MITRE_ATTACK_ICS .
+
+### ===================================================================
+### EXTENDED SECURITY CONTROLS (IEC 62443-3-3)
+### ===================================================================
+
+irccf:AnomalyDetectionControl a irccf:SecurityControl ;
+    rdfs:label "Anomaly detection control" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+irccf:NetworkMonitoringControl a irccf:SecurityControl ;
+    rdfs:label "Network monitoring control" ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+irccf:AccessControlEnforcement a irccf:SecurityControl ;
+    rdfs:label "Access control enforcement (SR 1.1)" ;
+    irccf:description "Human user identification and authentication." ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+irccf:UseControlAuthorization a irccf:SecurityControl ;
+    rdfs:label "Use control authorization (SR 2.1)" ;
+    irccf:description "Authorization enforcement for all users." ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+irccf:SystemIntegrityControl a irccf:SecurityControl ;
+    rdfs:label "System integrity control (SR 3.4)" ;
+    irccf:description "Software and information integrity verification." ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+irccf:DataConfidentialityControl a irccf:SecurityControl ;
+    rdfs:label "Data confidentiality control (SR 4.1)" ;
+    irccf:description "Information confidentiality protection." ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+irccf:NetworkSegmentationControl a irccf:SecurityControl ;
+    rdfs:label "Network segmentation control (SR 5.1)" ;
+    irccf:description "Network segmentation to limit lateral movement." ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+irccf:AuditLoggingControl a irccf:SecurityControl ;
+    rdfs:label "Audit logging control (SR 2.8)" ;
+    irccf:description "Auditable events and tamper-proof logging." ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+irccf:CommunicationIntegrityControl a irccf:SecurityControl ;
+    rdfs:label "Communication integrity control (SR 3.1)" ;
+    irccf:description "Communication integrity protection." ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+irccf:ResourceAvailabilityControl a irccf:SecurityControl ;
+    rdfs:label "Resource availability control (SR 7.1)" ;
+    irccf:description "Denial of service protection and resource availability." ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+irccf:BackupRecoveryControl a irccf:SecurityControl ;
+    rdfs:label "Backup and recovery control (SR 7.3)" ;
+    irccf:description "System backup and recovery capabilities." ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+irccf:InputValidationControl a irccf:SecurityControl ;
+    rdfs:label "Input validation control (SR 3.5)" ;
+    irccf:description "Input validation to prevent injection and manipulation." ;
+    irccf:belongsToStandard irccf:IEC_62443_3_3 .
+
+### ===================================================================
+### CONTROL → THREAT MITIGATION LINKS
+### ===================================================================
+
+## Access control mitigations
+irccf:AccessControlEnforcement irccf:mitigates irccf:T0859_ValidAccounts .
+irccf:AccessControlEnforcement irccf:mitigates irccf:T0812_DefaultCredentials .
+irccf:AccessControlEnforcement irccf:mitigates irccf:T0891_HardcodedCredentials .
+irccf:AccessControlEnforcement irccf:mitigates irccf:T0822_ExternalRemoteServices .
+irccf:AccessControlEnforcement irccf:mitigates irccf:T0886_RemoteServices .
+irccf:AccessControlEnforcement irccf:mitigates irccf:T0892_ChangeCredential .
+
+## Use control mitigations
+irccf:UseControlAuthorization irccf:mitigates irccf:T0890_ExploitationForPrivilegeEscalation .
+irccf:UseControlAuthorization irccf:mitigates irccf:T0807_CommandLineInterface .
+irccf:UseControlAuthorization irccf:mitigates irccf:T0823_GraphicalUserInterface .
+irccf:UseControlAuthorization irccf:mitigates irccf:T0871_ExecutionThroughAPI .
+
+## System integrity mitigations
+irccf:SystemIntegrityControl irccf:mitigates irccf:T0889_ModifyProgram .
+irccf:SystemIntegrityControl irccf:mitigates irccf:T0839_ModuleFirmware .
+irccf:SystemIntegrityControl irccf:mitigates irccf:T0857_SystemFirmware .
+irccf:SystemIntegrityControl irccf:mitigates irccf:T0873_ProjectFileInfection .
+irccf:SystemIntegrityControl irccf:mitigates irccf:T0895_AutorunImage .
+irccf:SystemIntegrityControl irccf:mitigates irccf:T0851_Rootkit .
+
+## Data confidentiality mitigations
+irccf:DataConfidentialityControl irccf:mitigates irccf:T0893_DataFromLocalSystem .
+irccf:DataConfidentialityControl irccf:mitigates irccf:T0811_DataFromInformationRepositories .
+irccf:DataConfidentialityControl irccf:mitigates irccf:T0852_ScreenCapture .
+irccf:DataConfidentialityControl irccf:mitigates irccf:T0882_TheftOfOperationalInformation .
+
+## Network segmentation mitigations
+irccf:NetworkSegmentationControl irccf:mitigates irccf:T0866_ExploitationOfRemoteServices .
+irccf:NetworkSegmentationControl irccf:mitigates irccf:T0867_LateralToolTransfer .
+irccf:NetworkSegmentationControl irccf:mitigates irccf:T0843_ProgramDownload .
+irccf:NetworkSegmentationControl irccf:mitigates irccf:T0884_ConnectionProxy .
+
+## Network monitoring mitigations (extended from original)
+irccf:NetworkMonitoringControl irccf:mitigates irccf:T0830_AdversaryInTheMiddle .
+irccf:NetworkMonitoringControl irccf:mitigates irccf:T0842_NetworkSniffing .
+irccf:NetworkMonitoringControl irccf:mitigates irccf:T0840_NetworkConnectionEnumeration .
+irccf:NetworkMonitoringControl irccf:mitigates irccf:T0885_CommonlyUsedPort .
+irccf:NetworkMonitoringControl irccf:mitigates irccf:T0869_StandardApplicationLayerProtocol .
+irccf:NetworkMonitoringControl irccf:mitigates irccf:T0887_WirelessSniffing .
+
+## Anomaly detection mitigations (extended from original)
+irccf:AnomalyDetectionControl irccf:mitigates irccf:T0821_ModifyControllerTasking .
+irccf:AnomalyDetectionControl irccf:mitigates irccf:T0858_ChangeOperatingMode .
+irccf:AnomalyDetectionControl irccf:mitigates irccf:T0835_ManipulateIOImage .
+irccf:AnomalyDetectionControl irccf:mitigates irccf:T0836_ModifyParameter .
+irccf:AnomalyDetectionControl irccf:mitigates irccf:T0855_UnauthorizedCommandMessage .
+irccf:AnomalyDetectionControl irccf:mitigates irccf:T0806_BruteForceIO .
+irccf:AnomalyDetectionControl irccf:mitigates irccf:T0856_SpoofReportingMessage .
+irccf:AnomalyDetectionControl irccf:mitigates irccf:T0878_AlarmSuppression .
+
+## Audit logging mitigations
+irccf:AuditLoggingControl irccf:mitigates irccf:T0872_IndicatorRemovalOnHost .
+irccf:AuditLoggingControl irccf:mitigates irccf:T0849_Masquerading .
+irccf:AuditLoggingControl irccf:mitigates irccf:T0894_SystemBinaryProxyExecution .
+
+## Communication integrity mitigations
+irccf:CommunicationIntegrityControl irccf:mitigates irccf:T0830_AdversaryInTheMiddle .
+irccf:CommunicationIntegrityControl irccf:mitigates irccf:T0848_RogueMaster .
+irccf:CommunicationIntegrityControl irccf:mitigates irccf:T0804_BlockReportingMessage .
+irccf:CommunicationIntegrityControl irccf:mitigates irccf:T0803_BlockCommandMessage .
+
+## Resource availability mitigations
+irccf:ResourceAvailabilityControl irccf:mitigates irccf:T0814_DenialOfService .
+irccf:ResourceAvailabilityControl irccf:mitigates irccf:T0816_DeviceRestartShutdown .
+irccf:ResourceAvailabilityControl irccf:mitigates irccf:T0881_ServiceStop .
+
+## Backup and recovery mitigations
+irccf:BackupRecoveryControl irccf:mitigates irccf:T0809_DataDestruction .
+irccf:BackupRecoveryControl irccf:mitigates irccf:T0826_LossOfAvailability .
+
+## Input validation mitigations
+irccf:InputValidationControl irccf:mitigates irccf:T0819_ExploitPublicFacingApplication .
+irccf:InputValidationControl irccf:mitigates irccf:T0820_ExploitationForEvasion .
+irccf:InputValidationControl irccf:mitigates irccf:T0853_Scripting .
+
+### ===================================================================
+### REQUIREMENT → CONTROL LINKS (extended)
+### ===================================================================
+
+## Data Minimization (GDPR) — implemented by controls that govern data handling
+irccf:DataMinimization irccf:implementedBy irccf:NetworkMonitoringControl .
+irccf:DataMinimization irccf:implementedBy irccf:DataConfidentialityControl .
+
+## Human Oversight (GDPR, AI Act) — implemented by detection and audit controls
+irccf:HumanOversight irccf:implementedBy irccf:AnomalyDetectionControl .
+irccf:HumanOversight irccf:implementedBy irccf:AuditLoggingControl .
+
+## Security by Design (AI Act, CRA)
+irccf:SecurityByDesign irccf:implementedBy irccf:AnomalyDetectionControl .
+irccf:SecurityByDesign irccf:implementedBy irccf:SystemIntegrityControl .
+irccf:SecurityByDesign irccf:implementedBy irccf:InputValidationControl .
+
+## Access Control (NIS2)
+irccf:AccessControl irccf:implementedBy irccf:AccessControlEnforcement .
+irccf:AccessControl irccf:implementedBy irccf:UseControlAuthorization .
+
+## Risk Management (NIS2, AI Act)
+irccf:RiskManagement irccf:implementedBy irccf:NetworkMonitoringControl .
+irccf:RiskManagement irccf:implementedBy irccf:AnomalyDetectionControl .
+
+## Vulnerability Handling (CRA)
+irccf:VulnerabilityHandling irccf:implementedBy irccf:SystemIntegrityControl .
+irccf:VulnerabilityHandling irccf:implementedBy irccf:InputValidationControl .
+
+## Supply Chain Security (NIS2)
+irccf:SupplyChainSecurity irccf:implementedBy irccf:SystemIntegrityControl .
+
+## Business Continuity (NIS2)
+irccf:BusinessContinuity irccf:implementedBy irccf:ResourceAvailabilityControl .
+irccf:BusinessContinuity irccf:implementedBy irccf:BackupRecoveryControl .
+
+## Incident Reporting (NIS2)
+irccf:IncidentReporting irccf:implementedBy irccf:AuditLoggingControl .
+
+### ===================================================================
+### REQUIREMENT → ASSET LINKS (extended for OT Sensor)
+### ===================================================================
+
+irccf:DataMinimization irccf:appliesTo irccf:OTSensor .
+irccf:HumanOversight irccf:appliesTo irccf:OTSensor .
+irccf:SecurityByDesign irccf:appliesTo irccf:OTSensor .
+irccf:AccessControl irccf:appliesTo irccf:OTSensor .
+irccf:RiskManagement irccf:appliesTo irccf:OTSensor .
+irccf:VulnerabilityHandling irccf:appliesTo irccf:OTSensor .
+irccf:IncidentReporting irccf:appliesTo irccf:OTSensor .
+irccf:BusinessContinuity irccf:appliesTo irccf:OTSensor .
+
+### ===================================================================
+### CASE STUDIES AND SCENARIO INSTANCES
+### ===================================================================
+
+irccf:ICSCaseStudy a irccf:CaseStudy .
+irccf:CTICaseStudy a irccf:CaseStudy .
+
+### Asset (ICS case)
+
+irccf:OTSensor a irccf:AIEnabledSystem ;
+    rdfs:label "AI-based OT Sensor" ;
+    irccf:usedInCaseStudy irccf:ICSCaseStudy ;
+    irccf:detects irccf:T0855_UnauthorizedCommandMessage ;
+    irccf:detects irccf:T0866_ExploitationOfRemoteServices ;
+    irccf:detects irccf:T0830_AdversaryInTheMiddle ;
+    irccf:detects irccf:T0856_SpoofReportingMessage ;
+    irccf:detects irccf:T0878_AlarmSuppression ;
+    irccf:detects irccf:T0835_ManipulateIOImage ;
+    irccf:detects irccf:T0842_NetworkSniffing ;
+    irccf:detects irccf:T0821_ModifyControllerTasking ;
+    irccf:detects irccf:T0858_ChangeOperatingMode ;
+    irccf:detects irccf:T0836_ModifyParameter .
+
+### ===================================================================
+### CTI SHARING SCENARIO (unchanged from original)
+### ===================================================================
+
+irccf:CTIPlatform a irccf:Asset ;
+    rdfs:label "CTI sharing platform" ;
+    irccf:usedInCaseStudy irccf:CTICaseStudy .
+
+irccf:ThreatSharing a irccf:ProcessingActivity ;
+    rdfs:label "Threat intelligence sharing" ;
+    irccf:performedBy irccf:CriticalInfrastructureOperator .
+
+irccf:CTIPlatform irccf:involvesProcessing irccf:ThreatSharing .
+
+irccf:CriticalInfrastructureOperator a irccf:Stakeholder .
+irccf:PlatformProvider a irccf:Stakeholder .
+irccf:CTIAnalysisProvider a irccf:Stakeholder .
+
+irccf:IncidentReporting irccf:appliesTo irccf:CTIPlatform .
+irccf:DataMinimization irccf:governsProcessing irccf:ThreatSharing .
+

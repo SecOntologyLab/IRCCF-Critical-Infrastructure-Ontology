@@ -1,0 +1,80 @@
+parent_id,parent_name,tactic_memberships,children_ids,children_names,existing_legacy_node
+T0800,Activate Firmware Update Mode,TA0107,,,True
+T0801,Monitor Process State,TA0100,,,True
+T0802,Automated Collection,TA0100,,,True
+T0806,Brute Force I/O,TA0106,,,True
+T0807,Command-Line Interface,TA0104,,,True
+T0809,Data Destruction,TA0107,,,True
+T0811,Data from Information Repositories,TA0100,,,True
+T0813,Denial of Control,TA0105,,,True
+T0814,Denial of Service,TA0107,,,True
+T0815,Denial of View,TA0105,,,True
+T0816,Device Restart/Shutdown,TA0107,,,True
+T0817,Drive-by Compromise,TA0108,,,True
+T0819,Exploit Public-Facing Application,TA0108,,,True
+T0820,Exploitation for Evasion,TA0103,,,True
+T0821,Modify Controller Tasking,TA0104,,,True
+T0822,External Remote Services,TA0108,,,True
+T0823,Graphical User Interface,TA0104,,,True
+T0826,Loss of Availability,TA0105,,,True
+T0827,Loss of Control,TA0105,,,True
+T0828,Loss of Productivity and Revenue,TA0105,,,True
+T0829,Loss of View,TA0105,,,True
+T0830,Adversary-in-the-Middle,TA0100,,,True
+T0831,Manipulation of Control,TA0105,,,True
+T0832,Manipulation of View,TA0105,,,True
+T0834,Native API,TA0104,,,True
+T0835,Manipulate I/O Image,TA0107,,,True
+T0836,Modify Parameter,TA0106,,,True
+T0837,Loss of Protection,TA0105,,,True
+T0838,Modify Alarm Settings,TA0107,,,True
+T0840,Network Connection Enumeration,TA0102,,,True
+T0842,Network Sniffing,TA0102,,,True
+T0843,Program Download,TA0109,T0843.001; T0843.002; T0843.003,Download All; Online Edit; Program Append,True
+T0845,Program Upload,TA0100,,,True
+T0846,Remote System Discovery,TA0102,T0846.001; T0846.002; T0846.003,Port Scan; Broadcast Discovery; Multicast Discovery,True
+T0847,Replication Through Removable Media,TA0108,,,True
+T0848,Rogue Master,TA0108,,,True
+T0849,Masquerading,TA0103,,,True
+T0851,Rootkit,TA0103; TA0107,,,True
+T0852,Screen Capture,TA0100,,,True
+T0853,Scripting,TA0104,,,True
+T0858,Change Operating Mode,TA0104; TA0103,,,True
+T0859,Valid Accounts,TA0110; TA0109,,,True
+T0860,Wireless Compromise,TA0108,,,True
+T0861,Point & Tag Identification,TA0100,,,True
+T0862,Supply Chain Compromise,TA0108,,,True
+T0863,User Execution,TA0104,,,True
+T0864,Transient Cyber Asset,TA0108,,,True
+T0865,Spearphishing Attachment,TA0108,,,True
+T0866,Exploitation of Remote Services,TA0108; TA0109,,,True
+T0867,Lateral Tool Transfer,TA0109,,,True
+T0868,Detect Operating Mode,TA0100,,,True
+T0869,Standard Application Layer Protocol,TA0101,,,True
+T0871,Execution through API,TA0104,,,True
+T0872,Indicator Removal on Host,TA0103,,,True
+T0873,Project File Infection,TA0110,T0873.001,Siemens Project File Format,True
+T0874,Hooking,TA0104; TA0111,,,True
+T0877,I/O Image,TA0100,,,True
+T0878,Alarm Suppression,TA0107,,,True
+T0879,Damage to Property,TA0105,,,True
+T0880,Loss of Safety,TA0105,,,True
+T0881,Service Stop,TA0107,,,True
+T0882,Theft of Operational Information,TA0105,,,True
+T0883,Internet Accessible Device,TA0108,,,True
+T0884,Connection Proxy,TA0101,,,True
+T0885,Commonly Used Port,TA0101,,,True
+T0886,Remote Services,TA0108; TA0109,,,True
+T0887,Wireless Sniffing,TA0102; TA0100,,,True
+T0888,Remote System Information Discovery,TA0102,,,True
+T0889,Modify Program,TA0110,,,True
+T0890,Exploitation for Privilege Escalation,TA0111,,,True
+T0892,Change Credential,TA0107,,,True
+T0893,Data from Local System,TA0100,,,True
+T0894,System Binary Proxy Execution,TA0103,,,True
+T0895,Autorun Image,TA0104,,,True
+T1691,Block Operational Technology Message,TA0107,T1691.001; T1691.002,Command Message; Reporting Message,False
+T1692,Unauthorized Message,TA0103; TA0106,T1692.001; T1692.002,Command Message; Reporting Message,False
+T1693,Modify Firmware,TA0110; TA0107; TA0106,T1693.001; T1693.002,System Firmware; Module Firmware,False
+T1694,Insecure Credentials,TA0110; TA0109,T1694.001; T1694.002,Default Credentials; Hardcoded Credentials,False
+T1695,Block Communications,TA0107,T1695.001; T1695.002; T1695.003,Serial COM; Ethernet; Wi-Fi,False

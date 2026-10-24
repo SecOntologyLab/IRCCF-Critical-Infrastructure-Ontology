@@ -1,0 +1,10 @@
+{
+  "RDFS": {
+    "transitive_subclass_entailment": true,
+    "inferred_instance_type": true
+  },
+  "OWL_RL": {
+    "transitive_subclass_entailment": true,
+    "inferred_instance_type": true
+  }
+}

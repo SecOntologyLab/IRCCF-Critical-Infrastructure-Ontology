@@ -1,0 +1,31 @@
+@prefix irccf: <https://purl.org/ircc-framework#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Targeted demonstration: this flags the original shared HumanOversight node.
+irccf:SharedHumanOversightShape a sh:NodeShape ;
+  sh:targetNode irccf:HumanOversight ;
+  sh:sparql [ a sh:SPARQLConstraint ;
+    sh:message "The same generic HumanOversight requirement is imposed by GDPR and AIAct; the two legal provisions must be modelled separately." ;
+    sh:select """
+      PREFIX irccf: <https://purl.org/ircc-framework#>
+      SELECT $this WHERE {
+        irccf:GDPR irccf:imposesRequirement $this .
+        irccf:AIAct irccf:imposesRequirement $this .
+      }
+    """ ] .
+
+# Targeted demonstration: this flags an explicit owl:sameAs between article-specific requirements.
+irccf:FalseArticleEquivalenceShape a sh:NodeShape ;
+  sh:targetNode irccf:GDPR_Art__22_1, irccf:GDPR_Art__22_2__3 ;
+  sh:sparql [ a sh:SPARQLConstraint ;
+    sh:message "A GDPR Article 22 requirement has been asserted owl:sameAs an AI Act Article 14 requirement." ;
+    sh:select """
+      PREFIX irccf: <https://purl.org/ircc-framework#>
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      SELECT $this WHERE {
+        { $this owl:sameAs irccf:AIAct_Art__14_1__4 }
+        UNION
+        { irccf:AIAct_Art__14_1__4 owl:sameAs $this }
+      }
+    """ ] .

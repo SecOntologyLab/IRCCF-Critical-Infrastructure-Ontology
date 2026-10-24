@@ -1,0 +1,11 @@
+PREFIX irccf: <https://purl.org/ircc-framework#>
+SELECT DISTINCT ?regulation ?requirement ?mapping ?control ?mitigation ?technique ?tactic ?function WHERE {
+ ?regulation irccf:imposesRequirement ?requirement .
+ ?mapping a irccf:ProposedRegulatoryControlMapping ; irccf:proposedRequirement ?requirement ; irccf:proposedControl ?control .
+ ?requirement irccf:implementedBy ?control .
+ ?mitigation irccf:referencesStandardsControl ?control ; irccf:mitigatesTechnique ?technique .
+ ?technique irccf:belongsToTactic ?tactic .
+ ?tactic irccf:calculatedFunctionAssociation ?function .
+ FILTER NOT EXISTS { ?technique a irccf:SubTechnique }
+ FILTER EXISTS { ?control irccf:hasCSFSubcategory ?subcategory . ?subcategory irccf:inCSFFunction ?function }
+} ORDER BY ?tactic ?regulation ?requirement
