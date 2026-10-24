@@ -6,13 +6,24 @@ Companion materials for *A Unified Ontological Framework for Integrated Regulato
 
 ## Research baseline and scope
 
-- Pinned source: MITRE ATT&CK for ICS **v19.2** (historical release, not necessarily the most recent version).
-- Canonical experimental graph: [`ontology/releases/irccf_stage5_3_PRELIMINARY_all47_active.ttl`](ontology/releases/irccf_stage5_3_PRELIMINARY_all47_active.ttl), **9,420 asserted RDF triples**.
-- Source inventory: **12 ICS tactics, 79 unique parent techniques, 18 sub-techniques, 52 mitigations, 402 mitigation-to-technique links**.
-- NIST CSF 2.0 Function associations are calculated through source-referenced mitigation/NIST SP 800-53 controls and an SP 800-53-to-CSF 2.0 crosswalk using a **25% parent-technique coverage threshold**; 32 tactic-to-Function associations were reported. The crosswalk file is labelled *draft*; see provenance notes.
-- **47 author-proposed regulatory-to-technical-control mappings** are activated for exploratory analysis. These are not legally validated and should not be treated as authoritative compliance determinations.
-- The reported **1,319 distinct SPARQL evidence paths** are graph-query results, not distinct legal duties or evidence that an operator complies with legislation.
+- **Pinned source:** MITRE ATT&CK for ICS v19.2 (historical release, not necessarily the most recent version).
 
+- **Source inventory:** 12 ICS tactics, 79 unique parent techniques, 18 sub-techniques, 52 mitigations, and 402 mitigation-to-technique links.
+
+- **Original experimental baseline (Stage 5.3):** `ontology/releases/irccf_stage5_3_PRELIMINARY_all47_active.ttl`, containing 9,420 asserted RDF triples, 32 calculated tactic-to-NIST CSF 2.0 Function associations, and 1,319 distinct regulatory evidence paths.
+
+- **Corrected traceability release (Stage 5.4):** `ontology/releases/irccf_stage5_4_PRELIMINARY_all47_active.ttl`, containing 9,421 asserted RDF triples, 33 calculated tactic-to-Function associations, and 1,320 distinct regulatory evidence paths.
+
+- **Tactic-to-Function calculation:** NIST CSF 2.0 Function associations are derived through source-referenced MITRE mitigation relationships, NIST SP 800-53 Rev. 5 controls, and an SP 800-53-to-CSF 2.0 crosswalk. A Function association is established when at least 25% of the relevant parent techniques satisfy the coverage criterion. The crosswalk file is identified as a draft and is retained for research provenance; its mappings should not be interpreted as independently validated normative relationships.
+
+- **Stage 5.4 correction:** A targeted audit identified one previously omitted qualifying association between MITRE ICS Discovery (`TA0102`) and the NIST CSF 2.0 Detect (`DE`) Function. Two of the eight relevant parent techniques satisfied the criterion, meeting the 25% threshold. Adding this association increased the number of calculated tactic-to-Function associations from 32 to 33 and the distinct regulatory evidence paths from 1,319 to 1,320. No additional regulatory mapping or source mitigation relationship was introduced. The correction is documented in `docs/provenance/Stage5_4_Change_Record.md`.
+
+- **Experimental scope:** The recorded SHACL, RDFS/OWL 2 RL reasoning, and synthetic scalability experiments were performed using the original Stage 5.3 experimental baseline or its documented SHACL-specific inputs. Their reported results have been preserved unchanged. The corrected Stage 5.4 ontology is provided for regulatory traceability analysis and has not been independently subjected to the complete benchmark suite reported for Stage 5.3.
+
+- **Regulatory mappings:** The framework activates 47 author-proposed regulatory-to-technical-control mappings for exploratory analysis. These mappings are preliminary and have not been independently validated as authoritative legal interpretations.
+
+- **Interpretation of traceability results:** The 1,319 evidence paths associated with Stage 5.3 and the 1,320 paths associated with Stage 5.4 represent distinct SPARQL graph-query results. They are not counts of distinct legal obligations, independently verified compliance requirements, or evidence that an infrastructure operator complies with applicable legislation.
+  
 ## Repository structure
 
 | Path | Purpose |
