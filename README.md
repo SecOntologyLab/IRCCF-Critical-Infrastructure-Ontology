@@ -87,22 +87,37 @@ The graph-size expansion is **synthetic** and does not represent a deployed SOC,
 
 The scripts write new outputs beneath `results/verification/`, retaining the recorded experiment outputs separately in `results/shacl/`, `results/reasoning/` and `results/scalability/`.
 
-## Traceability results and outstanding verification
+## Traceability results and reproducibility verification
 
-The repository includes recorded SPARQL queries and CSV outputs for MITRE ATT&CK for ICS tactic-to-NIST CSF 2.0 Function coverage and EU regulatory traceability.
+The repository includes recorded SPARQL queries and CSV outputs for
+MITRE ATT&CK for ICS tactic-to-NIST CSF 2.0 Function coverage and
+EU regulatory traceability.
 
-The original Stage 5.3 ontology produced 1,319 distinct regulatory evidence paths and 32 calculated tactic-to-Function associations. The corrected Stage 5.4 ontology produces 1,320 distinct evidence paths and 33 calculated tactic-to-Function associations, reflecting one additional qualifying Discovery-to-Detect Function association under the established 25% parent-technique coverage threshold.
+On 25 October 2026, independent count-level verification was completed
+using Stardog Cloud Free, with freshly created databases populated
+separately from the archived Stage 5.3 and Stage 5.4 RDF/Turtle files.
 
-The repository reproducibility audit includes independent re-execution of the Stardog SPARQL traceability and coverage queries against the archived ontology releases. This verification will establish whether the recorded results can be reproduced from the repository's documented inputs, graph-loading procedures, and query definitions.
+All six numerical checks passed:
 
-The verification will include:
+| Verification measure | Stage 5.3 | Stage 5.4 |
+|---|---:|---:|
+| Asserted RDF triples | 9,420 | 9,421 |
+| Tactic-to-CSF Function associations | 32 | 33 |
+| Distinct regulatory evidence paths | 1,319 | 1,320 |
 
-1. Re-execution of the active regulatory traceability query against the Stage 5.4 ontology to confirm 1,320 distinct evidence paths.
-2. Verification of the 33 calculated tactic-to-CSF 2.0 Function associations against the established coverage criterion.
-3. Corresponding checks against the original Stage 5.3 ontology to confirm 1,319 evidence paths and 32 associations.
-4. Documentation of the Stardog environment, ontology-loading procedures, SPARQL queries, resulting outputs, and any discrepancies.
+The verification was conducted with the Stardog Reasoner OFF. The
+Studio query display limit was manually increased from 1,000 to 1,500
+through Preferences to accommodate the complete traceability results.
 
-The repository's provenance documentation will record the verification results and any necessary corrections. Until this independent re-execution has been completed, the archived traceability outputs should be regarded as recorded research results rather than independently reproduced repository outputs.
+The complete verification procedure, SPARQL queries, environment
+configuration, observed results, and limitations are documented in
+[Stardog Reproducibility Verification](docs/provenance/Stardog_Reproducibility_Verification.md).
+
+The verification establishes reproducibility of the six aggregate counts
+from the archived ontology releases. Row-by-row comparison against
+archived CSV outputs, independent recalculation of the 25% coverage
+threshold, and complete reconstruction from original MITRE and NIST
+datasets remain outside the scope of this verification.
 
 ## Provenance, interpretation and redistribution
 
