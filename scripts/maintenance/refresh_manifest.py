@@ -1,47 +1,84 @@
-"""Generate a deterministic SHA-256 manifest for tracked-candidate repository files.
-Run from anywhere: py scripts/maintenance/refresh_manifest.py
+"""Generate a deterministic SHA-256 manifest of Git-tracked files.
+
+Usage:
+    py scripts/maintenance/refresh_manifest.py
+
+The manifest excludes itself to avoid a circular hash dependency.
+Hashes represent the bytes of files in the local working directory.
 """
+
 from __future__ import annotations
+
 import csv
 import hashlib
+import subprocess
 from pathlib import Path
 
+
 ROOT = Path(__file__).resolve().parents[2]
-TARGET = ROOT / 'docs' / 'provenance' / 'file_manifest.csv'
-IGNORED_DIRS = {'.git', '.venv', '.vscode', '__pycache__', 'local-not-for-github', '.pytest_cache'}
-IGNORED_FILES = {'.DS_Store', 'Thumbs.db', 'repository_inventory.txt'}
-
-
-def include(path: Path) -> bool:
-    rel = path.relative_to(ROOT)
-    if path == TARGET or any(part in IGNORED_DIRS for part in rel.parts):
-        return False
-    if path.name in IGNORED_FILES or path.suffix.lower() in {'.pyc', '.log'}:
-        return False
-    if 'raw-runs' in rel.parts and 'results' in rel.parts:
-        return False
-    return True
+TARGET = ROOT / "docs" / "provenance" / "file_manifest.csv"
 
 
 def digest(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open('rb') as stream:
-        for chunk in iter(lambda: stream.read(1024 * 1024), b''):
-            h.update(chunk)
-    return h.hexdigest()
+    """Calculate the SHA-256 hash of a file."""
+    hasher = hashlib.sha256()
+
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            hasher.update(chunk)
+
+    return hasher.hexdigest()
+
+
+def tracked_files() -> list[Path]:
+    """Return files tracked by Git, excluding the manifest itself."""
+    result = subprocess.run(
+        ["git", "ls-files", "-z"],
+        cwd=ROOT,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=True,
+    )
+
+    paths = []
+
+    for name in result.stdout.split(b"\0"):
+        if not name:
+            continue
+
+        relative_path = name.decode("utf-8", errors="surrogateescape")
+        path = ROOT / relative_path
+
+        if path == TARGET:
+            continue
+
+        if path.is_file():
+            paths.append(path)
+
+    return sorted(paths, key=lambda p: p.relative_to(ROOT).as_posix())
 
 
 def main() -> None:
     rows = []
-    for path in sorted(ROOT.rglob('*')):
-        if path.is_file() and include(path):
-            rows.append((path.relative_to(ROOT).as_posix(), path.stat().st_size, digest(path)))
-    TARGET.parent.mkdir(parents=True, exist_ok=True)
-    with TARGET.open('w', encoding='utf-8-sig', newline='') as fh:
-        writer = csv.writer(fh)
-        writer.writerow(('path', 'size_bytes', 'sha256'))
-        writer.writerows(rows)
-    print(f'Wrote {len(rows)} file hashes to {TARGET}')
 
-if __name__ == '__main__':
+    for path in tracked_files():
+        rows.append(
+            (
+                path.relative_to(ROOT).as_posix(),
+                path.stat().st_size,
+                digest(path),
+            )
+        )
+
+    TARGET.parent.mkdir(parents=True, exist_ok=True)
+
+    with TARGET.open("w", encoding="utf-8-sig", newline="") as stream:
+        writer = csv.writer(stream)
+        writer.writerow(("path", "size_bytes", "sha256"))
+        writer.writerows(rows)
+
+    print(f"Manifest updated: {len(rows)} Git-tracked files")
+
+
+if __name__ == "__main__":
     main()
