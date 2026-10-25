@@ -37,7 +37,7 @@ Companion materials for *A Unified Ontological Framework for Integrated Regulato
 | `queries/` | SPARQL traceability and diagnostic queries |
 | `results/` | Original curated experimental outputs |
 | `results/verification/` | Independent reruns from the assembled repository; do not overwrite the originals |
-| `docs/provenance/` | Assembly checklist and manifest; refresh file hashes after final repository assembly |
+| `docs/provenance/` | Stardog reproducibility verification, ontology change records, and research provenance documentation |
 
 ## Local environment
 
@@ -125,7 +125,7 @@ datasets remain outside the scope of this verification.
 - Do not upload proprietary IEC 62443 normative text, journal PDFs, private correspondence, confidential partner material or personal data without authorisation.
 - The 20 source-observed IEC 62443-3-3 SR identifiers do **not** constitute validation against the complete normative IEC catalogue.
 - GDPR Article 22 and EU AI Act Article 14 are distinct provisions with different legal scopes. The demonstration's SHACL rules detect selected incorrectly modelled relationships only.
-- The source inventory and stored file manifest should be checked and regenerated after all edits. The repository is not yet an independently audited complete archive of every development step.
+- The repository is not yet an independently audited complete archive of every development step.
 
 ## GitHub release status
 
