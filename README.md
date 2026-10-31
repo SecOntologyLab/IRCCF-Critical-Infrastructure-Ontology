@@ -133,6 +133,14 @@ The repository was initially committed as a private GitHub repository under SecO
 
 Initial commit: `5fd073b`
 
-The repository is being made publicly available following a review of licensing arrangements, source-data provenance, third-party redistribution conditions, and experimental reproducibility. The archived ontology releases and their principal computational traceability results have undergone independent count-level verification. The 47 author-proposed regulatory-to-control correspondences remain preliminary and are provided for transparency, examination, and subsequent expert validation.
+## GitHub release status
+
+The repository was initially committed as a private GitHub repository under SecOntologyLab on 24 October 2026.
+
+Initial commit: `5fd073b`
+
+The repository is publicly available to facilitate independent examination, reproducibility, and scholarly review of the IRCCF framework and its supporting research materials. Licensing arrangements, source-data provenance, and third-party redistribution conditions have been documented. The archived ontology releases and their principal computational traceability results have undergone independent count-level verification.
+
+The 47 author-proposed regulatory-to-control correspondences remain preliminary and are provided for transparency, examination, and subsequent legal and technical expert validation.
 
 **Licensing:** The repository uses separate licenses for original research materials and software, while third-party materials remain subject to their applicable terms and conditions. See [Licensing Overview](LICENSING-OVERVIEW.md) for details.
