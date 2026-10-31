@@ -133,4 +133,6 @@ The repository was initially committed as a private GitHub repository under SecO
 
 Initial commit: `5fd073b`
 
-The repository remains private pending review of licensing, source-data provenance, third-party redistribution conditions, and experimental reproducibility. Its contents should not yet be regarded as a fully independently verified public research release.
+The repository is being made publicly available following a review of licensing arrangements, source-data provenance, third-party redistribution conditions, and experimental reproducibility. The archived ontology releases and their principal computational traceability results have undergone independent count-level verification. The 47 author-proposed regulatory-to-control correspondences remain preliminary and are provided for transparency, examination, and subsequent expert validation.
+
+**Licensing:** The repository uses separate licenses for original research materials and software, while third-party materials remain subject to their applicable terms and conditions. See [Licensing Overview](LICENSING-OVERVIEW.md) for details.
