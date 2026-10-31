@@ -5,7 +5,7 @@
 
 This directory provides a structured review register for **47 author-proposed correspondences** between selected provisions of four European Union legislative instruments and cybersecurity controls referenced by the IRCCF (Integrated Regulatory Compliance and Cybersecurity Framework) ontology.
 
-The register is made available so that readers, reviewers, and domain specialists can inspect the proposed interpretations, understand the unresolved issues, and—where appropriate—submit reasoned assessments or corrections. **The 47 correspondences have not received documented independent legal approval.** Their presence in the research ontology supports exploratory computational traceability; it does **not** demonstrate legal equivalence, regulatory compliance, or expert endorsement.
+The register is made available so that readers, reviewers, and domain specialists can inspect the proposed interpretations, understand the unresolved issues and, where appropriate, submit reasoned assessments or corrections. **The 47 correspondences have not yet received documented independent legal approval.** Their presence in the research ontology supports exploratory computational traceability; it does **not yet** demonstrate legal equivalence, regulatory compliance, or expert endorsement.
 
 The related IEEE Access research manuscript examines ontology-based relationships among regulatory requirements, cybersecurity controls, MITRE ATT&CK for ICS, and NIST Cybersecurity Framework (CSF) 2.0 Functions. This register provides transparency about the *legal interpretation layer* of those relationships; it is not a substitute for legal advice or a compliance assessment.
 
