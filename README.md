@@ -2,7 +2,7 @@
 
 **Research reproducibility repository — preliminary regulatory mappings.**
 
-Companion materials for *A Unified Ontological Framework for Integrated Regulatory Compliance and Cybersecurity Requirements in Critical Infrastructure* (IEEE Access manuscript under final review by IEEE Access).
+Companion materials for *A Unified Ontological Framework for Integrated Regulatory Compliance and Cybersecurity Requirements in Critical Infrastructure* (IEEE Access manuscript under final review).
 
 ## Research baseline and scope
 
